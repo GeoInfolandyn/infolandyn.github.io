@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>INFOLANDYN</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+	<link rel="shortcut icon" href="img/infolandyn.png"/>
+  <style>
+    .menu-widgets {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+
+    #map-container-1 {
+      position: absolute;
+      top: 1%;
+      bottom: 0;
+      left: 0;
+      width: calc(50% - 5px);
+      height: auto;
+      border-right: 5px solid #666666;
+    }
+
+
+    #map-container-2 {
+      position: absolute;
+      top: 10px;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      height: auto;
+
+    }
+
+  </style>
+</head>
+
+<body class="force-no-scroll">
+<!-- Start: Header -->
+  <div class="header">
+<header>
+	<!--<div class="menu-table flex-row-space-between">-->
+
+		<div class="logo flex-row-left">
+			<img src="img/infolandyn.png" width="70">
+			<a href="index.html"><font color="black"><H3><pre><font color="black"><p style = "font-family:arial;"><font size=5>   <br>   </font></p></pre></H3></font></a>
+
+			<!--</div>-->
+		<div class="logo flex-row-center">
+		<div class="verticalLine">
+			<p align="justify"><span class="department">Information System to Monitor <br>
+			 Global Change Impacts</span></p>
+		</div>
+
+		</div>
+		</div>
+    </header>
+</div>
+
+
+
+<!---APP-------------------------------------------------------------------------------------> 
+  <div class="menu-container"></div>
+  <div class="iframe-container">
+	<h11 class="leaflet-control", class="center"><abbr title="Wind speed/direction Surface + Carbon Monoxide Surface (ppbv) provided by Global Weather Conditions Portal">GLOBAL WEATHER CONDITIONS</abbr></h11>
+  <div id="map-container-1" class="noselect"><iframe class="iframe" width="100%" height="100%" allowfullscreen style="border-style:none;" src="https://alexanderariza.users.earthengine.app/view/climaera5"></iframe></div>
+  <div id="map-container-2" class="noselect"><iframe class="iframe" width="100%" height="100%" allowfullscreen style="border-style:none;" src="https://alexanderariza.users.earthengine.app/view/suceptibility"></iframe></div>
+
+
+  </div>
+
+<!---APP-------------------------------------------------------------------------------------> 
+
+<div class="menu-container"></div>
+<div class="menu-container">
+  <div class="menu">
+  <div class="menu-table flex-row-space-between">
+
+    <a class="menu-button" tabindex="0" href="javascript:void(0)">
+     	<img src="img/menu.png">
+    </a>
+ 
+    <div class="menu-items flex-row-center flex-item">
+				<a href="index.html" class="menu-index"><span class="logo-font-1">INFOLANDYN</span><span class="logo-font-2"><i> Project </i></span><span class="logo-font-1"> </span></a>
+				<a href="index.html" class="menu-index" class="logo-font-3"><b>Home</b></a>
+				<a href="widgets.html">About</a>
+				<a href="antes.html">Products</a>
+				<a href="durante.html">Users Guides</a>
+				<a href="despues.html">News</a>
+				<a href="despues.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+</div>
+    <div class="content">
+      <div class="content-table flex-column">
+
+        <!--End Intro-->
+        <!-------------------------------------------------------------------------------------------->
+
+
+
+
+</body>
+
+
+</html>

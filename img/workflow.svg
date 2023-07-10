@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <path d="M 38.462 293.683 H 424.344 L 424.344 269.71 L 484.163 320.317 L 424.344 370.925 L 424.344 346.952 H 38.462 V 293.683 Z" style="stroke: rgb(0, 0, 0); fill: rgb(68, 114, 196);" transform="matrix(0.999998, 0.001742, -0.001742, 0.999998, -11.366781, -222.354553)" bx:shape="arrow 38.462 269.71 445.701 101.215 53.269 59.819 0 1@9a2227cd"/>
+  <rect x="32.239" y="75.225" width="55.43" height="45.814" style="stroke: rgb(0, 0, 0); fill: rgb(253, 253, 253);"/>
+  <text style="font-family: Roboto; font-size: 36px; font-weight: 700; text-anchor: middle; white-space: pre;" transform="matrix(0.259663, 0, 0, 0.244004, 60.467323, 89.55069)"><tspan>Remote </tspan><tspan x="0" dy="1em">​</tspan><tspan>Sensing </tspan><tspan x="0" dy="1em">​</tspan><tspan>Data</tspan></text>
+  <rect x="93.325" y="75.943" width="55.43" height="45.814" style="stroke: rgb(0, 0, 0); fill: rgb(253, 253, 253);"/>
+  <text style="font-family: Roboto; font-size: 36px; font-weight: 700; text-anchor: middle; white-space: pre;" transform="matrix(0.221972, 0, 0, 0.249026, 119.856873, 89.997467)"><tspan>MODIS</tspan><tspan x="0" dy="1em">​</tspan><tspan>Multispectral</tspan><tspan x="0" dy="1em">​</tspan><tspan>Images</tspan></text>
+  <rect x="155.542" y="75.943" width="55.43" height="45.814" style="stroke: rgb(0, 0, 0); fill: rgb(253, 253, 253);"/>
+  <text style="font-size: 36px; font-family: Roboto; white-space: pre; text-anchor: middle;" transform="matrix(0.221959, 0.002403, -0.006591, 0.24897, 180.417252, 87.735138)"> </text>
+  <text style="font-family: Roboto; font-size: 36px; font-weight: 700; text-anchor: middle; white-space: pre;" transform="matrix(0.221972, 0, 0, 0.249026, 182.175507, 90.740097)"><tspan>NDVI series</tspan><tspan x="0" dy="1em">​</tspan><tspan>250 m</tspan><tspan x="0" dy="1em">​</tspan><tspan>8 days</tspan></text>
+  <rect x="216.629" y="75.943" width="62.217" height="45.814" style="stroke: rgb(0, 0, 0); fill: rgb(253, 253, 253);"/>
+  <text style="font-family: Roboto; font-size: 36px; font-weight: 700; text-anchor: middle; white-space: pre;" transform="matrix(0.221972, 0, 0, 0.249026, 248.250931, 94.522522)"><tspan>MODIS filtrered</tspan><tspan x="0" dy="1em">​</tspan><tspan>time series</tspan></text>
+  <rect x="283.936" y="76.074" width="62.217" height="45.814" style="stroke: rgb(0, 0, 0); fill: rgb(253, 253, 253);"/>
+  <text style="font-family: Roboto; font-size: 36px; font-weight: 700; text-anchor: middle; white-space: pre;" transform="matrix(0.221972, 0, 0, 0.249026, 315.55838, 94.522903)"><tspan>Autocorrelation</tspan><tspan x="0" dy="1em">​</tspan><tspan>Function</tspan></text>
+  <rect x="350.113" y="75.509" width="62.217" height="45.814" style="stroke: rgb(0, 0, 0); fill: rgb(253, 253, 253);"/>
+  <text style="font-family: Roboto; font-size: 36px; font-weight: 700; text-anchor: middle; white-space: pre;" transform="matrix(0.221972, 0, 0, 0.249026, 381.735291, 95.088913)"><tspan>AC - lags</tspan><tspan x="0" dy="1em">​</tspan><tspan>1,46,92,138</tspan></text>
+</svg>

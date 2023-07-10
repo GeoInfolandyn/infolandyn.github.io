@@ -1,0 +1,546 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- infolandyn: Header -->
+    <title>INFOLANDYN</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="custom.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+    <link rel="shortcut icon" href="img/infolandyn.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="Leaflet.CountrySelect.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'
+        rel='stylesheet' />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="Leaflet.PolylineMeasure.js"></script>
+    <link rel="stylesheet" href="Leaflet.PolylineMeasure.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet-0.7.2/leaflet.ie.css" />
+    <link rel="stylesheet" href="leaflet-sidebar.css" />
+    <script src="leaflet-sidebar.js"></script>
+    <script src="leaflet.wms.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<!---star style -------------------------------------------------------------------------------------> 
+<style>
+    html, body, #map {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .center {
+        text-align: center;
+        height: 9%;
+        padding-top: 0;
+        padding-bottom: 0;
+        color: black;
+        font-size: 70%;
+        font-family: Arial;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    html, body, #map {
+        height: 800px;
+        font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif;
+    }
+
+    .lorem {
+        font-style: italic;
+        color: #AAA;
+    }
+
+    h11 {
+        color: white;
+        font-weight: normal;
+        font-size: 30px;
+        padding-left: 20%;
+        font-family: Arial;
+        text-transform: uppercase;
+    }
+	
+	.map-container {
+      width: 250px;
+      height: 250px;
+    }
+
+</style>
+<!---end style -------------------------------------------------------------------------------------> 
+
+
+<!---star body-------------------------------------------------------------------------------------> 
+<body onload="init()" class="force-no-scroll">
+<!-- Start: Header -->
+	<div class="header">
+	<header>
+		<!--<div class="menu-table flex-row-space-between">-->
+		<div class="logo flex-row-center">
+			<img src="img/infolandyn.png" width="70"><img src="img/geo.jpg" width="70"><img src="img/upm.png" width="70"><img src="img/urj.png" width="150">
+			<a href="index.html"><font color="black"><H3><pre><font color="black"><p style = "font-family:arial;"><font size=5>  <br>  </font></p></pre></H3></font></a>
+			<div class="logo flex-row-center">
+			<div class="verticalLine">
+				<p align="justify"><span class="department">INFORMATION SYSTEM TO MONITOR<br>GLOBAL CHANGE IMPACTS</span></p>
+			</div>
+			</div>
+		</div> <!--</div>-->
+	</header>
+	</div>
+	
+<!-- Start: Menu -->
+<div class="menu-container"></div>
+	<div class="menu-container">
+		<div class="menu">
+			<div class="menu-table flex-row-space-between">
+				<a class="menu-button" tabindex="0" href="javascript:void(0)">
+				<img src="img/menu.png"></a>
+				<div class="menu-items flex-row-center flex-item">
+					<a href="index.html" class="menu-index"><span class="logo-font-1">INFOLANDYN</span><span class="logo-font-2"><i> Project </i></span><span class="logo-font-1"> </span></a>
+					<a href="widgets.html">About</a>
+					<a href="products.html"><b>Products</b></a>
+						  <div class="dropdown">
+							<a class="dropbtn" href="products_map.html">Viewer<i class="fas fa-caret-down"></i></a>
+							<div class="dropdown-content">
+							  <a href="products_map.html">Dinamicland Mapper</a>
+							  <a href="products_map.html">Dinamicland Indicator</a>
+							  <a href="products_map.html">Dinamicland Field</a>
+							</div>
+						  </div>
+					<a href="news.html">News</a>
+					<a href="https://blogs.upm.es/dynamicland/contact/">Contact</a>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--End Menu-Intro---------------------------------------------------------------------------------->
+
+<body translate="no">
+  <div class="max-w-sm mx-auto p-5 divide-y space-y-5">
+    <div x-data="{ selectedDataSource: '', selectedLevel: '', selectedLevel2: '', Subproduct2: '' }">
+      <div>
+        <label class="block text-sm font-medium text-gray-700" for="data-source">DATA SOURCE</label>
+        <select x-model="selectedDataSource" id="data-source" name="data-source" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" onchange="updateTable()">
+          <option value="">Please select a value</option>
+          <option value="A">A_SATELITE_IMAGERY</option>
+          <option value="B">B_STATISTICS_PRODUCTS</option>
+          <option value="C">C_ENVIRONMENTAL_INFORMATION</option>
+          <option value="D">D_ENVIRONMENTAL_STATISTICS</option>
+		  <option value="E">E_INFOGRAPHICS, GENERAL INFORMATION, NEWS</option>
+        </select>
+      </div>
+
+      <div class="pt-3" x-show="selectedDataSource === 'A' || selectedLevel === 'A1'">
+        <label class="block text-sm font-medium text-gray-700" for="level">A_SATELITE_IMAGERY</label>
+        <select x-model="selectedLevel" id="level" name="level" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+          <option value="">Please select a value</option>
+          <option value="A1">Level A1</option>
+          <option value="A2">Level A2</option>
+          <option value="A3">Level A3</option>
+        </select>
+      </div>
+
+      <div class="pt-4" x-show="selectedLevel === 'A1' || selectedLevel === 'A1'">
+        <label class="block text-sm font-medium text-gray-700" for="PRODUCT">Level A1</label>
+        <select x-model="selectedLevel2" id="PRODUCT" name="PRODUCT" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+          <option value="">Please select a value</option>
+          <option value="MOD17A2H">MODIS (MOD17A2H) Spectrum</option>
+          <option value="MOD09A1">MODIS (MOD09A1) Spectrum</option>
+          <option value="MOD09Q1">MODIS (MOD09Q1) Spectrum</option>
+          <option value="MOD13Q1">MODIS(MOD13Q1) Spectrum</option>
+          <option value="L5">Landsat 5</option>
+          <option value="S2S">Sentinel-2 Spectrum</option>
+        </select>
+      </div>
+
+      <div class="pt-5" x-show="selectedLevel2 === 'A2' || selectedLevel === 'A2'">
+        <label class="block text-sm font-medium text-gray-700" for="PRODUCT2">Level A2</label>
+        <select x-model="selectedLevel2" id="PRODUCT2" name="PRODUCT2" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+          <option value="">Please select a value</option>
+          <option value="GPP5">GPP 500m</option>
+          <option value="AR5">AR 500m</option>
+          <option value="AS25">AS2 500m</option>
+          <option value="NDVI5">NDVI 500m</option>
+          <option value="MODNDVI25TS">MODIS NDVI 250m time series</option>
+          <option value="TSSD">Time Series of secchi disk</option>
+          <option value="NDVI10">NDVI 10m</option>
+          <option value="RED&NIRB">RED and NIR bands</option>
+          <option value="NIR&SWIRB">NIR and SWIR bands</option>
+          <option value="AVHRRNDVI">AVHRR-NDVI time series</option>
+        </select>
+      </div>
+
+      <div class="pt-5" x-show="selectedLevel2 === 'A3' || selectedLevel === 'A3'">
+        <label class="block text-sm font-medium text-gray-700" for="Subproduct3">Level A3</label>
+        <select x-model="selectedLevel2" id="Subproduct3" name="Subproduct3" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+          <option value="">Please select a value</option>
+          <option value="AR5F">AR 500m filtered</option>
+          <option value="AS5F">AS2 500m filtered</option>
+          <option value="NDVI5F">NDVI 500m filtered</option>
+          <option value="MONDVIF">MODIS NDVI-filtered</option>
+          <option value="NDVI1F">NDVI 10m filtered</option>
+        </select>
+      </div>
+
+      <div class="pt-6" x-show="selectedDataSource === 'B' || selectedLevel === 'B'">
+        <label class="block text-sm font-medium text-gray-700" for="levelb">B_STATISTICS_PRODUCTS</label>
+        <select x-model="selectedLevel" id="levelb" name="levelb" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+          <option value="">Please select a value</option>
+          <option value="B1">Level B1</option>
+          <option value="B2">Level B2</option>
+        </select>
+      </div>
+	  
+	  <div class="pt-7" x-show="selectedLevel === 'B1' || selectedLevel === 'B1'">
+        <label class="block text-sm font-medium text-gray-700" for="PRODUCTB1">Level B1</label>
+        <select x-model="selectedLevel2" id="PRODUCTB1" name="PRODUCTB1" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+          <option value="">Please select a value</option>
+          <option value="ACYV">Accumulative year Values</option>
+          <option value="STGP">Start of growing period</option>
+          <option value="ETGP">End of growing period</option>
+          <option value="PERIODOGRAM">Periodogram</option>
+          <option value="MANDVI">Mean annual NDVI</option>
+          <option value="AUTVL">Autocorrelation values at lags 8 days, 6 months and 1, 2,3 years</option>
+		  <option value="AUTVLDF">Autocorrelation values at lags 10 days, 6 months and 1 2 and 3 years Differences Ratios</option>
+		  <option value="MMEV">Monthly means values</option>
+		  <option value="PERID">Periodogram</option>
+		  <option value="AUTOF">Autocorrelation function</option>		  
+        </select>
+      </div>
+	  
+	  <div class="pt-8" x-show="selectedLevel === 'B2' || selectedLevel === 'B2'">
+        <label class="block text-sm font-medium text-gray-700" for="PRODUCTB1">Level B2</label>
+        <select x-model="selectedLevel2" id="PRODUCTB2" name="PRODUCTB2" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+          <option value="">Please select a value</option>
+          <option value="CUGPP">Cumulative GPP prewildfire</option>
+          <option value="LEGRP">Length of growing period</option>
+          <option value="PEO46MY">Periodogram ordinates at 4, 6 months and one year</option>
+          <option value="TRMNDVI">Trends of mean annual NDVI</option>
+          <option value="MOMANN">Monthly mean annomalies</option>
+          <option value="SHPMRNB">Short period mean RED and NIR bads</option>
+		  <option value="SHPMRWB">Short period mean NIR and SWIR bands</option>
+		  <option value="PEO46MYFKT">Periodogram ordinates at 4, 6 months and one year - Fisher Kappa test</option>
+		  <option value="AUTV15613Y">Autocorrelation values at lags 15 days, 6 months, 1, 2 and 3 years</option>
+        </select>
+      </div>
+	  
+	  <div class="pt-9" x-show="selectedDataSource === 'C' || selectedLevel === 'C'">
+        <label class="block text-sm font-medium text-gray-700" for="levelc">C_ENVIRONMENTAL_INFORMATION</label>
+        <select x-model="selectedLevel2" id="levelc" name="levelc" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+          <option value="">Please select a value</option>
+          <option value="CUMGPP">Cumulative GPP</option>
+          <option value="FAA">Fallowed areas (annual)</option>
+          <option value="AGIMRA">Agricultural intensification of maize and rice areas</option>
+        </select>
+      </div>
+	  
+	  <div class="pt-10" x-show="selectedDataSource === 'D' || selectedLevel === 'D'">
+        <label class="block text-sm font-medium text-gray-700" for="leveld">D_ENVIRONMENTAL_STATISTICS</label>
+        <select x-model="selectedLevel2" id="leveld" name="leveld" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+          <option value="">Please select a value</option>
+          <option value="dCUMGPP">Fgures and tables of cumulative GPP in Salamanca</option>
+          <option value="dFAA">Tables and figures of surface of fallowed area. Change of fallowed area between years</option>
+          <option value="dAGIMRA">Tables and figures of the increase or decrease in the number of crop cycles or maize and rice areas in Ecuador</option>
+        </select>
+      </div>
+
+      <div class="pt-11">
+        <button x-on:click="resetForm" class="bg-indigo-500 text-white py-2 px-4 rounded">New Selection</button>
+      </div>
+	  
+    <!--Star table generate-->
+    <!-------------------------------------------------------------------------------------------->
+      <div class="pt-11" x-show="selectedDataSource || selectedLevel || selectedLevel2 || Subproduct2 || selectedSubproduct3">
+        <h2 class="text-lg font-medium">PRODUCT INFORMATION</h2>
+        <table class="mt-2 border border-gray-300">
+          <thead>
+            <tr>
+              <th class="border border-gray-300 px-4 py-2">PRODUCT LEVEL</th>
+              <th class="border border-gray-300 px-4 py-2">SUBPRODUCT LEVEL</th>
+              <th class="border border-gray-300 px-4 py-2">PRODUCT CODE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr x-show="selectedDataSource">
+              <td class="border border-gray-300 px-4 py-2" x-text="selectedDataSource"></td>
+              <td class="border border-gray-300 px-4 py-2" x-text="selectedLevel"></td>
+              <td class="border border-gray-300 px-4 py-2" x-text="selectedLevel2"></td>
+            </tr>
+          </tbody>
+        </table>
+		<button onclick="exportTable()"class="bg-indigo-500 text-white py-2 px-4 rounded">Export Metadata</button>
+      </div>
+    <!--Export TXT Metadata-->	  
+	<script>
+    function exportTable() {
+      var table = document.querySelector('table');
+      var rows = table.rows;
+      var text = '';
+
+      for (var i = 0; i < rows.length; i++) {
+        var cells = rows[i].cells;
+
+        for (var j = 0; j < cells.length; j++) {
+          text += cells[j].innerText + '\t';
+        }
+
+        text += '\n';
+      }
+
+      var blob = new Blob([text], { type: 'text/plain' });
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'tabla.txt';
+      a.click();
+    }
+	</script>
+	<!--End table generate-->
+    <!-------------------------------------------------------------------------------------------->
+		  
+
+    </div>
+  </div>
+  
+<!--Star Reload the page-->
+<!-------------------------------------------------------------------------------------------->
+  <script>
+    function generateDownloadLinks() {
+      const dataSource = document.getElementById('data-source').value;
+      const level = document.getElementById('level').value;
+      const PRODUCT = document.getElementById('PRODUCT').value;
+      const Subproduct2 = document.getElementById('Subproduct2').value;
+
+      const links = [];
+
+      if (dataSource && level && PRODUCT && Subproduct2) {
+        const numLinks = 5; // Number of links to generate
+
+        for (let i = 1; i <= numLinks; i++) {
+          const link = `http://example.com/download?dataSource=${encodeURIComponent(dataSource)}&level=${encodeURIComponent(level)}&PRODUCT=${encodeURIComponent(PRODUCT)}&Subproduct3=${encodeURIComponent(Subproduct3)}&linkNumber=${i}`;
+          links.push(link);
+        }
+      }
+
+      return links;
+    }
+    
+    function resetForm() {
+      const selectElements = document.getElementsByTagName('select');
+      for (let i = 0; i < selectElements.length; i++) {
+        selectElements[i].selectedIndex = 0;
+      }
+      location.reload(); // Reload the page
+    }
+  </script>
+<!--End Reload the page-->
+<!-------
+<!---star tabla-------------------------------------------------------------------------------------> 
+<div class="custom-table-container center add-top-margin-small">
+<style type="text/css">
+.tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;border-style:solid;border-width:1px;}
+.tg td{background-color:#fdf6e3;border-color:#93a1a1;border-style:solid;border-width:0px;color:#002b36;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:0px;color:#fdf6e3;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-ubgb{background-color:#ffffff;border-color:#000000;color:#002b36;font-family:Arial, Helvetica, sans-serif !important;
+  font-size:14px;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-hwwl{background-color:#c0c0c0;border-color:#000000;color:#002b36;font-family:Arial, Helvetica, sans-serif !important;
+  font-size:14px;text-align:left;vertical-align:middle}
+.tg .tg-f7v4{background-color:#c0c0c0;border-color:#000000;text-align:left;vertical-align:top}
+.tg .tg-sggj{background-color:#ffffff;border-color:#000000;color:#002b36;font-family:Arial, Helvetica, sans-serif !important;
+  font-size:14px;font-weight:bold;text-align:left;vertical-align:middle}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-fzdr{border-color:#c0c0c0;text-align:center;vertical-align:top}
+.tg .tg-edz8{background-color:#ffffff;border-color:#000000;color:#002b36;font-family:Arial, Helvetica, sans-serif !important;
+  font-size:14px;text-align:left;vertical-align:middle}
+</style>
+
+
+<table class="tg" style="undefined;table-layout: fixed; width: 1043px" id="tabla-datos"
+<colgroup>
+<col style="width: 521px">
+<col style="width: 261px">
+<col style="width: 261px">
+</colgroup>
+<thead>
+  <tr>
+    <th class="tg-sggj">Product Name</th>
+    <th class="tg-ubgb">Map</th>
+    <th class="tg-ubgb"><span style="font-weight:bold">Download</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax"><div id="pname"></div>
+    <td class="tg-fzdr" rowspan="3"><a class="custom-button custom-button-info pulse-info" target="_blank" href="products_map.html" target="_blank"><b>MAP LINK</b></a><br>
+		<div class="map-container">
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-9.6627,35.9469,2.8788,58.7787&amp;layer=mapnik&amp;marker=40.4168,-3.7038" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+        </div>
+	</td>
+    <td class="tg-0lax"><a class="custom-button" target="_blank" href="https://zenodo.org/record/7973930/files/FallowTemp_8bit.tif?download=1" target="_blank">Hyperlink</a></td>
+  </tr>
+  <tr>
+    <td class="tg-sggj">Description</td>
+    <td class="tg-ubgb"><span style="font-weight:bold">Keywords</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><div id="description"></div>
+	</td>
+    <td class="tg-f7v4" rowspan="5">text keywords</td>
+  </tr>
+  <tr>
+    <td class="tg-sggj"><span style="font-weight:bold">WorkFlow:</span></td>
+    <td class="tg-sggj"></td>
+  </tr>
+  <tr>
+  	<!--Link SVG of woirk flows-->
+    <td class="tg-sggj"><img class="image center max-width-600 add-top-margin-small" src="img/workflow.svg" width="247" height="40"></td>
+    <td class="tg-sggj"></td>
+  </tr>
+  <tr>
+    <td class="tg-sggj" colspan="2">Product citation</td>
+  </tr>
+  <tr>
+    <td class="tg-edz8" colspan="2">text production</td>
+  </tr>
+  <tr>
+    <td class="tg-sggj" colspan="2">Copyright &amp; License</td>
+    <td class="tg-ubgb">Details</td>
+  </tr>
+  <tr>
+    <td class="tg-edz8" colspan="2">tex copyright</td>
+    <td class="tg-hwwl" rowspan="5">text details</td>
+  </tr>
+  <tr>
+    <td class="tg-sggj" colspan="2">Related resources and products</td>
+  </tr>
+  <tr>
+    <td class="tg-edz8" colspan="2">text related</td>
+  </tr>
+  <tr>
+    <td class="tg-sggj" colspan="2">Comments</td>
+  </tr>
+  <tr>
+    <td class="tg-edz8" colspan="2">text comment</td>
+  </tr>
+</tbody>
+</table>
+
+<!---end test-------------------------------------------------------------------------------------> 
+	
+<script>
+        $(document).ready(function() {
+	var descriptions = {
+        MOD17A2H: "The MOD17A2H Version 6 Gross Primary Productivity (GPP) product is a cumulative 8-day composite of values with 500 meter (m) pixel size based on the radiation use efficiency concept that can be potentially used as inputs to data models to calculate terrestrial energy, carbon, water cycle processes, and biogeochemistry of vegetation. The data product includes information about GPP and Net Photosynthesis (PSN). The PSN band values are the GPP less the Maintenance Respiration (MR). The data product also contains a PSN Quality Control (QC) layer. The quality layer contains quality information for both the GPP and the PSN.",
+        MOD09A1: "The Moderate Resolution Imaging Spectroradiometer (MODIS) Terra MOD09A1 Version 6 product provides an estimate of the surface spectral reflectance of Terra MODIS Bands 1 through 7 corrected for atmospheric conditions such as gasses, aerosols, and Rayleigh scattering. Along with the seven 500 meter (m) reflectance bands are two quality layers and four observation bands. For each pixel, a value is selected from all the acquisitions within the 8-day composite period. The criteria for the pixel choice include cloud and solar zenith. When several acquisitions meet the criteria the pixel with the minimum channel 3 (blue) value is used",
+        MOD09Q1: "The MOD09Q1 Version 6 product provides an estimate of the surface spectral reflectance of Terra Moderate Resolution Imaging Spectroradiometer (MODIS) Bands 1 and 2, corrected for atmospheric conditions such as gasses, aerosols, and Rayleigh scattering. Provided along with the 250 meter (m) surface reflectance bands are two quality layers. For each pixel, a value is selected from all the acquisitions within the 8-day composite period. The criteria for the pixel choice include cloud and solar zenith. When several acquisitions meet the criteria the pixel with the minimum channel 3 (blue) value is used.",
+		MOD13Q1: "The Terra Moderate Resolution Imaging Spectroradiometer (MODIS) Vegetation Indices (MOD13Q1) Version 6 data are generated every 16 days at 250 meter (m) spatial resolution as a Level 3 product. The MOD13Q1 product provides two primary vegetation layers. The first is the Normalized Difference Vegetation Index (NDVI) which is referred to as the continuity index to the existing National Oceanic and Atmospheric Administration-Advanced Very High Resolution Radiometer (NOAA-AVHRR) derived NDVI. The second vegetation layer is the Enhanced Vegetation Index (EVI), which has improved sensitivity over high biomass regions. The algorithm chooses the best available pixel value from all the acquisitions from the 16 day period. The criteria used is low clouds, low view angle, and the highest NDVI/EVI value",
+		L5: "It consists of Landsat 5 Thematic Mapper (TM) spectral bands with a spatial resolution of 30 meters for Bands 1 to 5 and 7.",
+		S2S: "The Copernicus SENTINEL-2 mission comprises a constellation of two polar-orbiting satellites placed in the same sun-synchronous orbit, phased at 180° to each other. It aims at monitoring variability in land surface conditions, and its wide swath width (290 km) and high revisit time (10 days at the equator with one satellite, and 5 days with 2 satellites under cloud-free conditions which results in 2-3 days at mid-latitudes) will support monitoring of Earth's surface changes."
+    };
+	
+    var pnames = {
+		MOD17A2H: "MODIS (MOD17A2H) Spectum",
+		MOD09A1: "MODIS (MOD09A1) Spectrum",
+		MOD09Q1: "MODIS (MOD09Q1) Spectrum", 
+		MOD13Q1: "MODIS(MOD13Q1) Spectrum",
+		L5:      "Landsat 5",
+		S2S:     "Sentinel-2 spectrum"		
+
+
+    };
+	
+	$('#PRODUCT').change(function() {
+        var selectedOption = $(this).val();
+        var description = descriptions[selectedOption];
+        var pname = pnames[selectedOption];
+
+        $('#description').text(description);
+        $('#pname').text(pname);
+    });
+});
+	
+</script>	
+
+
+<!---end test-------------------------------------------------------------------------------------> 
+
+<!---end tabla-------------------------------------------------------------------------------------> 
+  <script>
+    function appData() {
+      return {
+        selectedDataSource: '',
+        selectedLevel: '',
+        selectedPeriod: '',
+        selectedCoverage: '',
+        links: [],
+        isTableVisible: false,
+
+        generateDownloadLink() {
+          const queryParams = `?dataSource=${encodeURIComponent(this.selectedDataSource)}&level=${encodeURIComponent(this.selectedLevel)}&period=${encodeURIComponent(this.selectedPeriod)}&coverage=${encodeURIComponent(this.selectedCoverage)}`;
+
+          return `http://example.com/download${queryParams}`;
+        },
+
+        updateTable() {
+          const linkObject = {
+            dataSource: this.selectedDataSource,
+            level: this.selectedLevel,
+            period: this.selectedPeriod,
+            coverage: this.selectedCoverage,
+            downloadLink: this.generateDownloadLink()
+          };
+
+          this.links = [linkObject];
+          this.isTableVisible = true;
+        },
+
+        downloadTable(format) {
+          const linkRows = this.links.map(link => Object.values(link).join(','));
+          const csvContent = linkRows.join('\n');
+          const mimeType = format === 'csv' ? 'text/csv' : 'text/plain';
+          const extension = format === 'csv' ? 'csv' : 'txt';
+
+          const element = document.createElement('a');
+          element.href = `data:${mimeType};charset=utf-8,` + encodeURIComponent(csvContent);
+          element.target = '_blank';
+          element.download = `table.${extension}`;
+          element.click();
+        }
+      };
+    }
+  </script>
+  
+<!-- Start Credits -->
+
+<!-- End Credits -->
+</body>
+</html>

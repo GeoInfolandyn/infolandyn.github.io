@@ -11,7 +11,7 @@ The main objective of the INFOLANDYN project is to design and implement an Infor
 The INFOLANDYN project is an initiative of the Research Group Geo-Qubidy of the “Universidad Politécnica de Madrid” (UPM), Spain, working in close collaboration with researchers from the “Universidad Rey Juan Carlos” (URJC).
 The project aims to design and implement an Information System to generate remote sensing products that help understand the dynamics of the earth's surface in the context of global change. Phenological and dynamic indicators and products will be developed, and analyses and reports will be generated to communicate the results to end-users. The structure of the project will include elements such as system design, identification of indicators and products, data and product management, results analysis, and communication of findings.
 
-# INSTRUCTIONS FOR DEVELOPMENT OR UPGRADE
+## INSTRUCTIONS FOR DEVELOPMENT OR UPGRADE
 If you would love to keep updating this template, please keep your codes in separate files (custom.css and custom.js) and avoid modifying the following:
 - css/frame.css (CSS for the main frame of the website)
 - css/controls.css (CSS for control elements that do not require JavaScript)
@@ -65,3 +65,4 @@ This project was built on a lightweight, responsive (mobile/desktop) HTML/CSS te
 I welcome and appreciate contributions in fixing bugs and enhancing features. However, please avoid submitting pull requests (PRs) that modify the template's existing design without discussing them with me. Please also avoid submitting PRs that are not related to bug fixes or feature enhancements. Editing text in the README file is not encouraged (e.g., fixing grammar errors), and PRs with unnecessary editing (e.g., adding unrelated text, changing the design of the template, modifying the README text arbitrarily) will highly likely be marked as "spam" and "invalid."
 
 If you are excited to contribute to the new features directly, please explain your design decisions and how your design matches this template's style in the PR. If you fix bugs, please explain which bug you fixed and how you fixed them. The explanations that you put in each PR can greatly help me determine if the changes can be merged into the master branch. PRs with no explanations will highly likely be rejected and marked as "wontfix."
+

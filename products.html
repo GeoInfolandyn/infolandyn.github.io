@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products</title>
+<meta charset="UTF-8">
+<link rel="StyleSheet" href="css/column.css" type="text/css">
+
 <!doctype html>
 <html>
 
@@ -71,7 +78,7 @@
     }
 
     html, body, #map {
-        height: 800px;
+        height: 100px;
         font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif;
     }
 
@@ -136,239 +143,280 @@
 							</div>
 						  </div>
 					<a href="news.html">News</a>
-					<a href="https://blogs.upm.es/dynamicland/contact/">Contact</a>
+					<a href="https://blogs.upm.es/dynamicland/contact/" Target="_blank" >Contact</a>
 				</div>
 			</div>
 		</div>
 	</div>
 <!--End Menu-Intro---------------------------------------------------------------------------------->
 
-<body translate="no">
-  <div class="max-w-sm mx-auto p-5 divide-y space-y-5">
-    <div x-data="{ selectedDataSource: '', selectedLevel: '', selectedLevel2: '', Subproduct2: '' }">
-      <div>
-        <label class="block text-sm font-medium text-gray-700" for="data-source">DATA SOURCE</label>
-        <select x-model="selectedDataSource" id="data-source" name="data-source" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" onchange="updateTable()">
-          <option value="">Please select a value</option>
-          <option value="A">A_SATELITE_IMAGERY</option>
-          <option value="B">B_STATISTICS_PRODUCTS</option>
-          <option value="C">C_ENVIRONMENTAL_INFORMATION</option>
-          <option value="D">D_ENVIRONMENTAL_STATISTICS</option>
-		  <option value="E">E_INFOGRAPHICS, GENERAL INFORMATION, NEWS</option>
-        </select>
-      </div>
+</head>
 
-      <div class="pt-3" x-show="selectedDataSource === 'A' || selectedLevel === 'A1'">
-        <label class="block text-sm font-medium text-gray-700" for="level">A_SATELITE_IMAGERY</label>
-        <select x-model="selectedLevel" id="level" name="level" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-          <option value="">Please select a value</option>
-          <option value="A1">Level A1</option>
-          <option value="A2">Level A2</option>
-          <option value="A3">Level A3</option>
-        </select>
-      </div>
+<body>
 
-      <div class="pt-4" x-show="selectedLevel === 'A1' || selectedLevel === 'A1'">
-        <label class="block text-sm font-medium text-gray-700" for="PRODUCT">Level A1</label>
-        <select x-model="selectedLevel2" id="PRODUCT" name="PRODUCT" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-          <option value="">Please select a value</option>
-          <option value="MOD17A2H">MODIS (MOD17A2H) Spectrum</option>
-          <option value="MOD09A1">MODIS (MOD09A1) Spectrum</option>
-          <option value="MOD09Q1">MODIS (MOD09Q1) Spectrum</option>
-          <option value="MOD13Q1">MODIS(MOD13Q1) Spectrum</option>
-          <option value="L5">Landsat 5</option>
-          <option value="S2S">Sentinel-2 Spectrum</option>
-        </select>
-      </div>
+	<div id="columna1">
+		<div class="flex-item flex-column">
+			<h2 class="add-top-margin">Search Data Catalog</h2>
+			<hr>
+		</div>
+		<div class="content">
+		<div class="content-table flex-column">
 
-      <div class="pt-5" x-show="selectedLevel2 === 'A2' || selectedLevel === 'A2'">
-        <label class="block text-sm font-medium text-gray-700" for="PRODUCT2">Level A2</label>
-        <select x-model="selectedLevel2" id="PRODUCT2" name="PRODUCT2" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-          <option value="">Please select a value</option>
-          <option value="GPP5">GPP 500m</option>
-          <option value="AR5">AR 500m</option>
-          <option value="AS25">AS2 500m</option>
-          <option value="NDVI5">NDVI 500m</option>
-          <option value="MODNDVI25TS">MODIS NDVI 250m time series</option>
-          <option value="TSSD">Time Series of secchi disk</option>
-          <option value="NDVI10">NDVI 10m</option>
-          <option value="RED&NIRB">RED and NIR bands</option>
-          <option value="NIR&SWIRB">NIR and SWIR bands</option>
-          <option value="AVHRRNDVI">AVHRR-NDVI time series</option>
-        </select>
-      </div>
+			<div class="max-w-sm mx-auto p-5 divide-y space-y-5">
+			<div x-data="{ selectedDataSource: '', selectedLevel: '', selectedLevel2: '', Subproduct2: '' }">
+			  <div>
+				<label class="block text-sm font-medium text-gray-700" for="data-source"><b>DATA SOURCE</b></label>
+				<select x-model="selectedDataSource" id="data-source" name="data-source" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" onchange="updateTable()">
+				  <option value="">Please select a value</option>
+				  <option value="A">A SATELITE IMAGERY</option>
+				  <option value="B">B STATISTICS PRODUCTS</option>
+				  <option value="C">C ENVIRONMENTAL INFORMATION</option>
+				  <option value="D">D ENVIRONMENTAL STATISTICS</option>
+				  <option value="E">E INFOGRAPHICS, GENERAL INFORMATION, NEWS</option>
+				</select>
+			  </div>
 
-      <div class="pt-5" x-show="selectedLevel2 === 'A3' || selectedLevel === 'A3'">
-        <label class="block text-sm font-medium text-gray-700" for="Subproduct3">Level A3</label>
-        <select x-model="selectedLevel2" id="Subproduct3" name="Subproduct3" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-          <option value="">Please select a value</option>
-          <option value="AR5F">AR 500m filtered</option>
-          <option value="AS5F">AS2 500m filtered</option>
-          <option value="NDVI5F">NDVI 500m filtered</option>
-          <option value="MONDVIF">MODIS NDVI-filtered</option>
-          <option value="NDVI1F">NDVI 10m filtered</option>
-        </select>
-      </div>
+			  <div class="pt-3" x-show="selectedDataSource === 'A' || selectedLevel === 'A1'">
+				<label class="block text-sm font-medium text-gray-700" for="level">A_SATELITE_IMAGERY</label>
+				<select x-model="selectedLevel" id="level" name="level" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+				  <option value="">Please select a value</option>
+				  <option value="A1">Level A1</option>
+				  <option value="A2">Level A2</option>
+				  <option value="A3">Level A3</option>
+				</select>
+			  </div>
 
-      <div class="pt-6" x-show="selectedDataSource === 'B' || selectedLevel === 'B'">
-        <label class="block text-sm font-medium text-gray-700" for="levelb">B_STATISTICS_PRODUCTS</label>
-        <select x-model="selectedLevel" id="levelb" name="levelb" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-          <option value="">Please select a value</option>
-          <option value="B1">Level B1</option>
-          <option value="B2">Level B2</option>
-        </select>
-      </div>
-	  
-	  <div class="pt-7" x-show="selectedLevel === 'B1' || selectedLevel === 'B1'">
-        <label class="block text-sm font-medium text-gray-700" for="PRODUCTB1">Level B1</label>
-        <select x-model="selectedLevel2" id="PRODUCTB1" name="PRODUCTB1" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-          <option value="">Please select a value</option>
-          <option value="ACYV">Accumulative year Values</option>
-          <option value="STGP">Start of growing period</option>
-          <option value="ETGP">End of growing period</option>
-          <option value="PERIODOGRAM">Periodogram</option>
-          <option value="MANDVI">Mean annual NDVI</option>
-          <option value="AUTVL">Autocorrelation values at lags 8 days, 6 months and 1, 2,3 years</option>
-		  <option value="AUTVLDF">Autocorrelation values at lags 10 days, 6 months and 1 2 and 3 years Differences Ratios</option>
-		  <option value="MMEV">Monthly means values</option>
-		  <option value="PERID">Periodogram</option>
-		  <option value="AUTOF">Autocorrelation function</option>		  
-        </select>
-      </div>
-	  
-	  <div class="pt-8" x-show="selectedLevel === 'B2' || selectedLevel === 'B2'">
-        <label class="block text-sm font-medium text-gray-700" for="PRODUCTB1">Level B2</label>
-        <select x-model="selectedLevel2" id="PRODUCTB2" name="PRODUCTB2" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-          <option value="">Please select a value</option>
-          <option value="CUGPP">Cumulative GPP prewildfire</option>
-          <option value="LEGRP">Length of growing period</option>
-          <option value="PEO46MY">Periodogram ordinates at 4, 6 months and one year</option>
-          <option value="TRMNDVI">Trends of mean annual NDVI</option>
-          <option value="MOMANN">Monthly mean annomalies</option>
-          <option value="SHPMRNB">Short period mean RED and NIR bads</option>
-		  <option value="SHPMRWB">Short period mean NIR and SWIR bands</option>
-		  <option value="PEO46MYFKT">Periodogram ordinates at 4, 6 months and one year - Fisher Kappa test</option>
-		  <option value="AUTV15613Y">Autocorrelation values at lags 15 days, 6 months, 1, 2 and 3 years</option>
-        </select>
-      </div>
-	  
-	  <div class="pt-9" x-show="selectedDataSource === 'C' || selectedLevel === 'C'">
-        <label class="block text-sm font-medium text-gray-700" for="levelc">C_ENVIRONMENTAL_INFORMATION</label>
-        <select x-model="selectedLevel2" id="levelc" name="levelc" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-          <option value="">Please select a value</option>
-          <option value="CUMGPP">Cumulative GPP</option>
-          <option value="FAA">Fallowed areas (annual)</option>
-          <option value="AGIMRA">Agricultural intensification of maize and rice areas</option>
-        </select>
-      </div>
-	  
-	  <div class="pt-10" x-show="selectedDataSource === 'D' || selectedLevel === 'D'">
-        <label class="block text-sm font-medium text-gray-700" for="leveld">D_ENVIRONMENTAL_STATISTICS</label>
-        <select x-model="selectedLevel2" id="leveld" name="leveld" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-          <option value="">Please select a value</option>
-          <option value="dCUMGPP">Fgures and tables of cumulative GPP in Salamanca</option>
-          <option value="dFAA">Tables and figures of surface of fallowed area. Change of fallowed area between years</option>
-          <option value="dAGIMRA">Tables and figures of the increase or decrease in the number of crop cycles or maize and rice areas in Ecuador</option>
-        </select>
-      </div>
+			  <div class="pt-4" x-show="selectedLevel === 'A1' || selectedLevel === 'A1'">
+				<label class="block text-sm font-medium text-gray-700" for="PRODUCT">Level A1</label>
+				<select x-model="selectedLevel2" id="PRODUCT" name="PRODUCT" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+				  <option value="">Please select a value</option>
+				  <option value="MOD17A2H">MODIS (MOD17A2H) Spectrum</option>
+				  <option value="MOD09A1">MODIS (MOD09A1) Spectrum</option>
+				  <option value="MOD09Q1">MODIS (MOD09Q1) Spectrum</option>
+				  <option value="MOD13Q1">MODIS(MOD13Q1) Spectrum</option>
+				  <option value="L5">Landsat 5</option>
+				  <option value="S2S">Sentinel-2 Spectrum</option>
+				</select>
+			  </div>
 
-      <div class="pt-11">
-        <button x-on:click="resetForm" class="bg-indigo-500 text-white py-2 px-4 rounded">New Selection</button>
-      </div>
-	  
-    <!--Star table generate-->
-    <!-------------------------------------------------------------------------------------------->
-      <div class="pt-11" x-show="selectedDataSource || selectedLevel || selectedLevel2 || Subproduct2 || selectedSubproduct3">
-        <h2 class="text-lg font-medium">PRODUCT INFORMATION</h2>
-        <table class="mt-2 border border-gray-300">
-          <thead>
-            <tr>
-              <th class="border border-gray-300 px-4 py-2">PRODUCT LEVEL</th>
-              <th class="border border-gray-300 px-4 py-2">SUBPRODUCT LEVEL</th>
-              <th class="border border-gray-300 px-4 py-2">PRODUCT CODE</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr x-show="selectedDataSource">
-              <td class="border border-gray-300 px-4 py-2" x-text="selectedDataSource"></td>
-              <td class="border border-gray-300 px-4 py-2" x-text="selectedLevel"></td>
-              <td class="border border-gray-300 px-4 py-2" x-text="selectedLevel2"></td>
-            </tr>
-          </tbody>
-        </table>
-		<button onclick="exportTable()"class="bg-indigo-500 text-white py-2 px-4 rounded">Export Metadata</button>
-      </div>
-    <!--Export TXT Metadata-->	  
-	<script>
-    function exportTable() {
-      var table = document.querySelector('table');
-      var rows = table.rows;
-      var text = '';
+			  <div class="pt-5" x-show="selectedLevel2 === 'A2' || selectedLevel === 'A2'">
+				<label class="block text-sm font-medium text-gray-700" for="PRODUCT2">Level A2</label>
+				<select x-model="selectedLevel2" id="PRODUCT2" name="PRODUCT2" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+				  <option value="">Please select a value</option>
+				  <option value="GPP5">GPP 500m</option>
+				  <option value="AR5">AR 500m</option>
+				  <option value="AS25">AS2 500m</option>
+				  <option value="NDVI5">NDVI 500m</option>
+				  <option value="MODNDVI25TS">MODIS NDVI 250m time series</option>
+				  <option value="TSSD">Time Series of secchi disk</option>
+				  <option value="NDVI10">NDVI 10m</option>
+				  <option value="RED&NIRB">RED and NIR bands</option>
+				  <option value="NIR&SWIRB">NIR and SWIR bands</option>
+				  <option value="AVHRRNDVI">AVHRR-NDVI time series</option>
+				</select>
+			  </div>
 
-      for (var i = 0; i < rows.length; i++) {
-        var cells = rows[i].cells;
+			  <div class="pt-5" x-show="selectedLevel2 === 'A3' || selectedLevel === 'A3'">
+				<label class="block text-sm font-medium text-gray-700" for="Subproduct3">Level A3</label>
+				<select x-model="selectedLevel2" id="Subproduct3" name="Subproduct3" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+				  <option value="">Please select a value</option>
+				  <option value="AR5F">AR 500m filtered</option>
+				  <option value="AS5F">AS2 500m filtered</option>
+				  <option value="NDVI5F">NDVI 500m filtered</option>
+				  <option value="MONDVIF">MODIS NDVI-filtered</option>
+				  <option value="NDVI1F">NDVI 10m filtered</option>
+				</select>
+			  </div>
 
+			  <div class="pt-6" x-show="selectedDataSource === 'B' || selectedLevel === 'B'">
+				<label class="block text-sm font-medium text-gray-700" for="levelb">B_STATISTICS_PRODUCTS</label>
+				<select x-model="selectedLevel" id="levelb" name="levelb" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+				  <option value="">Please select a value</option>
+				  <option value="B1">Level B1</option>
+				  <option value="B2">Level B2</option>
+				</select>
+			  </div>
+			  
+			  <div class="pt-7" x-show="selectedLevel === 'B1' || selectedLevel === 'B1'">
+				<label class="block text-sm font-medium text-gray-700" for="PRODUCTB1">Level B1</label>
+				<select x-model="selectedLevel2" id="PRODUCTB1" name="PRODUCTB1" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+				  <option value="">Please select a value</option>
+				  <option value="ACYV">Accumulative year Values</option>
+				  <option value="STGP">Start of growing period</option>
+				  <option value="ETGP">End of growing period</option>
+				  <option value="PERIODOGRAM">Periodogram</option>
+				  <option value="MANDVI">Mean annual NDVI</option>
+				  <option value="AUTVL">Autocorrelation values at lags 8 days, 6 months and 1, 2,3 years</option>
+				  <option value="AUTVLDF">Autocorrelation values at lags 10 days, 6 months and 1 2 and 3 years Differences Ratios</option>
+				  <option value="MMEV">Monthly means values</option>
+				  <option value="PERID">Periodogram</option>
+				  <option value="AUTOF">Autocorrelation function</option>		  
+				</select>
+			  </div>
+			  
+			  <div class="pt-8" x-show="selectedLevel === 'B2' || selectedLevel === 'B2'">
+				<label class="block text-sm font-medium text-gray-700" for="PRODUCTB1">Level B2</label>
+				<select x-model="selectedLevel2" id="PRODUCTB2" name="PRODUCTB2" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+				  <option value="">Please select a value</option>
+				  <option value="CUGPP">Cumulative GPP prewildfire</option>
+				  <option value="LEGRP">Length of growing period</option>
+				  <option value="PEO46MY">Periodogram ordinates at 4, 6 months and one year</option>
+				  <option value="TRMNDVI">Trends of mean annual NDVI</option>
+				  <option value="MOMANN">Monthly mean annomalies</option>
+				  <option value="SHPMRNB">Short period mean RED and NIR bads</option>
+				  <option value="SHPMRWB">Short period mean NIR and SWIR bands</option>
+				  <option value="PEO46MYFKT">Periodogram ordinates at 4, 6 months and one year - Fisher Kappa test</option>
+				  <option value="AUTV15613Y">Autocorrelation values at lags 15 days, 6 months, 1, 2 and 3 years</option>
+				</select>
+			  </div>
+			  
+			  <div class="pt-9" x-show="selectedDataSource === 'C' || selectedLevel === 'C'">
+				<label class="block text-sm font-medium text-gray-700" for="levelc">C_ENVIRONMENTAL_INFORMATION</label>
+				<select x-model="selectedLevel2" id="levelc" name="levelc" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+				  <option value="">Please select a value</option>
+				  <option value="CUMGPP">Cumulative GPP</option>
+				  <option value="FAA">Fallowed areas (annual)</option>
+				  <option value="AGIMRA">Agricultural intensification of maize and rice areas</option>
+				</select>
+			  </div>
+			  
+			  <div class="pt-10" x-show="selectedDataSource === 'D' || selectedLevel === 'D'">
+				<label class="block text-sm font-medium text-gray-700" for="leveld">D_ENVIRONMENTAL_STATISTICS</label>
+				<select x-model="selectedLevel2" id="leveld" name="leveld" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+				  <option value="">Please select a value</option>
+				  <option value="dCUMGPP">Fgures and tables of cumulative GPP in Salamanca</option>
+				  <option value="dFAA">Tables and figures of surface of fallowed area. Change of fallowed area between years</option>
+				  <option value="dAGIMRA">Tables and figures of the increase or decrease in the number of crop cycles or maize and rice areas in Ecuador</option>
+				</select>
+			  </div>
+
+			  <div class="pt-11">
+				<button x-on:click="resetForm" class="bg-indigo-500 text-white py-2 px-4 rounded">New Selection</button>
+			  </div>
+			  
+			<!--Star table generate-->
+			<!-------------------------------------------------------------------------------------------->
+			  <div class="pt-11" x-show="selectedDataSource || selectedLevel || selectedLevel2 || Subproduct2 || selectedSubproduct3">
+				<h2 class="text-lg font-medium">PRODUCT INFORMATION</h2>
+				<table class="mt-2 border border-gray-300">
+				  <thead>
+					<tr>
+					  <th class="border border-gray-300 px-4 py-2">PRODUCT LEVEL</th>
+					  <th class="border border-gray-300 px-4 py-2">SUBPRODUCT LEVEL</th>
+					  <th class="border border-gray-300 px-4 py-2">PRODUCT CODE</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr x-show="selectedDataSource">
+					  <td class="border border-gray-300 px-4 py-2" x-text="selectedDataSource"></td>
+					  <td class="border border-gray-300 px-4 py-2" x-text="selectedLevel"></td>
+					  <td class="border border-gray-300 px-4 py-2" x-text="selectedLevel2"></td>
+					</tr>
+				  </tbody>
+				</table>
+					<div class="pt-11">
+					<button onclick="exportTable()"class="bg-indigo-500 text-white py-2 px-4 rounded">Export Metadata</button>
+					</div>
+			  </div>
+			<!--Export TXT Metadata-->	  
+<script>
+  function exportTable() {
+    var table = document.querySelector('table');
+    var rows = table.rows;
+    var rowIndex = 1; // Índice de la fila que contiene el nombre deseado (empieza desde 0)
+    var cellIndex = 2; // Índice de la columna que contiene el nombre deseado (empieza desde 0)
+    var filename = rows[rowIndex].cells[cellIndex].innerText.trim(); // Obtener el valor de la celda específica
+    var text = 'Metadata for Satellite Product Vertion V1.0 2023\n\n'; // Agregar una nueva línea para el espacio en blanco
+
+    // Obtener la fecha y hora actual
+    var currentDate = new Date();
+    var currentDateTime = currentDate.toLocaleString();
+
+    // Agregar la fecha y hora al texto
+    text += 'Date and time: ' + currentDateTime + '\n\n';
+
+    for (var i = 0; i < rows.length; i++) {
+      var cells = rows[i].cells;
+
+      for (var j = 0; j < cells.length; j++) {
+        text += '|' + cells[j].innerText + '\t';
+      }
+
+      text += '|\n';
+
+      if (i === 0 || i === rows.length - 1) {
         for (var j = 0; j < cells.length; j++) {
-          text += cells[j].innerText + '\t';
+          text += '+------------------------';
         }
 
-        text += '\n';
+        text += '+\n';
       }
-
-      var blob = new Blob([text], { type: 'text/plain' });
-      var a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = 'tabla.txt';
-      a.click();
     }
-	</script>
-	<!--End table generate-->
-    <!-------------------------------------------------------------------------------------------->
-		  
 
-    </div>
-  </div>
-  
-<!--Star Reload the page-->
-<!-------------------------------------------------------------------------------------------->
-  <script>
-    function generateDownloadLinks() {
-      const dataSource = document.getElementById('data-source').value;
-      const level = document.getElementById('level').value;
-      const PRODUCT = document.getElementById('PRODUCT').value;
-      const Subproduct2 = document.getElementById('Subproduct2').value;
+    var blob = new Blob([text], { type: 'text/plain' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = filename + '.txt'; // Usar el valor de la celda específica como nombre del archivo
+    a.click();
+  }
+</script>
 
-      const links = [];
 
-      if (dataSource && level && PRODUCT && Subproduct2) {
-        const numLinks = 5; // Number of links to generate
+			<!--End table generate-->
+			<!-------------------------------------------------------------------------------------------->
+				  
 
-        for (let i = 1; i <= numLinks; i++) {
-          const link = `http://example.com/download?dataSource=${encodeURIComponent(dataSource)}&level=${encodeURIComponent(level)}&PRODUCT=${encodeURIComponent(PRODUCT)}&Subproduct3=${encodeURIComponent(Subproduct3)}&linkNumber=${i}`;
-          links.push(link);
-        }
-      }
+			</div>
+		</div>
+	  
+	  <!--Star Reload the page-->
+	<!-------------------------------------------------------------------------------------------->
+	  <script>
+		function generateDownloadLinks() {
+		  const dataSource = document.getElementById('data-source').value;
+		  const level = document.getElementById('level').value;
+		  const PRODUCT = document.getElementById('PRODUCT').value;
+		  const Subproduct2 = document.getElementById('Subproduct2').value;
 
-      return links;
-    }
-    
-    function resetForm() {
-      const selectElements = document.getElementsByTagName('select');
-      for (let i = 0; i < selectElements.length; i++) {
-        selectElements[i].selectedIndex = 0;
-      }
-      location.reload(); // Reload the page
-    }
-  </script>
-<!--End Reload the page-->
-<!-------
+		  const links = [];
+
+		  if (dataSource && level && PRODUCT && Subproduct2) {
+			const numLinks = 5; // Number of links to generate
+
+			for (let i = 1; i <= numLinks; i++) {
+			  const link = `http://example.com/download?dataSource=${encodeURIComponent(dataSource)}&level=${encodeURIComponent(level)}&PRODUCT=${encodeURIComponent(PRODUCT)}&Subproduct3=${encodeURIComponent(Subproduct3)}&linkNumber=${i}`;
+			  links.push(link);
+			}
+		  }
+
+		  return links;
+		}
+		
+		function resetForm() {
+		  const selectElements = document.getElementsByTagName('select');
+		  for (let i = 0; i < selectElements.length; i++) {
+			selectElements[i].selectedIndex = 0;
+		  }
+		  location.reload(); // Reload the page
+		}
+	  </script>
+	<!--End Reload the page-->
+	  
+	  
+		</div>
+
+	</div>
+	</div>
+
+<div id="columna2">
+
 <!---star tabla-------------------------------------------------------------------------------------> 
 <div class="custom-table-container center add-top-margin-small">
 <style type="text/css">
 .tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;border-style:solid;border-width:1px;}
-.tg td{background-color:#fdf6e3;border-color:#93a1a1;border-style:solid;border-width:0px;color:#002b36;
+.tg td{background-color:#ffffff;border-color:#93a1a1;border-style:solid;border-width:0px;color:#002b36;
   font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:0px;color:#fdf6e3;
+.tg th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:0px;color:#ffffff;
   font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-ubgb{background-color:#ffffff;border-color:#000000;color:#002b36;font-family:Arial, Helvetica, sans-serif !important;
   font-size:14px;font-weight:bold;text-align:center;vertical-align:middle}
@@ -414,7 +462,19 @@
   <tr>
     <td class="tg-0lax"><div id="description"></div>
 	</td>
-    <td class="tg-f7v4" rowspan="5">text keywords</td>
+    <td class="tg-f7v4" rowspan="5"><p>
+		<p style="color:#2874A6;">Thematic area:</p>  Sustainable agriculture<br> 
+		<p style="color:#2874A6;">Specific area:</p>   Fallow lands <br> 
+		<p style="color:#2874A6;">Data source:</p>   Remote sensing<br> 
+		<p style="color:#2874A6;">Sensor:</p>  MODIS<br> 
+		<p style="color:#2874A6;">Period start:</p>   2001<br> 
+		<p style="color:#2874A6;">Period end:</p>   2012<br> 
+		<p style="color:#2874A6;">Coverage:</p>   regional (Spain)<br> 
+		<p style="color:#2874A6;">Processing level:</p>  C<br> 
+		<p style="color:#2874A6;">Methodology:</p>   spectral index, time series analysis,artificial intelligence, 
+		<p style="color:#2874A6;">Other keyword:</p>  NDVI, Spain, autocorrelation
+		</p>
+	</td>
   </tr>
   <tr>
     <td class="tg-sggj"><span style="font-weight:bold">WorkFlow:</span></td>
@@ -422,14 +482,16 @@
   </tr>
   <tr>
   	<!--Link SVG of woirk flows-->
-    <td class="tg-sggj"><img class="image center max-width-600 add-top-margin-small" src="img/workflow.svg" width="247" height="40"></td>
+    <td class="tg-sggj"><img class="image center max-width-600 add-top-margin-small" src="img/workFlow.drawio.svg" width="247" height="40"></td>
     <td class="tg-sggj"></td>
   </tr>
   <tr>
     <td class="tg-sggj" colspan="2">Product citation</td>
   </tr>
   <tr>
-    <td class="tg-edz8" colspan="2">text production</td>
+    <td class="tg-edz8" colspan="2"><p>
+	Recuero, L., Wiese, K., Huesca, M., Cicuéndez, V., Litago, J., Tarquis, A. M., & Palacios-Orueta, A. (2019). Fallowing temporal patterns assessment in rainfed agricultural areas based on NDVI time series autocorrelation values. International Journal of Applied Earth Observation and Geoinformation, 82, 101890</p>
+	</td>
   </tr>
   <tr>
     <td class="tg-sggj" colspan="2">Copyright &amp; License</td>
@@ -437,7 +499,14 @@
   </tr>
   <tr>
     <td class="tg-edz8" colspan="2">tex copyright</td>
-    <td class="tg-hwwl" rowspan="5">text details</td>
+    <td class="tg-hwwl" rowspan="5"><p>
+		<p style="color:#2874A6;">Format:</p>geotiff<br> 
+		<p style="color:#2874A6;">Period:</p>2001-2012<br> 
+		<p style="color:#2874A6;">Coverage:</p>regional<br> 
+		<p style="color:#2874A6;">Spatial resolution</p>250 meters<br> 
+
+		</p>
+	</td>
   </tr>
   <tr>
     <td class="tg-sggj" colspan="2">Related resources and products</td>
@@ -541,6 +610,8 @@
   
 <!-- Start Credits -->
 
-<!-- End Credits -->
+
+</div>
+</div>
 </body>
 </html>

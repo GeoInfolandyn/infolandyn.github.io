@@ -11,26 +11,21 @@
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
-<link href="custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="custom.css" media="screen" rel="stylesheet" type="text/css" />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/menu.js"></script>
 	<link rel="shortcut icon" href="img/infolandyn.png"/>
 	
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
-		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-		<script src="Leaflet.CountrySelect.js"></script>
-
-		<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+		
 		<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
         
 		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-        <script src="Leaflet.PolylineMeasure.js"></script>
+        
         <link rel="stylesheet" href="Leaflet.PolylineMeasure.css" />
 
 
@@ -40,10 +35,7 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
 <link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet-0.7.2/leaflet.ie.css" />
 <link rel="stylesheet" href="leaflet-sidebar.css" />
-<script src="leaflet-sidebar.js"></script>
-<script src="leaflet.wms.js"></script>
 
-	
 </head>
 
 <!---star style -------------------------------------------------------------------------------------> 
@@ -90,7 +82,13 @@
   	font-family: Arial;
   	text-transform: uppercase;
 	}	
-
+	.menu-container{
+		background-color:rgb(52, 88, 186);
+		color: #fff7f7;
+	}
+	.logo-font-2{
+		color: #00ffff;
+	}
 	</style>
 <!---end style -------------------------------------------------------------------------------------> 
 
@@ -362,12 +360,13 @@
  <!--<div class="menu-table flex-row-space-between">-->
     <div class="logo flex-row-center">
 	
-      <img src="img/infolandyn.png" width="70"><img src="img/geo.jpg" width="70"><img src="img/upm.png" width="70"><img src="img/urj.png" width="150">
+      <img src="img/geo.jpg" width="70"><img src="img/upm.png" width="70"><img src="img/urj.png" width="150">
 	  
         <a href="index.html"><font color="black"><H3><pre><font color="black"><p style = "font-family:arial;"><font size=5>  <br>  </font></p></pre></H3></font>
       </a>
      <!--</div>-->
     <div class="logo flex-row-center">
+		<img src="img/infolandyn.png" width="70">
 		<div class="verticalLine">
 			<p align="justify"><span class="department">INFORMATION SYSTEM TO MONITOR<br>
 			GLOBAL CHANGE IMPACTS</span></p>
@@ -488,18 +487,14 @@
         <!--Standar map-->
 
         <!-------------------------------------------------------------------------------------------->
-		
-<!--Start Credits-->
-		<div class="menu-container">
-		<div class="menu">
-		<div class="logo flex-row-left">
-			<img src="img/escudo.png" width="170">
-			<p class="text text-small text-italic"><span class="highlight-text">  © 2023 INFOLANDYN All rights reserved.</p>
-			</div>
-		</div>
-		</div>
-		</div>
-        <!--End Credits-->
-        <!-------------------------------------------------------------------------------------------->
+		<!-- javascripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="js/menu.js"></script>
+		<script src="Leaflet.PolylineMeasure.js"></script>
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+		<script src="Leaflet.CountrySelect.js"></script>
+		<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+		<script src="leaflet-sidebar.js"></script>
+		<script src="leaflet.wms.js"></script>
 </body>
 </html>

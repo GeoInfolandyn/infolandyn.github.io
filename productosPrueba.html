@@ -25,28 +25,41 @@
 		.menu-container{
 			background-color:rgb(52, 88, 186);
 			color: #fff7f7;
+			display: flex;
+			flex-wrap: wrap;
+			align-content:end;
+			justify-content: center;
 			
+
 		}
 		.logo-font-2{
 			color: #00ffff;
 		}
+		.department{
+			margin-top: 10px;
+		}
+		.fondo{
+			width: 100%;
+			background-color: rgb(255, 255, 255);
+		}
+
 	</style>
 </head>
 <!-- end: Head -->
 
 <body>
-  <div class="header">
+	<div class="header">
 	<header>
 	 <!--<div class="menu-table flex-row-space-between">-->
 		<div class="logo flex-row-center">
 		  <img src="img/geo.jpg" width="70"><img src="img/upm.png" width="70"><img src="img/Logo_URJC.png" width="70">
-			<a href="index.html"><font color="black"><H3><pre><font color="black"><p style = "font-family:arial;"><font size=5>  <br>  </font></p></pre></H3></font></a>
+			<a href="index.html"><font color="black"><H3><font color="black"><p style = "font-family:arial;"><font size=5>  <br>  </p></H3></font></a>
 			<!--</div>-->
 			<div class="logo flex-row-center">
 				<img src="img/infolandyn.png" width="70">
 				<div class="verticalLine">
-					<p align="justify"><span class="department">INFORMATION SYSTEM TO MONITOR<br>
-					GLOBAL CHANGE IMPACTS</span></p>
+					<p align="justify">INFORMATION SYSTEM TO MONITOR<br>
+					GLOBAL CHANGE IMPACTS</p>
 				</div>
 			</div>
 		</div>
@@ -78,84 +91,50 @@
 			</div>
 		</div> 
 	</div>
+
 	
 	
-		<!-- Start filtros -->
-			<div class="filtro">
-					<!-- Botón Data Source -->
-				<div class="filtrar_cont">
-						<button onclick="hazVariasFunciones()" id="boton1">
-							Select Data Source
-							<img src="img\flechaFiltro.png" id="flecha">
-						</button>
-
-					<div class="filtrosOcultos">
-					
-						<div id="A">
-							<h3>A</h3>
-						</div>
-						<div id="B">
-							<h3>B</h3>
-						</div>
-						<div id="C">
-							<h3>C</h3>
-						</div>
-					</div>
-					</div>
-					<!-- Botón Subdivision -->
-				<div class="filtrar_cont2">
-						<button onclick="hazVariasFunciones()" id="boton1">
-							Subdivision
-							<img src="img\flechaFiltro.png" id="flecha">
-						</button>
-
-					<div id="A">
-
-					</div>
-					<div id="B">
-
-					</div>
-					<div id="C">
-
-					</div>
-				</div>
-					<!-- Botón Products -->
-				<div class="filtrar_cont3">
-						<button onclick="hazVariasFunciones()" id="boton1">
-							Select a Product
-							<img src="img\flechaFiltro.png" id="flecha">
-						</button>
-						<div id="A">
-							<H3></H3>
-						</div>
-						<div id="B">
-							<H3></H3>
-						</div>
-						<div id="C">
-							<H3></H3>
-						</div>
-					</div>
-			</div>
-		</div>
+		
 		
 		<!-- Start Products -->
+		
+		
+			<div class="fondo">
+			<div class="contexto">
+				<h2>MODELING LAND COVER DYNAMICS</h2>
+				<img src="img\sky.jpg" alt="" id="bannerProductos"> 
+				
+			</div>
+			</div>
+	
+			<div class="container">
+
+				 <div class="card">
+					<a href="sateliteImagery.html"><img src="img\ImagenProductoA.jpg"></a>
+					<h4>SATELITE IMAGERY</h4>
+					<p>Earth observation data and products experts</p><br>
+					
+				</div>
+				 <div class="card">
+					 <img src="img\ImagenProductoB.png">
+					<h4>STATISTICS PRODUCTS</h4>
+					 <p>Experts in data analysis but not specifically in the territorial field, among other statisticans and computer experts</p>
+					
+				</div>
+				 <div class="card">
+					 <img src="img\ImagenProductoC.png">
+					<h4>ENVIRIONMENTAL STATISTICS</h4>
+					 <p>Scientist who work with environmental information or managers who understand the territorial scope</p>
+					<a href="index.html"></a>
+				</div>
+			</div> 
+			
 
 
-
-
-
-
-		<!--<div class="grid-container">
-			<div class="element">aaaaa</div>
-			<div class="element">a</div>
-			<div class="element">a</div>
-			<div class="element">a</div>
-			<div class="element">a</div>
-			<div class="element">a</div>	
-		</div>
-
+		
+		
 			<!-- Start Credits -->
-			<div class="menu-container">
+		<div class="footer">
 			<div class="menu">
 				<div class="logo flex-row-left">
 				<img src="img/ESCUDO_blanco.png" width="170">
@@ -164,7 +143,7 @@
 				</p>
 				</div>
 			</div>
-			</div>
+		</div>
 			<!-- End Credits -->
 
 			<!-------------------------------------------------------------------------------------------->

@@ -1,13 +1,66 @@
-    .grid-container{
-        display: grid;
-        grid-template-rows: repeat(2, 50px);
-        grid-template-columns: repeat(3,1fr);
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    
+    
+    
+    .menu-container{
+        display: flex;
+        flex-wrap:wrap;
+        align-content:end;
         justify-content: center;
-        grid-gap: 20px 20px;
+        width: 100%;
+        
     }
-    .element{
-        background-color: rgb(170, 226, 252);
+/* REVISAAAAR */
+    .header{
+        display: flex;
+        justify-content: center;
     }
+
+
+    .logo{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+  
+
+    .footer{
+        background-color:rgb(52, 88, 186);
+		color: #fff7f7;
+        bottom: 0;
+        width:100%;
+        position: relative;
+        
+    }
+
+    .contexto{
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-content: center;
+    }
+
+    .contexto h2{
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        top: 35%;
+        bottom: 50%;
+    }
+      
+    #bannerProductos{
+        opacity: 25%;
+        width: 100%;
+        margin-top:-20px;
+        
+    }
+
     #flecha{
         height: 20px;
         width: 15px;
@@ -15,13 +68,11 @@
     }
 
     .rotar180{
-
+        transform: rotate(180deg);
+        transition: .4s ease;
     }
 
-    @keyframes{
-        form{top:120px; opacity:0}
-        to{top:160px; opacity:1}
-    }
+ 
 
     .filtro{
     display: flex;
@@ -29,7 +80,8 @@
     justify-content: center;
     margin-top: 12px;
     }
-
+   
+    
     #boton1{
         width: 180px;
         height: 30px;
@@ -44,7 +96,143 @@
         justify-content: space-around;
         align-items: center;
     }
-    .filtrosOcultos{
-        display:none;
+
+   
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        flex-wrap: wrap;
+        align-content:center; */
+    }
+    
+
+    
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+       
+        }
+
+    .fila {
+        display: flex;
+        width: 100%; /* Opcional: asegura que la fila ocupa todo el ancho disponible */
+        flex: 1; /* Hace que la fila ocupe todo el espacio disponible verticalmente */
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 100px 10px 100px;
+    }
+   .container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1200px;
+        height: 80%;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 100px 10px 100px;
+        margin: auto;
+    }
+    .container .card{
+        width: 42%;
+        height: 42%;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        overflow: hidden;
+        margin: 30px;
+        transition: all 0.5s;
+       
+       
+
+
+    }
+    .container .card:hover{
+        transform: scale( 1.15);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    }
+     .container .card img{
+        width: 100%;
+        height: 100%;
+       
+    }
+    .container .card h4{
+        font-weight: 400;
+        padding: 8px;
+    }
+    .container .card p{
+        font-weight: 300;
+    }
+    
+
+    .container .card a{
+        text-decoration: none;
+    } 
+
+    /* filtros búsqueda productos */
+    .filtros{
+        display: flex;
+        justify-content: center;
         
     }
+
+    #subdivision{
+       background-color:rgb(45, 132, 252);
+       text-align:center;
+       margin: 20px;
+       color: #fff7f7;
+       border-radius: 5px;
+       width: 200px;
+    }
+    #subdivision:hover {
+        background-color: rgb(7, 85, 168);
+    }
+    /* PRODUCTOS A */
+    .section{
+        margin: 0 40px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h1{
+          color:#333 ;
+
+        }
+        .tab{
+            position: relative;
+            background-color: #ffffff;
+            padding: 0 20px 20px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+            border-radius: 5px;
+            overflow: hidden;
+           input{
+                appearance: none;
+                &:checked{
+                    ~{
+                        label{
+                            &::after{
+                                content: '+';
+                                color: aqua;
+                                transform: rotate(135deg);
+                            }
+                                h2{
+                                    position: absolute;
+                                    top: 0;
+                                    left: o;
+                                    width: 100%;
+                                    height: 100%;
+                                    font-size: 8em;
+                                    justify-content: flex-end;
+                                    padding: 20px;
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+    }
+      
+    

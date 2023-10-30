@@ -1,3 +1,4 @@
+        @import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"  ;  
     *{
         margin: 0;
         padding: 0;
@@ -57,6 +58,7 @@
     #bannerProductos{
         opacity: 25%;
         width: 100%;
+        height: 250px;
         margin-top:-20px;
         
     }
@@ -191,51 +193,6 @@
         background-color: rgb(7, 85, 168);
     }
     /* PRODUCTOS A */
-    .section{
-        margin: 0 40px;
-        max-width: 600px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .section h1{
-          color:#636363 ;
-        }
-        
-        .tab{
-            position: relative;
-            background-color: #ffffff;
-            padding: 0 20px 20px;
-            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
-            border-radius: 5px;
-            overflow: hidden;
-        }
-           .tab input{
-                appearance:none;
-           }
-                &:checked{
-                    ~{
-                        label{
-                            &::after{
-                                content: '+';
-                                color: aqua;
-                                transform: rotate(135deg);
-                            }
-                                h2{
-                                    position: absolute;
-                                    top: 0;
-                                    left: o;
-                                    width: 100%;
-                                    height: 100%;
-                                    font-size: 8em;
-                                    justify-content: flex-end;
-                                    padding: 20px;
-                            } 
-                        }
-                    }
-                }
-            
-            
-    
-      
      
+        
+      

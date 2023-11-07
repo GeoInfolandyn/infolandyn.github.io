@@ -5,20 +5,59 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+.header{
+  display: flex;
+  justify-content: center;
+}
 
+
+.logo{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+.footer{
+  background-color:rgb(52, 88, 186);
+  color: #fff7f7;
+  bottom: 0;
+  width:100%;
+  position: relative;  
+  margin-top: 30px;
+}
 .section h1 {
   background-color: #c9f3f9;
   color: #fff;
 }
 
 .section {
-  padding: 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
   margin: 0 40px;
   max-width: 1500px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+/* eliminar espacio entre secciones */
+#sC1{
+  padding-bottom: 50px;
+}
+#sA2{
+  padding-top: 20px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0px;
+}
+#sA3{
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-bottom: 0;
+  margin-top: 0px;
+}
+/*  */
 .section h1 {
   color: #434242;
 }
@@ -93,7 +132,7 @@
 }
 .section .tab-content-grid {
   max-height: 0;
-  overflow: hidden;
+  overflow: auto;
   transition: 1s;
 }
 .section .tab-content-grid p {
@@ -133,14 +172,16 @@
   grid-area: credit-card;
   background-color: rgba(198, 221, 247, 0.74);
 }
-@media (min-width: 300px) {
+@media (min-width: 500px) {
   .tab-content-grid {
-    grid-template: "title-card" 50px "img-card" auto "main-card" auto "credit-card " 100px/200px auto;
+    grid-template: "title-card" 70px "img-card" auto "main-card" auto "credit-card " auto/auto auto;
+    overflow: scroll;
   }
 }
 @media (min-width: 886px) {
   .tab-content-grid {
-    grid-template: "title-card   title-card" 100px "img-card     main-card" auto "credit-card  credit-card" auto/33% 66%;
+    grid-template: "title-card   title-card" 100px "img-card     main-card" auto "credit-card  credit-card" auto/30% 67%;
+   
   }
 }/*# sourceMappingURL=style.css.map */
 
@@ -157,12 +198,14 @@ gap: 10px;
   align-items: center;
   text-align: left;
   color: #fff;
-
   }
+
+
+
 .title-card-descarga{
-  display: inline-flex;
-  width: 15%;
-  height: 40px;
+  display:inline-flex;
+  width: auto;
+  height: fit-content;
   justify-content: center;
   color: #ffffff;
   border-radius: 10px;
@@ -175,12 +218,34 @@ gap: 10px;
 .main-card{
   display: flex;
   flex-wrap: wrap;
-}
+  
 
+}
+.main-card-img{
+position: relative;
+
+}
 
 .main-card img{
-  object-fit: contain;
-}
+  display: flex;
+  gap: 8px;
+  margin: 0 auto;
+  max-width: 100%;
+ }
+ .main-card-image-btn{
+  position: absolute;
+  margin: auto;
+  top: 34px;
+  left: 1%;
+  display: inline-flex;
+  gap: 10px;
+  font-size: small;
+ }
+ .main-card-image-btn .btn {
+  align-content: center;
+
+ }
+
 /* Estilos Img-card de tarjetas */
 .img-card{
  display: flex;
@@ -189,23 +254,41 @@ gap: 10px;
 }
 
 .img-card div{
-  display: flex;
-  width: 75%;
+  display: inline-block;
+  width: 100%;
+  justify-content: center;
   /* max-width: 1000px;
   min-width: 300px; */
 }
 
 .img-card img{
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   height: auto;
   object-fit: scale-down;
 }
+.img-card div p{
+  justify-content: center;
+  font-size: small;
+}
+
 /* Estilos Credit-card de tarjetas */
 .credit-card{
-  display:inline-block;
+  display:flex;
+  flex-wrap: wrap;
   padding: 10px;
+  justify-content: center;
 }
 .credit-card p{
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  font-size: small;
+}
+.credit-card img{
   display: flex;
+  padding-left: 8px;
+  width: fit-content;
+  height: fit-content;
 }

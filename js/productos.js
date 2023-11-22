@@ -105,46 +105,54 @@ function filtroB(){
     var op1 = document.getElementById("OP1");
     var op2 = document.getElementById("OP2");
 // listas de los elementos por clase
-    var listA1 =['MODIS(MOD09A1) SPECTRUM','MODIS(MOD09Q1) SPECTRUM','MODIS(MOD13Q1) SPECTRUM','SENTINEL-2-SPECTRUM']
+    var listB1 =['AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)','PERIODOGRAM (NDVI 500m MOD09A1)','MEAN ANUAL(MOD009A1)','ACF AT LAGS 8 DAYS 6MONTHS & 1, 2, 3 YEARS 250m (MOD09Q1)','ACF NDVI AT LAGS 10 YEARS (MOD09Q1)',
+    'TRENDS OF MEAN NDVI (MOD13Q1)','ACF AT LAGS 5 DAYS, 6 MONTHS & 1, 2 AND 3 YEARS (S210m)','ACF AT LAGS 10 DAYS, 6 MONTHS & 1, 2 AND 3 YEARS (S210m)','PERIODOGRAM ORDINATES AT 4, 6 MONTHS & 1 YEAR','SUMMATORY OF ORDINATES FROM PERIODOGRAM (AVHRR)',
+    'MEAN OF ORDINATES FROM PERIODOGRAM (AVHRR)','FISHER KAPPA TEST (AVHRR)']
+    var listB2 =['LENGHT OF GROWING PERIOD (MOD09A1)','SPECIFIC AUTOCORRELATION COEFFICIENTS (NDVI 250m MOD09Q1)','PERIODOGRAM ORDINATES AT 4, 6 MONTHS 6 1 YEAR (MOD09A1)',
+    'TRENDS OF MEAN ANUAL NDVI (MOD09A1)','TRENDS OF MEAN ANUAL NDVI (MOD13Q1)','MONTHLY MEAN ANNOMALIES (LST-5)']
+
+    cards = document.getElementsByClassName('tab')
+    for(card of cards){
+        card.style.display = 'grid';   
+    }
+
     switch(op1.value){
-        case 'A1':
+        case 'B1':
             for(i = op2.options.length; i > 0 ; i--){
                 op2.remove(i)
             }
 // habilitar el segundo filtro si seleccionas una opcion en el primero
             op2.disabled = false
 //añadir los elementos al segundo filtro
-            for(i in listA1){
+            for(i in listB1){
                 child = document.createElement('option')
                 child.id = i
                 child.value = i
-                child.innerHTML = listA1[i]
+                child.innerHTML = listB1[i]
                 op2.appendChild(child)
             }
-            document.getElementById('sA2').style.display = 'none'
-            document.getElementById('sA3').style.display = 'none'
-            document.getElementById('sA1').style.display = 'grid'
+            document.getElementById('sB2').style.display = 'none'
+            document.getElementById('sB1').style.display = 'grid'
             break;
-        case 'A2':
+        case 'B2':
             for(i = op2.options.length; i > 0 ; i--){
                 op2.remove(i)
             }
-            document.getElementById('sA1').style.display = 'none'
-            document.getElementById('sA3').style.display = 'none'
-            document.getElementById('sA2').style.display = 'grid'
-            break;
-        case 'A3':
-            for(i = op2.options.length; i > 0 ; i--){
-                op2.remove(i)
+            op2.disabled = false
+
+            for(i in listB2){
+                child = document.createElement('option')
+                child.id = i
+                child.value = i
+                child.innerHTML = listB2[i]
+                op2.appendChild(child)
             }
-            document.getElementById('sA2').style.display = 'none'
-            document.getElementById('sA1').style.display = 'none'
-            document.getElementById('sA3').style.display = 'grid'
+            document.getElementById('sB1').style.display = 'none'
+            document.getElementById('sB2').style.display = 'grid'
             break;
         default:
-            document.getElementById('sA1').style.display = 'grid'
-            document.getElementById('sA2').style.display = 'grid'
-            document.getElementById('sA3').style.display = 'grid'
+            document.getElementById('sB1').style.display = 'grid'
+            document.getElementById('sB2').style.display = 'grid'
             op2.disabled = true
             for(i = op2.options.length; i > 0 ; i--){
                 op2.remove(i)
@@ -155,3 +163,63 @@ function filtroB(){
 function filtroC(){
     document.getElementById("OP1").value
 }
+
+
+
+// En tu código común
+document.addEventListener('DOMContentLoaded', function() {
+    var selectedItem = sessionStorage.getItem('selectedItem');
+    if (selectedItem) {
+        // Limpiar el nombre almacenado en sessionStorage
+        sessionStorage.removeItem('selectedItem');
+        
+        // Ejecutar la lógica con el nombre recuperado
+        var cards = document.getElementsByClassName('tab');
+        for (var card of cards) {
+            console.log(card.getElementsByTagName('h3')[0].innerHTML);
+            
+            // Lógica de filtrado
+            if (card.getElementsByTagName('h3')[0].innerHTML !== selectedItem) {
+                card.style.display = 'none';
+            } else {
+                card.style.display = 'grid';
+                // Hacer que las tarjetas se abran cuando se selecciona con el filtro
+                card.getElementsByTagName('input')[0].checked = true;
+            }
+        }
+    }
+});
+
+function linkToItem(nombre, nivel) {
+    // Almacenar el nombre en sessionStorage
+    sessionStorage.setItem('selectedItem', nombre);
+    switch (nivel) {
+        case 'A':
+            document.location.href = 'sateliteImagery.html';
+            break;
+        case 'B':
+            document.location.href = 'statisticsProducts.html';
+            break;
+    }
+    
+}
+
+
+// function linkToItem(nombre){
+//     document.location.href='sateliteImagery.html';
+//     cards = document.getElementsByClassName('tab') 
+//     for(card of cards){
+//         // console.log(card.getElementsByTagName('h3')[0].innerHTML)
+//         console.log(card.getElementsByTagName('h3')[0].innerHTML)
+//         if(card.getElementsByTagName('h3')[0].innerHTML != nombre){
+//             card.style.display = 'none';   
+            
+//         }else{
+//             card.style.display = 'grid';
+//         //    hacer que las tarjetas se abran cuando selecciones con el filtro
+//             card.getElementsByTagName('input')[0].checked = true
+//         }
+//     }
+// }
+
+// 

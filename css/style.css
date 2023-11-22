@@ -8,6 +8,7 @@
 .header{
   display: flex;
   justify-content: center;
+  align-content: center;
 }
 
 
@@ -195,9 +196,9 @@ gap: 10px;
 .title-card h3{
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-content: center;
   text-align: left;
-  color: #fff;
+  color: #03050a;
   }
 
 
@@ -207,20 +208,51 @@ gap: 10px;
   width: auto;
   height: fit-content;
   justify-content: center;
+  align-content: center;
   color: #ffffff;
   border-radius: 10px;
   background-color: #0955ce;
   cursor: pointer;
   border: none;
   padding: 5px;
+  transition: background-color 0.5s;
+  text-decoration: none;
 }
+/* estilos botones descarga */
+#btn-raster{
+  background-color: #198754;
+}
+#btn-raster:hover{  
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  background-color: #3d9b63;
+}
+#btn-features{
+  background-color: #e6d175;
+}
+#btn-features:hover{
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f39843;
+}
+#btn-graphics{
+  background-color:  #ebaeaa;
+}
+#btn-graphics:hover{
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  background-color: #dd5753;
+}
+
 /* Estilos Main de tarjetas */
 .main-card{
   display: flex;
   flex-wrap: wrap;
   
+}
+
+.main-card-formula-img{
+  border: solid black 1px;
 
 }
+
 .main-card-img{
 position: relative;
 
@@ -235,15 +267,37 @@ position: relative;
  .main-card-image-btn{
   position: absolute;
   margin: auto;
-  top: 34px;
+  top: 33px;
   left: 1%;
   display: inline-flex;
   gap: 10px;
   font-size: small;
  }
- .main-card-image-btn .btn {
+ /* Estilos de los botones del workflow  y sus hover */
+ .main-card-image-btn .btn-primary{
   align-content: center;
-
+  border: 3px solid;
+  background-color: #a4c1ec;
+ }
+ .main-card-image-btn .btn-danger{
+  align-content: center;
+  border: 3px solid;
+  background-color:#d09cbd;
+ }
+ .main-card-image-btn .btn-sucess{
+  align-content: center;
+  border: 3px solid;
+  background-color: #198754;
+ }
+ .main-card-image-btn .btn-primary:hover{
+  align-content: center;
+  border: 3px solid;
+  background-color: #7ea6e0;
+ }
+ .main-card-image-btn .btn-danger:hover{
+  align-content: center;
+  border: 3px solid;
+  background-color: #B5739D;
  }
 
 /* Estilos Img-card de tarjetas */
@@ -253,25 +307,45 @@ position: relative;
  align-items: center;
 }
 
-.img-card div{
-  display: inline-block;
+/* .img-card div{
+  display: flex;
   width: 100%;
   justify-content: center;
-  /* max-width: 1000px;
-  min-width: 300px; */
+  flex-wrap: wrap;
+  
+} */
+.img-card div{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
 }
 
-.img-card img{
+.img-card-img1{
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
   object-fit: scale-down;
 }
+
+.img-card-img2{
+  margin-left: 6px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: auto;
+  object-fit: scale-down;
+  border: solid #0955ce 1px;
+}
+
 .img-card div p{
   justify-content: center;
-  font-size: small;
+  font-size: 8px; 
+  
 }
 
 /* Estilos Credit-card de tarjetas */

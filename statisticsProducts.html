@@ -331,7 +331,7 @@
                 <input type="checkbox" name="abrir" id="acc8"/>
                 <label for="acc8">
                     <h2>B1</h2>
-                    <h3>PERIODOGRAM ORDINATES AT 4, 6 MONTHS & 1 YEAR</h3>    
+                    <h3>PERIODOGRAM AVHRR-NDVI</h3>    
                 </label>
                 <div class="tab-content-grid">
                     <div class="title-card"><h3>DOWNLOADS</h3>
@@ -345,83 +345,22 @@
                             agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
                             rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
                             You can see the spatial distribution in the map viewer below <br>
-                            </p></div></article>
+                            </p></div>
+                            <div class="main-card-img">
+                                <img src="img\Diagrama MAS FINO.drawio.svg" alt="">
+                                    <div class="main-card-image-btn">
+                                        <a type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" >AVHRR-NDVI time series</a>
+                                        <a type="button" class="btn btn-danger btn-sm btn-block" onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')">PERIODOGRAM AVHRR</a>
+                                        <a type="button" class="btn btn-danger btn-sm" onclick="linkToItem('SPECIFIC AUTOCORRELATION COEFFICIENTS (NDVI 250m MOD09Q1)', 'B')">Periodogram ordinates at 4, 6 months and one year <br> </a>
+                                        <a type="button" class="btn btn-success btn-sm btn-block" href="">NUMBER OF SEASONAL CYCLES OF VEGETATION AT GLOBAL ESCALE AVHRR</a>
+                                    </div>
+                        </article>
                         
                     <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
                 </div>
             </div>
+             
             
-            <div class="tab">
-                <input type="checkbox" name="abrir" id="acc9"/>
-                <label for="acc9">
-                    <h2>B1</h2>
-                    <h3>SUMMATORY OF ORDINATES FROM PERIODOGRAM (AVHRR)</h3>    
-                </label>
-                <div class="tab-content-grid">
-                    <div class="title-card"><h3>DOWNLOADS</h3>
-                        <button id="descarga">Download</button>
-                    </div>
-                    
-                    <aside class="img-card">IMG-CARD</aside>
-                    <article class="main-card"><h2>MAIN-CARD</h2>
-                        <div><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
-                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
-                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
-                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
-                            You can see the spatial distribution in the map viewer below <br>
-                            </p></div></article>
-                        
-                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
-                </div>
-            </div>
-           
-            <div class="tab">
-                <input type="checkbox" name="abrir" id="acc10"/>
-                <label for="acc10">
-                    <h2>B1</h2>
-                    <h3>MEAN OF ORDINATES FROM PERIODOGRAM (AVHRR)</h3>    
-                </label>
-                <div class="tab-content-grid">
-                    <div class="title-card"><h3>DOWNLOADS</h3>
-                        <button id="descarga">Download</button>
-                    </div>
-                    
-                    <aside class="img-card">IMG-CARD</aside>
-                    <article class="main-card"><h2>MAIN-CARD</h2>
-                        <div><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
-                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
-                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
-                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
-                            You can see the spatial distribution in the map viewer below <br>
-                            </p></div></article>
-                        
-                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
-                </div>
-            </div>
-        
-            <div class="tab">
-                <input type="checkbox" name="abrir" id="acc11"/>
-                <label for="acc11">
-                    <h2>B1</h2>
-                    <h3>FISHER KAPPA TEST (AVHRR)</h3>    
-                </label>
-                <div class="tab-content-grid">
-                    <div class="title-card"><h3>DOWNLOADS</h3>
-                        <button id="descarga">Download</button>
-                    </div>
-                    
-                    <aside class="img-card">IMG-CARD</aside>
-                    <article class="main-card"><h2>MAIN-CARD</h2>
-                        <div><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
-                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
-                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
-                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
-                            You can see the spatial distribution in the map viewer below <br>
-                            </p></div></article>
-                        
-                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
-                </div>
-            </div>
 
             <div class="tab">
                 <input type="checkbox" name="abrir" id="acc12"/>
@@ -507,11 +446,40 @@
                     <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
                 </div>
             </div>
-                       
+            
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc15"/>
+                <label for="acc15">
+                    <h2>B2</h2>
+                    <h3>SPECIFIC PERIODOGRAM ORDINATES AND FISHER`S KAPPA TEST (AVHRR-NDVI)</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card"><h3>DOWNLOADS:</h3>
+                        <button class="title-card-descarga">FK at 1 year period</button>
+                        <button class="title-card-descarga">FK at 6 months period</button>
+                        <button class="title-card-descarga">FK at 4 months period</button>
+                        <!-- <button class="title-card-descarga">Ordinate at 1 year period</button>
+                        <button class="title-card-descarga">Ordinate at 6 months period</button>
+                        <button class="title-card-descarga">Ordinate at 4 months period</button>
+                        <button class="title-card-descarga">Sum of all ordinates</button>
+                        <button class="title-card-descarga">Mean of all ordinates</button> -->
+                    </div>
+                    
+                    <aside class="img-card"><img class="img-card-img2" src="img\lagsImg.png" alt=""></aside>
+                    <article class="main-card">
+                        <div><h3>DESCRIPTION</h3><p>would be interesting to analyse the seasonal patterns of vegetation of the periodogram ordinates at one year, 6 months and 4 months. 
+                            The relevancy of seasonal patterns could be evaluated by yhe Fisher Kapa test<br>
+                            This Kappa test is calculated: 
+                            <!-- añadir fórmula -->
+                            </p></div></article>
+                        
+                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>         
     
             <div class="tab">
-            <input type="checkbox" name="abrir" id="acc15"/>
-            <label for="acc15">
+            <input type="checkbox" name="abrir" id="acc16"/>
+            <label for="acc16">
                 <h2>B2</h2>
                 <h3>PERIODOGRAM ORDINATES AT 4, 6 MONTHS 6 1 YEAR (MOD09A1)</h3>    
             </label>
@@ -521,8 +489,8 @@
                 </div>
                 
                 <aside class="img-card">IMG-CARD</aside>
-                <article class="main-card"><h2>MAIN-CARD</h2>
-                    <div><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
+                <article class="main-card">
+                    <div><h3>DESCRIPTION</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
                         temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
                         agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
                         rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
@@ -534,8 +502,8 @@
         </div>
     
         <div class="tab">
-            <input type="checkbox" name="abrir" id="acc16"/>
-            <label for="acc16">
+            <input type="checkbox" name="abrir" id="acc17"/>
+            <label for="acc17">
                 <h2>B2</h2>
                 <h3>TRENDS OF MEAN ANUAL NDVI (MOD09A1)</h3>    
             </label>
@@ -545,32 +513,8 @@
                 </div>
                 
                 <aside class="img-card">IMG-CARD</aside>
-                <article class="main-card"><h2>MAIN-CARD</h2>
-                    <div><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
-                        temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
-                        agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
-                        rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
-                        You can see the spatial distribution in the map viewer below <br>
-                        </p></div></article>
-                    
-                <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
-            </div>
-        </div>
-
-        <div class="tab">
-            <input type="checkbox" name="abrir" id="acc17"/>
-            <label for="acc17">
-                <h2>B2</h2>
-                <h3>TRENDS OF MEAN ANUAL NDVI (MOD13Q1)</h3>    
-            </label>
-            <div class="tab-content-grid">
-                <div class="title-card"><h3>DOWNLOADS</h3>
-                    <button id="descarga">Download</button>
-                </div>
-                
-                <aside class="img-card">IMG-CARD</aside>
-                <article class="main-card"><h2>MAIN-CARD</h2>
-                    <div><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
+                <article class="main-card">
+                    <div><h3>DESCRIPTION</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
                         temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
                         agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
                         rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
@@ -584,6 +528,30 @@
         <div class="tab">
             <input type="checkbox" name="abrir" id="acc18"/>
             <label for="acc18">
+                <h2>B2</h2>
+                <h3>TRENDS OF MEAN ANUAL NDVI (MOD13Q1)</h3>    
+            </label>
+            <div class="tab-content-grid">
+                <div class="title-card"><h3>DOWNLOADS</h3>
+                    <button id="descarga">Download</button>
+                </div>
+                
+                <aside class="img-card">IMG-CARD</aside>
+                <article class="main-card">
+                    <div><h3>DESCRIPTION</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
+                        temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
+                        agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
+                        rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
+                        You can see the spatial distribution in the map viewer below <br>
+                        </p></div></article>
+                    
+                <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
+            </div>
+        </div>
+
+        <div class="tab">
+            <input type="checkbox" name="abrir" id="acc19"/>
+            <label for="acc19">
                 <h2>B2</h2>
                 <h3>MONTHLY MEAN ANNOMALIES (LST-5)</h3>    
             </label>

@@ -261,9 +261,9 @@
                 </label>
                 <div class="tab-content-grid">
                     <div class="title-card"><h3>DOWNLOADS:</h3>
-                        <button class="title-card-descarga"><b>Raster Image</b></button>
-                        <button class="title-card-descarga"><b>Features table</b></button>
-                        <button class="title-card-descarga"><b>Graphics</b></button>
+                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/records/8037299/files/SM_82-16.tif?download=1">Raster Image</a>
+                        <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
+                        <button class="title-card-descarga" id="btn-graphics"><b>Graphics</b></button>
                     </div>
                     
                     <aside class="img-card">
@@ -275,9 +275,18 @@
                         <div>
                             <img src="img\leyenda.drawio.drawio.svg" alt="">
                             <br><h3>DESCRIPTION:</h3><p>Using the AVHRR product provided by NOAA, the NDVI time series has been calculated, a periodogram has been made to study 
-                            different factors that affect the periodicity of the vegetative cycles. In this case, the number of seasonal cycles of vegetation<br>
+                            different factors that affect the periodicity of the vegetative cycles. In this case, the number of seasonal cycles of vegetation it is presented</p>
+                            <p><b>Product citation</b><br><i>Recuero, L., Litago, J., Pinzón, J. E., Huesca, M., Moyano, M. C., & Palacios-Orueta, A. (2019). Mapping periodic patterns of global 
+                            vegetation based on spectral analysis of NDVI time series. Remote sensing, 11(21), 2497.</i>
                             </p></div>
-                            <div class="main-card-img"><img src="img\workflowfallowed.png" alt="" ></div>
+                            <div class="main-card-img">
+                                <img src="img\Diagrama MAS FINO.drawio.svg" alt="">
+                                    <div class="main-card-image-btn">
+                                        <a type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('AVHRR NDVI Time Series', 'A')" >AVHRR NDVI Time Series</a>
+                                        <a type="button" class="btn btn-danger btn-sm btn-block" onclick="linkToItem('PERIODOGRAM AVHRR-NDVI', 'B')">PERIODOGRAM AVHRR-NDVI</a>
+                                        <a type="button" class="btn btn-danger btn-sm btn-block" onclick="linkToItem('SPECIFIC PERIODOGRAM ORDINATES AND FISHER`S KAPPA TEST (AVHRR-NDVI)', 'B')">SPECIFIC PERIODOGRAM ORDINATES & FISHER`S KAPPA TEST (AVHRR-NDVI)</a>
+                                        <a type="button" class="btn btn-success btn-sm btn-block" href="">NUMBER OF SEASONAL CYCLES OF VEGETATION AT GLOBAL ESCALE AVHRR</a>
+                                    </div>
                     </article>
 
                     <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p><p>cc-by-4.0 icon
@@ -561,7 +570,42 @@
                     <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
                 </div>
             </div>
-        </section>
+
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc15"/>
+                <label for="acc15">
+                    <h2><b>C</b></h2>
+                    <h3>STATISTICAL ANALYSIS OF THE CLIMATOLOGY AND VEGETATION DYNAMICS IN A REGION ON THE BANKS OF THE DUERO</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card"><h3>DOWNLOADS:</h3>
+                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="">Raster Image</a>
+                        <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
+                        <button class="title-card-descarga" id="btn-graphics"><b>Graphics</b></button>
+                    </div>
+                    
+                    <aside class="img-card">
+                        <div><img class="img-card-img1" src="img\NDVI_2008.gif" alt=""></div>
+                    </aside>
+                    <article class="main-card">
+                        <div>
+                            <br><h3>DESCRIPTION:</h3><p> The objective of the present study was to analyze the dynamics of the vegetation in ribera del Duero through
+                                 the use of the NDVI index and to relate this index with climatic variables to study how the climate influences the 
+                                 development of crops. For this, the time series of the NDVI extracted from MODIS images of the different crops in the studied region
+                                 in the period 2002-2020 were analyzed and this NDVI was related to the time series of two climatic variables such as 
+                                 temperature and precipitation, to evaluate the influence that these have on the dynamics of the vegetation of the area. <br>
+                                 The stationarity of the time series was analyzed using the Dickey-Fuller test and, through the use of autocorrelation 
+                                 graphs and periodograms, their seasonality was analyzed. It was observed that none of the climatic and NDVI series studied 
+                                 had a trend and it was also observed that the NDVI series had a clear annual cycle.<br>
+                            </p></div>
+                            <div class="main-card-img">
+                                <img src="img\Diagrama MAS FINO.drawio.svg" alt="">
+                                    <div class="main-card-image-btn">
+                                        <a type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" >500m MODIS 09A1 FILTERED SG</a>
+                                        <a type="button" class="btn btn-danger btn-sm btn-block" onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')">PERIODOGRAM AND ATC</a>
+                                        <a type="button" class="btn btn-success btn-sm btn-block" href="">STATISTICAL ANALYSIS OF THE CLIMATOLOGY AND VEGETATION DYNAMICS IN DUERO REGION</a>
+                                    </div>                 
+                </section>
 
             <!-- Start Credits -->
         <div class="footer">

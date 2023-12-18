@@ -35,14 +35,18 @@
 		.logo-font-2{
 			color: #00ffff;
 		}
-		.department{
+		
+		.verticalLine{
 			margin-top: 10px;
 		}
 		.fondo{
 			width: 100%;
 			background-color: rgb(255, 255, 255);
 		}
-
+		.card p{
+			font-size: large;
+		}
+		
 	</style>
 </head>
 <!-- end: Head -->
@@ -58,8 +62,8 @@
 			<div class="logo flex-row-center">
 				<img src="img/infolandyn.png" width="70">
 				<div class="verticalLine">
-					<p align="justify">INFORMATION SYSTEM TO MONITOR<br>
-					GLOBAL CHANGE IMPACTS</p>
+					<p align="justify"><span class="department">INFORMATION SYSTEM TO MONITOR<br>
+					GLOBAL CHANGE IMPACTS</span></p>
 				</div>
 			</div>
 		</div>
@@ -73,10 +77,10 @@
 				<img src="img/menu.png"></a>
 				<!-- TODO: justificar los items del menu a los margenes para que este centrado -->
 					<div class="menu-items flex-row-center flex-item"> 
-						<a href="index.html" class="menu-index"><span class="logo-font-1">INFOLANDYN </span> <span class="logo-font-2"><i> Project</i></span><span class="logo-font-1"></span></a>
+						<a href="index.html" class="menu-index"><span class="logo-font-1">INFOLANDYN</span><span class="logo-font-2"><i>Project</i></span></a>
 						<!--<a href="index.html" class="menu-index" class="logo-font-3"><b>Home</b></a> -->
 						<a href="widgets.html">About</a>
-						<a href="products.html">Products</a>
+						<a href="products.html"><b>Products</b></a>
 						  <div class="dropdown">
 							<a class="dropbtn" href="products_map.html">Viewer<i class="fas fa-caret-down"></i></a>
 							<div class="dropdown-content">
@@ -105,21 +109,22 @@
 
 				 <div class="card">
 					<a href="sateliteImagery.html"><img src="img\ImagenProductoA.jpg"></a>
-					<h4 ><b>A</b><br>SATELITE IMAGERY</h4>
-					<p>Earth observation data and products experts</p><br>
-					
+					<h4 style="color: black;"><b>A</b><br>SATELITE IMAGERY</h4>
+					<p  style="color: black;">Earth observation data and products</p><br>
 				</div>
+
 				 <div class="card">
-					<a href="statisticsProducts.html"><img src="img\ImagenProductoB.png">
-					<h4 style="color: black;"><b>B</b><br>STATISTICS PRODUCTS</h4>
-					 <p style="color: black;">Experts in data analysis but not specifically in the territorial field, among other statisticans and computer experts</p>
-					
+					<a href="statisticsProducts.html"><img src="img\ImagenProductoB.png"></a>
+					<h4 style="color: black;"><b>B</b><br>STATISTICAL PRODUCTS</h4>
+					 <p style="color: black;">Results from stastical procedures applied at pixel level</p>
 				</div>
+
 				 <div class="card">
-					<a href="enviromentalInformation.html"><img src="img\ImagenProductoC.png">
-					<h4 style="color: black;"><b>C</b><br>ENVIRONMENTAL INFORMATION</h4>
-					 <p style="color: black;">Scientist who work with environmental information or managers who understand the territorial scope</p>
-					<a href="index.html"></a>
+					<a href="enviromentalInformation.html"><img src="img\ImagenProductoC.png"></a>
+					<h4 style="color: black;">ENVIRONMENTAL INFORMATION</h4>
+					<h4 style="color: black;"><b>C-Maps</b>
+					<p id="clasificacion" style="color: black;"><h5>D-Tables</h5></p>
+					<p id="clasificacion" style="color: black;"><h5>E-Reports</h5></p>
 				</div>
 			</div> 
 			

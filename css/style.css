@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
+
 }
 
 
@@ -269,18 +270,21 @@ position: relative;
   margin: auto;
   top: 33px;
   left: 1%;
-  display: inline-flex;
+  display: flex;
   gap: 10px;
   font-size: small;
+  text-align: left;
+  
  }
  /* Estilos de los botones del workflow  y sus hover */
+ /* Para cambiar la alineación del texto aplicar propiedades dentro de cada botón con tex-align, aunque si se lo aplicas al padre, debería aplicarse a los hijos */
  .main-card-image-btn .btn-primary{
-  align-content: center;
+  text-align: left;
   border: 3px solid;
   background-color: #a4c1ec;
  }
  .main-card-image-btn .btn-danger{
-  align-content: center;
+  text-align: left;
   border: 3px solid;
   background-color:#d09cbd;
  }

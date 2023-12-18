@@ -2,6 +2,7 @@ function filtroProducto(){
     var op2 = document.getElementById("OP2");
    
     productoSeleccionado = op2.value
+    // console.log(productoSeleccionado)
     cards = document.getElementsByClassName('tab') 
     for(card of cards){
         // console.log(card.getElementsByTagName('h3')[0].innerHTML)
@@ -25,7 +26,7 @@ function filtroA(){
     var op2 = document.getElementById("OP2");
 // listas de los elementos por clase
     var listA1 =['MODIS(MOD09A1) SPECTRUM','MODIS(MOD09Q1) SPECTRUM','MODIS(MOD13Q1) SPECTRUM','SENTINEL-2-SPECTRUM']
-    var listA2 =['AR SPECTRAL INDEX(MOD09Q1)','AS2(MOD09Q1) 500m','NDVI Time Series 500m 8days(MOD09A1)','NDVI Time Series 250m 8days(MOD09Q1)','NDVI (MOD13Q1) 250m 16days','Time Series Secchi Disk','Sentinel-2 NDVI 10m Time Seriess','AVHRR NDVI Time Series']
+    var listA2 =['AR SPECTRAL INDEX(MOD09Q1)','AS2(MOD09Q1) 500m','NDVI Time Series 500m 8days(MOD09A1)','NDVI Time Series 250m 8days(MOD09Q1)','NDVI (MOD13Q1) 250m 16days','Time Series Secchi Disk','Sentinel-2 NDVI 10m Time Seriess','AVHRR-NDVI Time Series']
     var listA3 =['AR 500m filtered','AS2 500m filtered','MODIS NDVI 500m MOD09A1 filtered','MODIS NDVI 250m MOD09Q1 Time Series filtered','MODIS NDVI 250m MOD13Q1 Time Series filtered','SENTINEL-2 NDVI Time Series filtered']
     
     cards = document.getElementsByClassName('tab') 
@@ -58,7 +59,7 @@ function filtroA(){
             }
             // habilitar el segundo filtro si seleccionas una opcion en el primero
             op2.disabled = false
-//añadir los elementos al segundo filtro
+            //añadir los elementos al segundo filtro
             for(i in listA2){
                 child = document.createElement('option')
                 child.id = i
@@ -127,7 +128,7 @@ function filtroB(){
             for(i in listB1){
                 child = document.createElement('option')
                 child.id = i
-                child.value = i
+                child.value = listB1[i]
                 child.innerHTML = listB1[i]
                 op2.appendChild(child)
             }
@@ -143,7 +144,7 @@ function filtroB(){
             for(i in listB2){
                 child = document.createElement('option')
                 child.id = i
-                child.value = i
+                child.value = listB2[i]
                 child.innerHTML = listB2[i]
                 op2.appendChild(child)
             }
@@ -157,17 +158,34 @@ function filtroB(){
             for(i = op2.options.length; i > 0 ; i--){
                 op2.remove(i)
             }
-        break
+            break
+        }
     }
-}
+    
 function filtroC(){
-    document.getElementById("OP1").value
-}
+    var op2 = document.getElementById("OP2");
+    var listC =['FALLOW LANDS REGIME','SPATIO-TEMPORAL VARIATIONS OF WATER QUALITY','FOREST AS CARBON SINKERS OR CARBON EMITTERS','NUMBER OF SEASONAL CYCLES OF VEGETATION AT GLOBAL ESCALE AVHRR',
+                'AMPLITUDE OF SEASONAL CYCLES OF VEGETATION AT GLOBAL SCALE','STABILITY OF SEASONAL CYCLES OF VEGETATION AT GLOBAL SCALE','PRESENCE OF PLURIANNUAL CYCLES','LAND-COVER AND PHYTOCLIMATIC-TYPE TRENDS',
+                'AGRICULTURAL INTENSIFICATION OF MAIZE AND RICE AREAS','NUMBER OF GROWN CROPS PER YEAR','GRASSLANDS TRENDS','TREE COVER','WILDFIRE SEVERITY INDEX: DIFFERENCE BETWEEN PRE AND POST WILDFIRE BAI INDEX',
+                'STATISTICAL ANALYSIS OF THE CLIMATOLOGY AND VEGETATION DYNAMICS IN A REGION ON THE BANKS OF THE DUERO']
+
+    for(i in listC){
+        child = document.createElement('option')
+        child.id = i
+        child.value = listC[i]
+        child.innerHTML = listC[i]
+        op2.appendChild(child)
+    }
+      
+ }
 
 
 
 // En tu código común
 document.addEventListener('DOMContentLoaded', function() {
+    /**el  filtro de C va a estar cargado siempre en cualquier página, para que cuando entre en productosC cargue el filtro de productos, pero que, 
+    si entramos en productos A o B se sobrescriba en cuanto se active el onchange de cada página*/
+    filtroC() 
     var selectedItem = sessionStorage.getItem('selectedItem');
     if (selectedItem) {
         // Limpiar el nombre almacenado en sessionStorage

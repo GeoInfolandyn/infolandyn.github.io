@@ -134,36 +134,52 @@
         max-width: 1200px;
         height: 80%;
         justify-content: center;
-        gap: 20px;
-        padding: 40px 100px 10px 100px;
+        gap: 55px;
+        padding: 40px 20px; /* Ajuste de los márgenes */
         margin: auto;
     }
     .container .card{
-        width: 42%;
-        height: 42%;
+        width:350px; /* Ajusta el ancho según tus preferencias */
+        height: 450px; /* Ajusta el alto según tus preferencias */
         border-radius: 8px;
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
         text-align: center;
         overflow: hidden;
-        margin: 30px;
+        margin-bottom: 20px; /* El margen de las tarjetas inferior para alejarlo del footer */ 
+        margin-top: 20px;
         transition: all 0.5s;
-       
-       
-
-
+        position: relative;
     }
+
     .container .card:hover{
         transform: scale( 1.15);
-        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 16px rgb(52, 88, 186);
     }
+   
+    .card .letter {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: 30px; /* Ajusta el tamaño de la letra según tus preferencias */
+        font-weight: bold;
+        color: white;
+        background-color: #333; /* Puedes ajustar el color de fondo según tus preferencias */
+        padding: 8px 16px; /* Ajusta el tamaño del cuadrado según tus preferencias */
+        border-radius: 4px; /* Ajusta la redondez del cuadrado según tus preferencias */
+        z-index: 1; /* Asegura que la letra esté encima de la imagen */
+    }
+
      .container .card img{
-        width: 100%;
-        height: 100%;
+    width: 100%;
+    height: 100%; /* Ajusta el porcentaje de altura según tus preferencias */
+    object-fit: cover; /* Evita que la imagen se deforme */
+    border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior de la img de la tarjeta */
        
     }
     .container .card h4{
-        font-weight: 400;
-        padding: 8px;
+    font-weight: 400;
+    padding: 8px;
+    color: black;
     }
     .container .card p{
         font-weight: 300;
@@ -192,7 +208,10 @@
     .subdivision:hover {
         background-color: rgb(7, 85, 168);
     }
-    /* PRODUCTOS A */
+   
+   
+    
+  
      
         
       

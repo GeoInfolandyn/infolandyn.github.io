@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+ <style>
+    .contenedor{
+        display: flex;
+        height: 500px;
+        width: 500px;
+        background-color: brown;
+        justify-content: center;
+        align-items: center;
+    }
+    .azul{
+        display:flex;
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        justify-content:center;
+        text-align: left;
+        gap: 20px;    
+    }
+     
+
+    .btn-primary{
+            border: 3px solid;
+            background-color: #eca4a9;
+           
+    }
+   .btn-danger{
+        align-content: center;
+        border: 3px solid;
+        background-color:#d09cbd;
+       }
+ </style>
+        
+
+
+</head>
+<body>
+    <div class="contenedor">
+        <div class="azul">
+            <a type="button" class="btn btn-danger btn-sm btn-block" onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')">AUTOCORRELATION FUNCTION</a>
+            <a type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" >NDVI250 FILTERED</a>
+        </div>
+    </div>
+</body>
+</html>

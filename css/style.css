@@ -1,0 +1,372 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+
+
+.logo{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+.footer{
+  background-color:rgb(52, 88, 186);
+  color: #fff7f7;
+  bottom: 0;
+  width:100%;
+  position: relative;  
+  margin-top: 30px;
+}
+.section h1 {
+  background-color: #c9f3f9;
+  color: #fff;
+}
+
+.section {
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin: 0 40px;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* eliminar espacio entre secciones */
+#sC1{
+  padding-bottom: 50px;
+}
+#sA2{
+  padding-top: 20px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0px;
+}
+#sA3{
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-bottom: 0;
+  margin-top: 0px;
+}
+/*  */
+.section h1 {
+  color: #434242;
+}
+.section .tab {
+  position: relative;
+  background: linear-gradient(135deg, #95cad2 10%, #7ba3e3 100%);
+  padding: 0 20px 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.section .tab input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.section .tab input:checked ~ label::after {
+  content: "+";
+  color: #fff;
+  transform: rotate(135deg);
+}
+.section .tab input:checked ~ label h3 {
+  background: #fff;
+  padding: 2px 10px;
+  color: #333;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.section .tab input:checked ~ .tab-content-grid {
+  max-height: 100vh;
+  transition: 1s;
+  display: grid;
+}
+.section .tab input:checked ~ .tab-content-grid p {
+  color: #080808;
+}
+
+.section label {
+  display: inline-block;
+  display: flex;
+  margin-bottom: 0px;
+  align-items: center;
+  cursor: pointer;
+}
+.section label::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 2em;
+  color: rgba(11, 11, 227, 0.1);
+  transition: transform 1s;
+}
+.section label h2 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.25em;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.section label h3 {
+  position: relative;
+  font-weight: 500;
+  color: #333;
+  z-index: 10;
+}
+.section:hover label::after {
+  color: #333;
+}
+.section .tab-content-grid {
+  max-height: 0;
+  overflow: auto;
+  transition: 1s;
+}
+.section .tab-content-grid p {
+  position: relative;
+  padding: 10px 0;
+  color: #333;
+  z-index: 10;
+}
+
+.tab-content-grid > * {
+  box-shadow: 10px 6px 37px -13px rgba(51, 51, 51, 0.74);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: justify;
+  font-weight: 500;
+}
+
+.tab-content-grid {
+  display: grid;
+  gap: 20px;
+  grid-template: "title-card" 200px "main-card" 100px "main-card" "credit-card";
+}
+.tab-content-grid .title-card {
+  grid-area: title-card;
+  background-color: rgba(198, 221, 247, 0.74);
+}
+.tab-content-grid .img-card {
+  grid-area: img-card;
+  background-color:   #fff;
+}
+.tab-content-grid .main-card {
+  grid-area: main-card;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+.tab-content-grid .credit-card {
+  grid-area: credit-card;
+  background-color: rgba(198, 221, 247, 0.74);
+}
+@media (min-width: 500px) {
+  .tab-content-grid {
+    grid-template: "title-card" 70px "img-card" auto "main-card" auto "credit-card " auto/auto auto;
+    overflow: scroll;
+  }
+}
+@media (min-width: 886px) {
+  .tab-content-grid {
+    grid-template: "title-card   title-card" 100px "img-card     main-card" auto "credit-card  credit-card" auto/30% 67%;
+   
+  }
+}/*# sourceMappingURL=style.css.map */
+
+/* Estilos encabezado de tarjetas */
+.title-card{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+.title-card h3{
+  display: flex;
+  justify-content: start;
+  align-content: center;
+  text-align: left;
+  color: #03050a;
+  }
+
+
+
+.title-card-descarga{
+  display:inline-flex;
+  width: auto;
+  height: fit-content;
+  justify-content: center;
+  align-content: center;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: #0955ce;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  transition: background-color 0.5s;
+  text-decoration: none;
+}
+/* estilos botones descarga */
+#btn-raster{
+  background-color: #198754;
+}
+#btn-raster:hover{  
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  background-color: #3d9b63;
+}
+#btn-features{
+  background-color: #e6d175;
+}
+#btn-features:hover{
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f39843;
+}
+#btn-graphics{
+  background-color:  #ebaeaa;
+}
+#btn-graphics:hover{
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  background-color: #dd5753;
+}
+
+/* Estilos Main de tarjetas */
+.main-card{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.main-card-formula-img{
+  border: solid black 1px;
+
+}
+
+.main-card-img{
+position: relative;
+
+}
+
+.main-card img{
+  display: flex;
+  gap: 8px;
+  margin: 0 auto;
+  max-width: 100%;
+ }
+ .main-card-image-btn{
+  position: absolute;
+  margin: auto;
+  top: 33px;
+  left: 1%;
+  display: flex;
+  gap: 10px;
+  font-size: small;
+  text-align: left;
+  
+ }
+ /* Estilos de los botones del workflow  y sus hover */
+ /* Para cambiar la alineación del texto aplicar propiedades dentro de cada botón con tex-align, aunque si se lo aplicas al padre, debería aplicarse a los hijos */
+ .main-card-image-btn .btn-primary{
+  text-align: left;
+  border: 3px solid;
+  background-color: #a4c1ec;
+ }
+ .main-card-image-btn .btn-danger{
+  text-align: left;
+  border: 3px solid;
+  background-color:#d09cbd;
+ }
+ .main-card-image-btn .btn-sucess{
+  align-content: center;
+  border: 3px solid;
+  background-color: #198754;
+ }
+ .main-card-image-btn .btn-primary:hover{
+  align-content: center;
+  border: 3px solid;
+  background-color: #7ea6e0;
+ }
+ .main-card-image-btn .btn-danger:hover{
+  align-content: center;
+  border: 3px solid;
+  background-color: #B5739D;
+ }
+
+/* Estilos Img-card de tarjetas */
+.img-card{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+/* .img-card div{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+} */
+.img-card div{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+}
+
+.img-card-img1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  object-fit: scale-down;
+}
+
+.img-card-img2{
+  margin-left: 6px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: auto;
+  object-fit: scale-down;
+  border: solid #0955ce 1px;
+}
+
+.img-card div p{
+  justify-content: center;
+  font-size: 8px; 
+  
+}
+
+/* Estilos Credit-card de tarjetas */
+.credit-card{
+  display:flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
+}
+.credit-card p{
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  font-size: small;
+}
+.credit-card img{
+  display: flex;
+  padding-left: 8px;
+  width: fit-content;
+  height: fit-content;
+}

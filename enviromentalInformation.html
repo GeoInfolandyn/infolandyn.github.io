@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="custom.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+	<link rel="shortcut icon" href="img/infolandyn.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\productos.css">
+    <link rel="stylesheet" href="css/style.css">
+        <title>Satelite Imagery</title>
+        <style>
+            .menu-index {
+                color: rgb(255, 255, 255) !important;
+                opacity: 1 !important;
+                font-weight: 700 !important;
+            }
+            .menu-container{
+                background-color:rgb(52, 88, 186);
+                color: #fff7f7;
+                display: flex;
+                flex-wrap: wrap;
+                align-content:end;
+                justify-content: center;
+                
+    
+            }
+            .verticalLine{
+                margin-top: 10px;
+            }
+            .logo-font-2{
+                color: #00ffff;
+            }
+            .department{
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <header>
+             <!--<div class="menu-table flex-row-space-between">-->
+                <div class="logo flex-row-center">
+                  <img src="img/geo.jpg" width="70"><img src="img/upm.png" width="70"><img src="img/Logo_URJC.png" width="70">
+                    <a href="index.html"><font color="black"><H3><font color="black"><p style = "font-family:arial;"><font size=5>  <br>  </p></H3></font></a>
+                    <!--</div>-->
+                    <div class="logo flex-row-center">
+                        <img src="img/infolandyn.png" width="70">
+                        <div class="verticalLine">
+                            <p align="justify">INFORMATION SYSTEM TO MONITOR<br>
+                            GLOBAL CHANGE IMPACTS</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+          </div>
+            <!-- MENU --> 
+            <div class="menu-container">
+                <div class="menu ">
+                    <div class="menu-table flex-row-space-between ">
+                        <a class="menu-button" tabindex="0" href="javascript:void(0)">
+                        <img src="img/menu.png"></a>
+                        <!-- TODO: justificar los items del menu a los margenes para que este centrado -->
+                            <div class="menu-items flex-row-center flex-item"> 
+                                <a href="index.html" class="menu-index"><span class="logo-font-1">INFOLANDYN </span> <span class="logo-font-2"><i> Project</i></span><span class="logo-font-1"></span></a>
+                                <!--<a href="index.html" class="menu-index" class="logo-font-3"><b>Home</b></a> -->
+                                <a href="widgets.html">About</a>
+                                <a href="productosPrueba.html">Products</a>
+                                  <div class="dropdown">
+                                    <a class="dropbtn" href="products_map.html">Viewer<i class="fas fa-caret-down"></i></a>
+                                    <div class="dropdown-content">
+                                      <a href="products_map.html">Dinamicland Mapper</a>
+                                      <a href="products_map.html">Dinamicland Indicator</a>
+                                      <a href="products_map.html">Dinamicland Field</a>
+                                    </div>
+                                  </div>
+                                <a href="news.html">News</a>
+                                <a href="https://blogs.upm.es/dynamicland/contact/" Target="_blank" >Contact</a>
+                            </div>
+                    </div>
+                </div> 
+            </div>
+            <!-- Fin menu -->
+            
+            <!-- Botón Subdivision -->
+            <script>
+
+            </script>
+           <div class="filtros">
+            <!-- <form action="">
+                <select class="subdivision" id="OP1" onchange="filtroC()">
+                    <option selected> Select a subdivision</option>
+                    <option value="C1">C1</option>
+                    <option value="C2">C2</option>
+                    <option value="C3">C3</option>
+                </select>
+            </form> -->
+            <form action="">
+                <select  class="subdivision" id="OP2" onchange="filtroProducto()">
+                    <option selected> Select a product</option>
+                </select>
+            </form>
+            <!--    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq111111111111º -->
+        </div>
+            
+        <!-- Productos -->
+        <section class="section" id="sC1">
+            <h1>ENVIROMENTAL INFORMATION</h1>
+            
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc1"/>
+                <label for="acc1">
+                    <h2><b>C</b></h2>
+                    <h3>FALLOW LANDS REGIME</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card">
+                        <h3>DOWNLOADS:</h3>
+                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/record/7973930/files/FallowTemp_8bit.tif?download=1">Raster Image</a>
+                        <button class="title-card-descarga" id="btn-graphics"><b>Report</b></button>
+                        <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
+                        <button class="title-card-descarga" id="btn-features"><b>Graphics</b></button>
+                        
+                    </div>
+                    
+                    <aside class="img-card">
+                        <div><img class="img-card-img1" src="img\FallowRF.png" alt="">
+
+                        <p><b>KEYWORDS</b> <br>
+                            <b>Thematic area:</b> sustainable agriculture 
+                            <b>Specific area:</b> fallow lands 
+                            <b>Data source:</b> remote sensing
+                            <b>Sensor:</b> MODIS
+                            <b>Period start:</b> 2001
+                            <b>Period end:</b> 2012
+                            <b>Coverage:</b> regional (Spain)
+                            <b>Processing level:</b> C
+                            <b>Methodology:</b> spectral index, time series analysis,artificial intelligence, 
+                            <b>Other keyword:</b> NDVI, Spain, autocorrelation</p>
+                        </div>
+                 </aside>
+
+                    <article class="main-card">
+                        <div>
+                            <img src="img\leyenda.drawio.drawio.svg" alt="">
+                            <br> <h3>DESCRIPTION:</h3>
+                            <p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
+                            temporal patterns across rainfed agricultural areas that were tested in mainland Spain. We found that approximately half of rainfed 
+                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
+                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
+                            You can see the spatial distribution in the map viewer below.
+                            <br>
+                            </p>
+                            <div class="main-card-img">
+                                <!-- <img src="img\workflowfallowed.png" alt="Workflow" usemap="#workflowproductos">
+                                <map name="workflowproductos">
+                                    <area shape="rectangle" coords="0,53,70,100" href="productosPrueba.html" title="">
+                                    <area shape="rectangle" coords="453,177,801,378" href="productosPrueba.html" title="">
+                                    <area shape="rect" coords="828,178,1176,378" href="productosPrueba.html" title="">
+                                    <area shape="rect" coords="1203,189,155,378" href="productosPrueba.html" title="">
+                                    <area shape="rect" coords="1580,179,1930,384" href="productosPrueba.html" title="">
+                                </map> -->
+                               <img src="img\Diagrama MAS FINO.drawio.svg" alt="">
+                                    <div class="main-card-image-btn">
+                                        <a id="hide-button" type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('MODIS(MOD09Q1) SPECTRUM', 'A')">MODIS09Q1</a>
+                                        <a type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" >NDVI250TS</a>
+                                        <a type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" >NDVI250 FILTERED</a>
+                                        <a type="button" class="btn btn-danger btn-sm btn-block" onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')">AUTOCORRELATION FUNCTION</a>
+                                        <a type="button" class="btn btn-danger btn-sm" onclick="linkToItem('SPECIFIC AUTOCORRELATION COEFFICIENTS (NDVI 250m MOD09Q1)', 'B')">AUTOCORRELATION VALUES AT LAGS 8 DAYS, 6 MONTHS AND 1, 2, 3 YEARS</a>
+                                        <a type="button" class="btn btn-success btn-sm btn-block" href="">FALLOW LANDS REGIME</a>
+                                    </div>    
+                              </div>
+                        </div>
+                    </article>
+           
+                    <div class="credit-card"> 
+                        <p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p>
+                    </div>
+                </div>
+            </div> 
+            
+
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc2"/>
+                <label for="acc2">
+                    <h2><b>C</b></h2>
+                    <h3>SPATIO-TEMPORAL VARIATIONS OF WATER QUALITY</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card">
+                        <h3>DOWNLOADS:</h3>
+                        <button class="title-card-descarga"><b>Raster Image</b></button>
+                        <button class="title-card-descarga"><b>Features table</b></button>
+                        <button class="title-card-descarga"><b>Graphics</b></button>
+                    </div>
+                    
+                    <aside class="img-card">
+                        <div><img class="img-card-img1" src="img\FallowRF.png" alt="">
+                            <p><b>KEYWORDS</b> <br>
+                                <b>Thematic area:</b> sustainable agriculture 
+                                <b>Specific area:</b> fallow lands 
+                                <b>Data source:</b> remote sensing
+                                <b>Sensor:</b> MODIS
+                                <b>Period start:</b> 2001
+                                <b>Period end:</b> 2012
+                                <b>Coverage:</b> regional (Spain)
+                                <b>Processing level:</b> C
+                                <b>Methodology:</b> spectral index, time series analysis,artificial intelligence, 
+                                <b>Other keyword:</b> NDVI, Spain, autocorrelation</p>
+                            </div>
+                    </aside>
+                    <article class="main-card">
+                        <img src="img\leyenda.drawio.drawio.svg" alt=""><div>
+                            <br><h3>DESCRIPTION:</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
+                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
+                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
+                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
+                            You can see the spatial distribution in the map viewer below <br>
+                            </p></div></article>
+                           
+                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc3"/>
+                <label for="acc3">
+                    <h2><b>C</b></h2>
+                    <h3>FOREST AS CARBON SINKERS OR CARBON EMITTERS</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card"><h3>DOWNLOADS:</h3>
+                        <button class="title-card-descarga"><b>Raster Image</b></button>
+                        <button class="title-card-descarga"><b>Features table</b></button>
+                        <button class="title-card-descarga"><b>Graphics</b></button>
+                    </div>
+                    
+                    <aside class="img-card">IMG-CARD</aside>
+                    <article class="main-card">
+                        <div>
+                            <img src="img\leyenda.drawio.drawio.svg" alt="">
+                            <br><h3>DESCRIPTION:</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
+                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
+                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
+                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
+                            You can see the spatial distribution in the map viewer below <br>
+                            </p></div></article>
+                           
+                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>
+            
+
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc4"/>
+                <label for="acc4">
+                    <h2><b>C</b></h2>
+                    <h3>NUMBER OF SEASONAL CYCLES OF VEGETATION AT GLOBAL ESCALE AVHRR</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card"><h3>DOWNLOADS:</h3>
+                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/records/8037299/files/SM_82-16.tif?download=1">Raster Image</a>
+                        <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
+                        <button class="title-card-descarga" id="btn-graphics"><b>Graphics</b></button>
+                    </div>
+                    
+                    <aside class="img-card">
+                        <div><img src="img\levelC-1.png" alt=""><p><b>KEYWORDS:</b><br>AVHRR, SEASONALITY, VEGETATION DYNAMICS, STABILITY, BIOCLIMATE, NDVI, TIME SERIES, PLURI-ANNUAL CYCLES, 
+                            SPETRAL ANALYSIS, PERIODOGRAM, LAND SURFACE PHENOLOGY</p></div>
+                    </aside>
+
+                    <article class="main-card">
+                        <div>
+                            <img src="img\leyenda.drawio.drawio.svg" alt="">
+                            <br><h3>DESCRIPTION:</h3><p>Using the AVHRR product provided by NOAA, the NDVI time series has been calculated, a periodogram has been made to study 
+                            different factors that affect the periodicity of the vegetative cycles. In this case, the number of seasonal cycles of vegetation it is presented</p>
+                            <p><b>Product citation</b><br><i>Recuero, L., Litago, J., Pinzón, J. E., Huesca, M., Moyano, M. C., & Palacios-Orueta, A. (2019). Mapping periodic patterns of global 
+                            vegetation based on spectral analysis of NDVI time series. Remote sensing, 11(21), 2497.</i>
+                            </p></div>
+                            <div class="main-card-img">
+                                <img src="img\Diagrama MAS FINO.drawio.svg" alt="">
+                                    <div class="main-card-image-btn">
+                                        <a type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('AVHRR NDVI Time Series', 'A')" >AVHRR NDVI Time Series</a>
+                                        <a type="button" class="btn btn-danger btn-sm btn-block" onclick="linkToItem('PERIODOGRAM AVHRR-NDVI', 'B')">PERIODOGRAM AVHRR-NDVI</a>
+                                        <a type="button" class="btn btn-danger btn-sm btn-block" onclick="linkToItem('SPECIFIC PERIODOGRAM ORDINATES AND FISHER`S KAPPA TEST (AVHRR-NDVI)', 'B')">SPECIFIC PERIODOGRAM ORDINATES & FISHER`S KAPPA TEST (AVHRR-NDVI)</a>
+                                        <a type="button" class="btn btn-success btn-sm btn-block" href="">NUMBER OF SEASONAL CYCLES OF VEGETATION AT GLOBAL ESCALE AVHRR</a>
+                                    </div>
+                    </article>
+
+                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p><p>cc-by-4.0 icon
+                                Creative Commons Attribution 4.0 International</p>
+                            <br><img src="img\sellocreativecommons.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc5"/>
+                <label for="acc5">
+                    <h2><b>C</b></h2>
+                    <h3>AMPLITUDE OF SEASONAL CYCLES OF VEGETATION AT GLOBAL SCALE</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card"><h3>DOWNLOADS:</h3>
+                        <button class="title-card-descarga"><b>Raster Image</b></button>
+                        <button class="title-card-descarga"><b>Features table</b></button>
+                        <button class="title-card-descarga"><b>Graphics</b></button>
+                    </div>
+                    
+                    <aside class="img-card">IMG-CARD</aside>
+                    <article class="main-card">
+                        <div>
+                            <img src="img\leyenda.drawio.drawio.svg" alt="">
+                            <br><h3>DESCRIPTION:</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
+                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
+                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
+                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
+                            You can see the spatial distribution in the map viewer below <br>
+                            </p></div>
+                    </article>
+                           
+                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>
+
+       
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc6"/>
+                <label for="acc6">
+                    <h2><b>C</b></h2>
+                    <h3>STABILITY OF SEASONAL CYCLES OF VEGETATION AT GLOBAL SCALE</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card"><h3>DOWNLOADS:</h3>
+                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/record/7973930/files/FallowTemp_8bit.tif?download=1">Raster Image</a>
+                        <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
+                        <button class="title-card-descarga" id="btn-graphics"><b>Graphics</b></button>
+                    </div>
+                    
+                    <aside class="img-card">IMG-CARD</aside>
+                    <article class="main-card">
+                        <div>
+                            <img src="img\leyenda.drawio.drawio.svg" alt="">
+                            <br><h3>DESCRIPTION:</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
+                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
+                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
+                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
+                            You can see the spatial distribution in the map viewer below <br>
+                            </p></div>
+                    </article>
+                           
+                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc7"/>
+                <label for="acc7">
+                    <h2><b>C</b></h2>
+                    <h3>PRESENCE OF PLURIANNUAL CYCLES</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card"><h3>DOWNLOADS:</h3>
+                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/record/7973930/files/FallowTemp_8bit.tif?download=1">Raster Image</a>
+                        <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
+                        <button class="title-card-descarga" id="btn-graphics"><b>Graphics</b></button>
+                    </div>
+                    
+                    <aside class="img-card">IMG-CARD</aside>
+                    <article class="main-card">
+                        <div>
+                            <img src="img\leyenda.drawio.drawio.svg" alt="">
+                            <br><h3>DESCRIPTION:</h3><p>Using the AVHRR product provided by NOAA, the NDVI time series has been calculated, a periodogram has been made to study different factors that affect the periodicity of the vegetative cycles. 
+                            In this case, the Stability of seasonal cycles of vegetation it is presented
+                            <br>
+                            </p></div>
+                    </article>
+                           
+                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>
+           
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc8"/>
+                <label for="acc8">
+                    <h2><b>C</b></h2>
+                    <h3>LAND-COVER AND PHYTOCLIMATIC-TYPE TRENDS</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card"><h3>DOWNLOADS:</h3>
+                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/record/7973930/files/FallowTemp_8bit.tif?download=1">Raster Image</a>
+                        <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
+                        <button class="title-card-descarga" id="btn-graphics"><b>Graphics</b></button>
+                    </div>
+                    
+                    <aside class="img-card">IMG-CARD</aside>
+                    <article class="main-card">
+                        <div>
+                            <br><h3>DESCRIPTION:</h3><p>In this study, we utilized MODIS NDVI data to examine long-term changes in the vegetation greenness in mainland Spain and the Balearic Islands from 2001 to 2016. We evaluated the percentage 
+                            of significant negative and positive trends by land-cover occupancies and phytoclimatic types to find patterns in our study area.
+                            In our study, we found that, in mainland Spain and the Balearic Islands, the annual average NDVI dataset showed that the area with significant positive trends was more important (11.8%) than the 
+                            territory with negative trends (7.6%).
+                             <br>
+                            </p></div></article>
+                           
+                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc9"/>
+                <label for="acc9">
+                    <h2><b>C</b></h2>
+                    <h3>AGRICULTURAL INTENSIFICATION OF MAIZE AND RICE AREAS</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card"><h3>DOWNLOADS:</h3>
+                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/record/7973930/files/FallowTemp_8bit.tif?download=1">Raster Image</a>
+                        <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
+                        <button class="title-card-descarga" id="btn-graphics"><b>Graphics</b></button>
+                    </div>
+                    
+                    <aside class="img-card">IMG-CARD</aside>
+                    <article class="main-card">
+                        <div>
+                            <br><h3>DESCRIPTION:</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
+                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
+                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
+                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
+                            You can see the spatial distribution in the map viewer below <br>
+                            </p></div></article>
+                           
+                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc10"/>
+                <label for="acc10">
+                    <h2><b>C</b></h2>
+                    <h3>NUMBER OF GROWN CROPS PER YEAR</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card"><h3>DOWNLOADS:</h3>
+                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/record/7973930/files/FallowTemp_8bit.tif?download=1">Raster Image</a>
+                        <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
+                        <button class="title-card-descarga" id="btn-graphics"><b>Graphics</b></button>
+                    </div>
+                    
+                    <aside class="img-card">IMG-CARD</aside>
+                    <article class="main-card">
+                        <div>
+                            <br><h3>DESCRIPTION:</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
+                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
+                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
+                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
+                            You can see the spatial distribution in the map viewer below <br>
+                            </p></div></article>
+                           
+                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>  
+            
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc11"/>
+                <label for="acc11">
+                    <h2><b>C</b></h2>
+                    <h3>GRASSLANDS TRENDS</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card"><h3>DOWNLOADS:</h3>
+                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/record/7973930/files/FallowTemp_8bit.tif?download=1">Raster Image</a>
+                        <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
+                        <button class="title-card-descarga" id="btn-graphics"><b>Graphics</b></button>
+                    </div>
+                    
+                    <aside class="img-card">IMG-CARD</aside>
+                    <article class="main-card">
+                        <div>
+                            <br><h3>DESCRIPTION:</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
+                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
+                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
+                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
+                            You can see the spatial distribution in the map viewer below <br>
+                            </p></div></article>
+                           
+                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc12"/>
+                <label for="acc12">
+                    <h2><b>C</b></h2>
+                    <h3>TREE COVER</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card"><h3>DOWNLOADS:</h3>
+                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/record/7973930/files/FallowTemp_8bit.tif?download=1">Raster Image</a>
+                        <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
+                        <button class="title-card-descarga" id="btn-graphics"><b>Graphics</b></button>
+                    </div>
+                    
+                    <aside class="img-card">IMG-CARD</aside>
+                    <article class="main-card">
+                        <div>
+                            <br><h3>DESCRIPTION:</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
+                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
+                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
+                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
+                            You can see the spatial distribution in the map viewer below <br>
+                            </p></div></article>
+                           
+                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc13"/>
+                <label for="acc13">
+                    <h2><b>C</b></h2>
+                    <h3>WILDFIRE SEVERITY INDEX: DIFFERENCE BETWEEN PRE AND POST WILDFIRE BAI INDEX</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card"><h3>DOWNLOADS:</h3>
+                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/record/7973930/files/FallowTemp_8bit.tif?download=1">Raster Image</a>
+                        <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
+                        <button class="title-card-descarga" id="btn-graphics"><b>Graphics</b></button>
+                    </div>
+                    
+                    <aside class="img-card">IMG-CARD</aside>
+                    <article class="main-card">
+                        <div>
+                            <br><h3>DESCRIPTION:</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
+                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
+                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
+                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
+                            You can see the spatial distribution in the map viewer below <br>
+                            </p></div></article>
+                           
+                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc14"/>
+                <label for="acc14">
+                    <h2><b>C</b></h2>
+                    <h3>WILDFIRE SEVERITY INDEX: DIFFERENCE BETWEEN PRE AND POST WILDFIRE NBR INDEX</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card"><h3>DOWNLOADS:</h3>
+                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/record/7973930/files/FallowTemp_8bit.tif?download=1">Raster Image</a>
+                        <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
+                        <button class="title-card-descarga" id="btn-graphics"><b>Graphics</b></button>
+                    </div>
+                    
+                    <aside class="img-card">IMG-CARD</aside>
+                    <article class="main-card">
+                        <div>
+                            <br><h3>DESCRIPTION:</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
+                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
+                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
+                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
+                            You can see the spatial distribution in the map viewer below <br>
+                            </p></div></article>
+                           
+                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc15"/>
+                <label for="acc15">
+                    <h2><b>C</b></h2>
+                    <h3>STATISTICAL ANALYSIS OF THE CLIMATOLOGY AND VEGETATION DYNAMICS IN A REGION ON THE BANKS OF THE DUERO</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card"><h3>DOWNLOADS:</h3>
+                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="">Raster Image</a>
+                        <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
+                        <button class="title-card-descarga" id="btn-graphics"><b>Graphics</b></button>
+                    </div>
+                    
+                    <aside class="img-card">
+                        <div><img class="img-card-img1" src="img\NDVI_2008.gif" alt=""></div>
+                    </aside>
+                    <article class="main-card">
+                        <div>
+                            <br><h3>DESCRIPTION:</h3><p> The objective of the present study was to analyze the dynamics of the vegetation in ribera del Duero through
+                                 the use of the NDVI index and to relate this index with climatic variables to study how the climate influences the 
+                                 development of crops. For this, the time series of the NDVI extracted from MODIS images of the different crops in the studied region
+                                 in the period 2002-2020 were analyzed and this NDVI was related to the time series of two climatic variables such as 
+                                 temperature and precipitation, to evaluate the influence that these have on the dynamics of the vegetation of the area. <br>
+                                 The stationarity of the time series was analyzed using the Dickey-Fuller test and, through the use of autocorrelation 
+                                 graphs and periodograms, their seasonality was analyzed. It was observed that none of the climatic and NDVI series studied 
+                                 had a trend and it was also observed that the NDVI series had a clear annual cycle.<br>
+                            </p></div>
+                            <div class="main-card-img">
+                                <img src="img\Diagrama MAS FINO.drawio.svg" alt="">
+                                    <div class="main-card-image-btn">
+                                        <a type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" >500m MODIS 09A1 FILTERED SG</a>
+                                        <a type="button" class="btn btn-danger btn-sm btn-block" onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')">PERIODOGRAM AND ATC</a>
+                                        <a type="button" class="btn btn-success btn-sm btn-block" href="">STATISTICAL ANALYSIS OF THE CLIMATOLOGY AND VEGETATION DYNAMICS IN DUERO REGION</a>
+                                    </div>                 
+                </section>
+
+            <!-- Start Credits -->
+        <div class="footer">
+			<div class="menu">
+				<div class="logo flex-row-left">
+				<img src="img/ESCUDO_blanco.png" width="170">
+				<p class="text text-small text-italic">
+					<span class="highlight-text">© 2023 INFOLANDYN All rights reserved.</span>
+				</p>
+				</div>
+			</div>
+		</div>
+			<!-- End Credits -->
+            <script src="js\productos.js"></script>
+</body>
+</html>

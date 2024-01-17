@@ -48,7 +48,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: Helvetica, sans-serif, Arial;
   left: 0;
   right: 0;
   width: auto;
@@ -89,7 +89,7 @@ h2 {
   margin: 30px 0 0 0;
   padding: 0;
   font-weight: bold;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: Helvetica, sans-serif, Arial;
 }
 
 h3 {
@@ -98,7 +98,7 @@ h3 {
   margin: 10px 0 0 0;
   padding: 0;
   font-weight: bold;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family:  sans-serif, Helvetica, Arial;
 }
 
 ul,

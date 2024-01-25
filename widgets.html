@@ -32,20 +32,22 @@
       opacity: 1 !important;
       font-weight: 700 !important;
     }
-    .menu-container{
-			background-color:rgb(52, 88, 186);
-			color: #fff7f7;
-		}
+    
     .logo-font-2{
 			color: #00ffff;
 		}
     .menu-container{
+      background-color:rgb(52, 88, 186);
+			color: #fff7f7;
       display: flex;
       flex-wrap:wrap;
       align-content:end;
       justify-content: center;
       width: 100%;
       
+  }
+  .text{
+    text-align:justify;
   }
   </style>
 </head>
@@ -69,7 +71,7 @@
 			</div>
 		</div>
     </header>
-
+</div>
 <!-- MENU --> 
 	<div class="menu-container">
 		<div class="menu">
@@ -136,7 +138,7 @@
               Cartographic products at two levels will be developed: (1) first level will consist of products representing the general attributes of vegetation index time series based on 
               statistical and phenological methods, such as inflection points or autocorrelation values at specific lags, (2) in a second level the “Ready to Use” products will consist on 
               environmental information related to the processes happening at the land surface, such as maps of the beginning of the growing cycles or the date of harvest. In addition, 
-              analysis and reports will be generated.</p>
+              analyses and reports will be generated.</p>
           </div>
         </div>
         <!--Botton-->
@@ -150,34 +152,32 @@
           </div>
           <div class="flex-item flex-item-stretch flex-column">
             <p class="text">
-		<a class="highlight-text" target="_blank" href="products.html"><font size=5> Raw data and algorithms:</font></a><br>
-              Level A of the INFOLANDYN project involves the collection, processing, and analysis of raw remote sensing data, as well as the development of algorithms to transform the data 
-              into useful information. The algorithms will be designed to generate phenological and dynamic indicators, as well as cartographic products. It is important to ensure that the 
-              algorithms are efficient, accurate, and adaptable to different types of data and products. Level A represents the foundation of the project.
+		          <a class="highlight-text" target="_blank" href="products.html"><font size=5> Satellite Data:</font></a><br>
+              Level A of the INFOLANDYN project involves the collection, processing, and index calculation of raw remote sensing data, as well as as the development of algorithms to transform the data into useful information.
+              Raw satellite images will be available for download, as well as the ones with the different filters applied. In addition, the different indexes calculated for each project will also be available for download.
 
             </p>
           </div>
         </div>
         <!--Botton-->
             <div class="control-group">
-              <a class="custom-button custom-button-danger pulse-danger" target="_blank" href="statisticsProducts.html" target="_blank"><b>LEVEL B</b></a>
+              <a style="background-color: rgb(155, 93, 141)" class="custom-button custom-button-danger pulse-danger" target="_blank" href="statisticsProducts.html" target="_blank"><b>LEVEL B</b></a>
             </div>
         <!-------------------------------------------------------------------------------------------->
  	<div class="flex-row">
           <div class="flex-item flex-item-stretch flex-column">            
-		<img class="image" src="img/levelB-1.png">
+		<img class="image" src="img\ExplicacionB.png">
           </div>
           <div class="flex-item flex-item-stretch flex-column">
             <p class="text">
-              <a class="highlight-text" target="_blank" href="products.html"><font size=5>Time series analysis:</font></a><br>
-			Time series analysis involves statistical and machine learning methods to extract meaningful information from time-dependent data. In the context of land surface dynamics, time series 
-      analysis is used to identify patterns and changes in vegetation index time series derived from remote sensing data. This analysis helps to understand the dynamics of vegetation growth, 
-      the timing and duration of growing seasons, and the impacts of environmental factors such as climate variability and land use change.</p>
+              <a class="highlight-text" target="_blank" href="products.html"><font size=5>Statistical products:</font></a><br>
+              Level B provides results from statistical procedures applied at pixel level. They come in form of a graphical product that can be altered and worked with. Each pixel holds information of different statistical 
+              parameters that could be later translated into new indexes with ecological meaning through the time series analysis, identifying patterns and changes in vegetation.</p>
           </div>
         </div>
         <!--Botton-->
             <div class="control-group">
-              <a class="custom-button custom-button-info pulse-info" target="_blank" href="enviromentalInformation.html" target="_blank"><b>LEVEL C</b></a>
+              <a style="background-color: rgb(171, 214, 120)" class="custom-button custom-button-info pulse-info" target="_blank" href="enviromentalInformation.html" target="_blank"><b>LEVEL C</b></a>
             </div>
         <!--NivelC------------------------------------------------------------------------------------>
  	<div class="flex-row">
@@ -196,7 +196,7 @@
 		<!-------------------------------------------------------------------------------------------->
         <!--Botton-->
             <div class="control-group">
-              <a class="custom-button custom-button-info pulse-info" target="_blank" href="" target="_blank"><b>LEVEL D</b></a>
+              <a style="background-color: rgb(235, 226, 102)" class="custom-button custom-button-info pulse-info" target="_blank" href="" target="_blank"><b>LEVEL D</b></a>
             </div>
 		<!--NivelD------------------------------------------------------------------------------------>
  	<div class="flex-row">
@@ -214,7 +214,7 @@
         <!-------------------------------------------------------------------------------------------->
 		<!--Botton-->
             <div class="control-group">
-              <a class="custom-button custom-button-info pulse-info" target="_blank" href="" target="_blank"><b>LEVEL E</b></a>
+              <a style="background-color: rgb(238, 178, 88)" class="custom-button custom-button-info pulse-info" target="_blank" href="" target="_blank"><b>LEVEL E</b></a>
             </div>
 		<!--NivelE------------------------------------------------------------------------------------>
  	<div class="flex-row">
@@ -223,11 +223,10 @@
           </div>
           <div class="flex-item flex-item-stretch flex-column">
             <p class="text">
-              <a class="highlight-text" target="_blank" href="products.html"><font size=5> Paper & Reports:</font></a><br>
-              Reports are a key output of the land surface dynamics information system developed in this project, providing a comprehensive summary of the analyses and findings related
-              to land surface dynamics and their impacts on global change. They include information on the methods used to develop indicators and cartographic products, results of statistical 
-              and machine learning analyses, ecological meaning of indicators, and recommendations for management and policy decisions based on scientific evidence. Reports aim to support 
-              sustainable natural resource management and land use practices.</p>
+              <a class="highlight-text" target="_blank" href="products.html"><font size=5> Papers & Reports:</font></a><br>
+             Papers are a key output of the land surface dynamics information system developed in this project. They include information on the methods used to develop indicators and cartographic products, results of statistical 
+             and machine learning analyses to understand the ecological meaning of indicators. <br>Reports provide a comprenhensive summary of these papers and 
+             recommendations for managment and policy decisions based on scientific evidence.</p>
           </div>
         </div>
         <!-------------------------------------------------------------------------------------------->
@@ -236,77 +235,59 @@
         <!--Start User Types with Centered Image and Table-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 class="add-top-margin">User Management</h2>
+            <h2 class="add-top-margin">Addressing the Needs of Different Roles</h2>
             <hr>
-            <p class="text">
+            <!-- <p class="text">
               "User Management: Addressing the Needs of Different Roles"
                 INFOLANDYN, an information system designed for monitoring global change impacts through land cover dynamics modeling, caters to diverse user needs through effective user management. 
                 It provides valuable indicators derived from remote sensing time series, including phenological and dynamics indicators, forecasting models, and climate impact indicators. 
                 The system offers clear and objective products at various scales, supporting sustainable natural resource management and policy-making. User management in INFOLANDYN 
                 ensures optimized user experiences by implementing role-based access control, assigning specific permissions and privileges based on user roles. 
-            </p>
-            <p class="text text-center graph-title">
-              "Addressing the Needs of Different Roles"
-            </p>
-            <div class="fotoDiego"><img class="image center max-width-400 add-top-margin-small" src="img\NewRoles.jpg" style= "border: 5px solid rgb(129, 156, 230)"> </div>
+            </p> -->
             <p class="text">
               This approach promotes data security while enabling users to access relevant resources. Additionally, comprehensive user support, including onboarding, training, and timely assistance, 
               fosters effective communication, collaboration, and productivity. By addressing the distinct requirements of different roles, INFOLANDYN empowers users to make informed decisions and 
               drive positive environmental impact.
             </p>
+            <div class="fotoDiego"><img class="image center max-width-400 add-top-margin-small" src="img\NewRoles.jpg" style= "border: 2px solid rgb(130, 167, 197)"> </div>
             <p class="text text-center graph-title">
-              User Segmentation
+             <b>User Segmentation</b>
             </p>
             <div class="custom-table-container center add-top-margin-small">
               <table class="custom-table">
                 <thead>
                   <tr class="bg-color-gray">
                     <th>PRODUCTS</th>
-                    <th class="text-center">Sub-Products</th>
                     <th class="text-center">STAKEHOLDERS</th>
-                    <th class="text-center">Global Users</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>A:(Satellite Imagery)</td>
-                    <td class="text-center">24</td>
                     <td class="text-center">Experts in Earth Observation Data and Products</td>
-                    <td class="text-center">21.5%</td>
                   </tr>
                   <tr class="bg-color-light-gray">
-                    <td>B:(Statistics Products)</td>
-                    <td class="text-center">24</td>
+                    <td>B: (Statistics Products)</td>
                     <td class="text-center">Expert in data analysis but not especially in the territorial field, among other experts in statistics and computer science</td>
-                    <td class="text-center">20.1%</td>
                   </tr>
                   <tr>
-                    <td>C:(Environmental information)</td>
-                    <td class="text-center">19</td>
+                    <td>C: (Environmental information)</td>>
                     <td class="text-center">Statistics that work with environmental information or managers that understand the territorial scope</td>
-                    <td class="text-center">19.9%</td>
                   </tr>
                   <tr class="bg-color-light-gray">
-                    <td>D:(Environmental statistics)</td>
-                    <td class="text-center">19</td>
+                    <td>D: (Environmental statistics)</td>
                     <td class="text-center">Managers using the information already synthesized</td>
-                    <td class="text-center">18.5%</td>
                   </tr>
                   <tr>
                     <td>E: (Infographics, general information, news )</td>
-                    <td class="text-center">18</td>
                     <td class="text-center">Managers, disseminators and the general public invested in highly summarized information and synthesis of analyzes already carried out</td>
-                    <td class="text-center">20.0%</td>
                   </tr>
                 </tbody>
                 <tfoot>
 				<tr class="bg-color-light-gray">
                     <td>Total</td>
-                    <td class="text-center">104</td>
                     <td class="text-center"> </td>
-                    <td class="text-center">100%</td>
                   </tr>
-
                 </tfoot>
               </table>
             </div>

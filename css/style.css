@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
-
+  width: 100%;
 }
 
 
@@ -32,13 +32,13 @@
   background-color: #c9f3f9;
   color: #fff;
 }
-
+/* anchura tarjetas y secciones */
 .section {
   padding-top: 50px;
   padding-right: 50px;
   padding-left: 50px;
-  margin: 0 40px;
-  max-width: 1500px;
+  margin: auto;
+  max-width: 75%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -46,6 +46,7 @@
 /* eliminar espacio entre secciones */
 #sC1{
   padding-bottom: 50px;
+  width: 100%;
 }
 #sA2{
   padding-top: 20px;
@@ -70,6 +71,7 @@
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
   overflow: hidden;
+  
 }
 .section .tab input {
   -webkit-appearance: none;
@@ -89,7 +91,7 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 .section .tab input:checked ~ .tab-content-grid {
-  max-height: 100vh;
+  max-height: 150vh;
   transition: 1s;
   display: grid;
 }
@@ -154,6 +156,7 @@
 
 .tab-content-grid {
   display: grid;
+  width: 100%;
   gap: 20px;
   grid-template: "title-card" 200px "main-card" 100px "main-card" "credit-card";
 }

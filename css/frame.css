@@ -12,8 +12,10 @@
 }
 header{
   font-family: "Poppins", sans-serif;
-  width: 850px;
+  width: 100%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 ul{
   list-style: square inside;
@@ -136,7 +138,7 @@ hr {
 .menu {
   position: relative;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 100%;
 }
 
 .menu .menu-table {
@@ -165,8 +167,9 @@ hr {
   padding: 10px 0;
 }
 
-.logo {
-  margin-left: 0px;
+.logo{
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .logo a {
@@ -307,7 +310,7 @@ hr {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   line-height: 1.5;
-  max-width: 900px;
+  max-width: 65%;
   overflow-x: auto;
 }
 

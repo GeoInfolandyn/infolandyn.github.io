@@ -1,87 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+<!-- Start: Head -->
+<!-- prueba -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba</title>
- <style>
-    .contenedor{
-        display: flex;
-        height: 500px;
-        width: 500px;
-        background-color: brown;
-        justify-content: center;
-        align-items: center;
-    }
-    .azul{
-        display:flex;
-        height: 100px;
-        width: 100px;
-        background-color: aqua;
-        justify-content:center;
-        text-align: left;
-        gap: 20px;    
-    }
-     
+	<title>INFOLANDYN</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="custom.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+	<link rel="shortcut icon" href="img/infolandyn.png"/>
+    <link href="css\style.css" media="screen" rel="stylesheet" type="text/css" />
+	<style>
+		
+		.menu-container{
+			background-color:rgb(52, 88, 186);
+			color: #fff7f7;
+			display: flex;
+			flex-wrap: wrap;
+			align-content:end;
+			justify-content: center;
+			
+		}
+		.footer{
+			background-color:rgb(52, 88, 186);
+			color: #fff7f7;
+			
+		}
+		.logo-font-2{
+			color: #00ffff;
+		}
+		
 
-    .btn-primary{
-            border: 3px solid;
-            background-color: #eca4a9;
-           
-    }
-   .btn-danger{
-        align-content: center;
-        border: 3px solid;
-        background-color:#d09cbd;
-       }
- </style>
-        
-
-
+	</style>
 </head>
+<!-- end: Head -->
+
 <body>
-    <div class="contenedor">
-        <div class="azul">
-            <a type="button" class="btn btn-danger btn-sm btn-block" onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')">AUTOCORRELATION FUNCTION</a>
-            <a type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" >NDVI250 FILTERED</a>
-        </div>
+
+	<div class="header">
+	<header>
+	 <!--<div class="menu-table flex-row-space-between">-->
+		<div class="logo flex-row-center">
+		  <img src="img/geo.jpg" width="70"><img src="img/upm.png" width="70"><img src="img/Logo_URJC.png" width="70">
+			<a href="index.html"><font color="black"><H3><pre><font color="black"><p style = "font-family:arial;"><font size=5>  <br>  </font></p></pre></H3></font></a>
+			<!--</div>-->
+			<div class="logo flex-row-center">
+				<img src="img/infolandyn.png" width="70">
+				<div class="verticalLine">
+					<p align="justify"><span class="department">INFORMATION SYSTEM TO MONITOR<br>
+					GLOBAL CHANGE IMPACTS</span></p>
+				</div>
+			</div>
+		</div>
+	</header>
+  </div>
+	<!-- MENU --> 
+	<div class="menu-container">
+		<div class="menu ">
+			<div class="menu-table flex-row-space-between ">
+				<a class="menu-button" tabindex="0" href="javascript:void(0)">
+				<img src="img/menu.png"></a>
+				<!-- TODO: justificar los items del menu a los margenes para que este centrado -->
+					<div class="menu-items flex-row-center flex-item"> 
+						<a href="index.html" class="menu-index"><span class="logo-font-1">INFOLANDYN </span> <span class="logo-font-2"><i> Project</i></span><span class="logo-font-1"></span></a>
+						<!--<a href="index.html" class="menu-index" class="logo-font-3"><b>Home</b></a> -->
+						<a href="widgets.html">About</a>
+						<a href="productosPrueba.html">Products</a>
+						  <div class="dropdown">
+							<a class="dropbtn" href="products_map.html">Viewer<i class="fas fa-caret-down"></i></a>
+							<div class="dropdown-content">
+							  <a href="products_map.html">Dinamicland Mapper</a>
+							  <a href="products_map.html">Dinamicland Indicator</a>
+							  <a href="products_map.html">Dinamicland Field</a>
+							</div>
+						  </div>
+						<a href="news.html">News</a>
+						<a href="https://blogs.upm.es/dynamicland/contact/" Target="_blank" >Contact</a>
+					</div>
+			</div>
+		</div> 
+	</div>
+<!-- Start Products -->
+<div class="fondo">
+    <div class="contexto">
+        <h2>MODELING LAND COVER DYNAMICS</h2>
+        <img src="img\sky.jpg" alt="" id="bannerProductos"> 
+        
     </div>
-    <div class="tab">
-        <input type="checkbox" name="abrir" id="acc15"/>
-        <label for="acc15">
-            <h2><b>C</b></h2>
-            <h3>STATISTICAL ANALYSIS OF THE CLIMATOLOGY AND VEGETATION DYNAMICS IN A REGION ON THE BANKS OF THE DUERO</h3>    
-        </label>
-        <div class="tab-content-grid">
-            <div class="title-card"><h3>DOWNLOADS:</h3>
-                <a class="title-card-descarga" target="_blank" id="btn-raster" href="">Raster Image</a>
-                <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
-                <button class="title-card-descarga" id="btn-graphics"><b>Graphics</b></button>
+    </div>
+
+    <div class="container">
+        
+            <div class="card">
+                <a href="sateliteImagery.html">
+                    <div class="letter">A</div>
+                    <img src="img\ImagenProductoA.jpg" alt="Product A">
+                </a>
+                <h4 style="color: black;">SATELLITE DATA</h4>
+                <p style="color: black;">Earth observation data and products</p>
+                <h5 style="color: black;"><br><b>A</b></h5>
             </div>
             
-            <aside class="img-card">
-                <div><img class="img-card-img1" src="img\NDVI_2008.gif" alt=""></div>
-            </aside>
-            <article class="main-card">
-                <div>
-                    <br><h3>DESCRIPTION:</h3><p> The objective of the present study was to analyze the dynamics of the vegetation in ribera del Duero through
-                         the use of the NDVI index and to relate this index with climatic variables to study how the climate influences the 
-                         development of crops. For this, the time series of the NDVI extracted from MODIS images of the different crops in the studied region
-                         in the period 2002-2020 were analyzed and this NDVI was related to the time series of two climatic variables such as 
-                         temperature and precipitation, to evaluate the influence that these have on the dynamics of the vegetation of the area. <br>
-                         The stationarity of the time series was analyzed using the Dickey-Fuller test and, through the use of autocorrelation 
-                         graphs and periodograms, their seasonality was analyzed. It was observed that none of the climatic and NDVI series studied 
-                         had a trend and it was also observed that the NDVI series had a clear annual cycle.<br>
-                    </p></div>
-                    <div class="main-card-img">
-                        <img src="img\Diagrama MAS FINO.drawio.svg" alt="">
-                            <div class="main-card-image-btn">
-                                <a type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" >500m MODIS 09A1 FILTERED SG</a>
-                                <a type="button" class="btn btn-danger btn-sm btn-block" onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')">PERIODOGRAM AND ATC</a>
-                                <a type="button" class="btn btn-success btn-sm btn-block" href="">STATISTICAL ANALYSIS OF THE CLIMATOLOGY AND VEGETATION DYNAMICS IN DUERO REGION</a>
-                            </div>                 
-        </section>
+            <div class="card">
+                <a href="statisticsProducts.html">
+                    <div class="letter">B</div>
+                    <img src="img\ImagenProductoB.png" alt="Product B">
+                </a>
+                <h4 style="color: black;">STATISTICAL PRODUCTS</h4>
+                <p style="color: black;">Results from statistical procedures applied at pixel level</p>
+                <h5 style="color: black;"><b>B</b></h5>
+            </div>
+            
 
+            <div class="card">
+                <a href="enviromentalInformation.html">
+                    <div class="letter">C</div>
+                    <img src="img\ImagenProductoC.png" alt="Product C">
+                </a>
+                <h4 style="color: black;">ENVIRONMENTAL INFORMATION</h4>
+                    <h5 style="color: black;"><b>C-Maps</b></h5>
+                    <h5 style="color: rgb(131, 130, 130);">D-Tables</h5><h5 style="color: rgb(131, 130, 130);">E-Reports</h5>	
+                    
+            </div>
+    </div> 
 
+		<!-- Start Credits -->
+		<div class="footer">
+			<div class="menu">
+				<div class="logo flex-row-left">
+				<img src="img/ESCUDO_blanco.png" width="170">
+				<p class="text text-small text-italic">
+					<span class="highlight-text">© 2023 INFOLANDYN All rights reserved.</span>
+				</p>
+				</div>
+			</div>
+		</div>
+		<!-- End Credits -->
+
+        <!-------------------------------------------------------------------------------------------->
+		<!-- javascripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/menu.js"></script>
 </body>
+
 </html>

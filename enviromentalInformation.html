@@ -74,12 +74,7 @@
                                 <a href="widgets.html">About</a>
                                 <a href="productosPrueba.html">Products</a>
                                   <div class="dropdown">
-                                    <a class="dropbtn" href="products_map.html">Viewer<i class="fas fa-caret-down"></i></a>
-                                    <div class="dropdown-content">
-                                      <a href="products_map.html">Dinamicland Mapper</a>
-                                      <a href="products_map.html">Dinamicland Indicator</a>
-                                      <a href="products_map.html">Dinamicland Field</a>
-                                    </div>
+                                    <a class="dropbtn" href="visor.html">Viewer<i class="fas fa-caret-down"></i></a>
                                   </div>
                                 <a href="news.html">News</a>
                                 <a href="https://blogs.upm.es/dynamicland/contact/" Target="_blank" >Contact</a>
@@ -236,14 +231,6 @@
                              <br>
                             </p>
                             <div class="main-card-img">
-                                <!-- <img src="img\workflowfallowed.png" alt="Workflow" usemap="#workflowproductos">
-                                <map name="workflowproductos">
-                                    <area shape="rectangle" coords="0,53,70,100" href="productosPrueba.html" title="">
-                                    <area shape="rectangle" coords="453,177,801,378" href="productosPrueba.html" title="">
-                                    <area shape="rect" coords="828,178,1176,378" href="productosPrueba.html" title="">
-                                    <area shape="rect" coords="1203,189,155,378" href="productosPrueba.html" title="">
-                                    <area shape="rect" coords="1580,179,1930,384" href="productosPrueba.html" title="">
-                                </map> -->
                                <img src="img\Diagrama MAS FINO.drawio.svg" alt="">
                                     <div class="main-card-image-btn">
                                         <a type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" >NDVI250 FILTERED</a>
@@ -651,6 +638,58 @@
                     <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
                 </div>
             </div> -->
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc16"/>
+                <label for="acc16">
+                    <h2><b>C</b></h2>
+                    <h3>CYCLE CHANGE TREND CLASSIFICATION</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card"><h3>DOWNLOADS:</h3>
+                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/record/7973930/files/FallowTemp_8bit.tif?download=1">Raster Image</a>
+                        <a class="title-card-descarga" target="_blank" id="btn-features" href="">Report</a>
+                    </div>
+                    
+                    <aside class="img-card">
+                        <div><img class="img-card-img1" src="img\resultado2.png" alt="">
+
+                            <p><b>KEYWORDS</b> <br>
+                                <b>Thematic area:</b> sustainable agriculture 
+                                <b>Specific area:</b> fallow lands 
+                                <b>Data source:</b> remote sensing
+                                <b>Sensor:</b> MODIS
+                                <b>Period start:</b> 2001
+                                <b>Period end:</b> 2012
+                                <b>Coverage:</b> regional (Spain)
+                                <b>Processing level:</b> C
+                                <b>Methodology:</b> spectral index, time series analysis,artificial intelligence, 
+                                <b>Other keyword:</b> NDVI, Spain, autocorrelation</p>
+                            </div>  
+                    </aside>
+                    <article class="main-card">
+                        <div>
+                            <img src="img\leyenda.drawio.drawio.svg" alt="">
+                            <br><h3>DESCRIPTION:</h3><p>The results obtained after classification generate a cartography that allows to observe the spatial 
+                                distribution of the different classes. These classes are used to recognize different patterns of vegetation behaviour, 
+                                identifying areas that remain unchanged and areas that have changed over the study range. It is useful to identify agricultural areas, 
+                                fires and even serve as an indicator in early warning systems to detect areas with an increase in biomass and potentially being combustible. <br>
+                            </p>
+                           
+                            <div class="main-card-img">
+                                <img src="img\Diagrama MAS FINO.drawio.svg" alt="">
+                                     <div class="main-card-image-btn">
+                                         <a type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" >NDVI250 FILTERED</a>
+                                         <a type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" >500m MODIS 09A1 FILTERED SG</a>
+                                         <a type="button" class="btn btn-danger btn-sm btn-block" onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')">PERIODOGRAM AND ATC</a>
+                                         <a type="button" class="btn btn-success btn-sm btn-block" href="">STATISTICAL ANALYSIS OF THE CLIMATOLOGY AND VEGETATION DYNAMICS IN DUERO REGION</a>
+                                     </div>    
+                               </div>
+                        </div>
+                        </article>
+                           
+                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div> 
 </section>
            
 

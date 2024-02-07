@@ -5,13 +5,13 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 .header{
   display: flex;
   justify-content: center;
   align-content: center;
   width: 100%;
 }
-
 
 .logo{
   display: flex;
@@ -271,16 +271,16 @@ position: relative;
  .main-card-image-btn{
   position: absolute;
   margin: auto;
-  top: 33px;
+  top: 25px;
   left: 1%;
   display: flex;
-  gap: 10px;
-  font-size: small;
+  gap: 5px;
   text-align: left;
-  
+  height: 60%;
+  font-size: xx-small ;
  }
  /* Estilos de los botones del workflow  y sus hover */
- /* Para cambiar la alineación del texto aplicar propiedades dentro de cada botón con tex-align, aunque si se lo aplicas al padre, debería aplicarse a los hijos */
+ /* Para cambiar la alineación del texto aplicar propiedades dentro de cada botón con text-align, aunque si se lo aplicas al padre, debería aplicarse a los hijos */
  .main-card-image-btn .btn-primary{
   text-align: left;
   border: 3px solid;
@@ -322,7 +322,7 @@ position: relative;
   
 } */
 .img-card div{
-  display: flex;
+ display: flex;
  justify-content: center;
  align-items: center;
  flex-wrap: wrap;

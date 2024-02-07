@@ -5,12 +5,13 @@
             margin: 0;
             padding: 0;
           }
-          /* .header{
+          header{
+            font-family: "Poppins", sans-serif;
+            width: 100%;
+            margin: 0 auto;
             display: flex;
             justify-content: center;
-            align-content: center;
-            width: 100%;
-          } */
+          }
           
           ul{
             list-style: square inside;
@@ -130,7 +131,9 @@
         align-content:center; */
     }
     
-
+    .boludo {
+        margin: 0;
+    }
     
     .contenedor {
         display: flex;

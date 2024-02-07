@@ -17,6 +17,10 @@ header{
   display: flex;
   justify-content: center;
 }
+
+/* Página productos */
+
+/* Fin página productos */
 ul{
   list-style: square inside;
 }

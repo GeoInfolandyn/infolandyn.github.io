@@ -196,6 +196,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 gap: 10px;
+
 }
 .title-card h3{
   display: flex;
@@ -258,61 +259,106 @@ gap: 10px;
 }
 
 .main-card-img{
-position: relative;
+width: 100%;
+display: flex;
+justify-content: center;
 
 }
 
-.main-card img{
+ .a{
+  background-color: #a4c1ec;
+  align-items: center;
+  margin: auto;
+  width: 15%;
+  height: 80px;
+  padding: 2%;
+  text-align: center;
+  font-size: small;
+  justify-content: center;
+  color: #fff;
+  border: solid 2px #3c5abb;
+ }
+ 
+ .a:hover{
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  background-color: #3e62a5b6;
+}
+ .b{
+  background-color: #d09cbd;
+  align-items:flex-start;
+  margin: auto;
+  width: 15%;
+  height: 80px;
+  padding: 2%;
+  text-align: center;
+  font-size: small;
+  justify-content: center;
+  color: #fff;
+  border: solid 2px #cf52c5;
+ }
+ .b:hover{
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  background-color: #a04398b6;
+}
+ .c{
+  background-color: #198754;
+  align-items: center;
+  margin: auto;
+  width: 20%;
+  height: 80px;
+  padding: 2%;
+  text-align: center;
+  font-size: small;
+  justify-content: center;
+  color: #fff;
+  border: solid 2px #70d6a6;
+}
+.c:hover{
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  background-color: #3d9b63;
+}
+
+.almacen{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 3%;
+}
+.cuerpoFlecha{
+background-color: #707ad6;
+width: 90%;
+display: inline-flex;
+height: auto;
+
+}
+
+.flecha{
+  display: inline-flex;
+  width: 10%;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #0955ce;
+}
+
+.tranparente{
+  background-color: none;
+  width:auto;
+}
+ /* .main-card img{
   display: flex;
   gap: 8px;
   margin: 0 auto;
-  max-width: 100%;
- }
- .main-card-image-btn{
-  position: absolute;
-  margin: auto;
-  top: 25px;
-  left: 1%;
-  display: flex;
-  gap: 5px;
-  text-align: left;
-  height: 60%;
-  font-size: xx-small ;
- }
- /* Estilos de los botones del workflow  y sus hover */
- /* Para cambiar la alineación del texto aplicar propiedades dentro de cada botón con text-align, aunque si se lo aplicas al padre, debería aplicarse a los hijos */
- .main-card-image-btn .btn-primary{
-  text-align: left;
-  border: 3px solid;
-  background-color: #a4c1ec;
- }
- .main-card-image-btn .btn-danger{
-  text-align: left;
-  border: 3px solid;
-  background-color:#d09cbd;
- }
- .main-card-image-btn .btn-sucess{
-  align-content: center;
-  border: 3px solid;
-  background-color: #198754;
- }
- .main-card-image-btn .btn-primary:hover{
-  align-content: center;
-  border: 3px solid;
-  background-color: #7ea6e0;
- }
- .main-card-image-btn .btn-danger:hover{
-  align-content: center;
-  border: 3px solid;
-  background-color: #B5739D;
- }
+  width: 100%;
+  
+ } */
+ 
 
 /* Estilos Img-card de tarjetas */
 .img-card{
  display: flex;
  justify-content: center;
  align-items: center;
-}
+} */
 
 /* .img-card div{
   display: flex;

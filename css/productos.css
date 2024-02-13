@@ -7,9 +7,12 @@
           }
           header{
             font-family: "Poppins", sans-serif;
-            width: 850px;
+            width: 100%;
             margin: 0 auto;
+            display: flex;
+            justify-content: center;
           }
+          
           ul{
             list-style: square inside;
           }
@@ -47,19 +50,6 @@
         
     }
 /* REVISAAAAR */
-    .header{
-        display: flex;
-        justify-content: center;
-    }
-
-
-    .logo{
-        display: flex;
-        justify-content: space-evenly;
-    }
-    
-  
-
     .footer{
         background-color:rgb(52, 88, 186);
 		color: #fff7f7;
@@ -141,7 +131,9 @@
         align-content:center; */
     }
     
-
+    .boludo {
+        margin: 0;
+    }
     
     .contenedor {
         display: flex;

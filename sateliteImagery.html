@@ -72,12 +72,7 @@
                                 <a href="widgets.html">About</a>
                                 <a href="productosPrueba.html">Products</a>
                                   <div class="dropdown">
-                                    <a class="dropbtn" href="products_map.html">Viewer<i class="fas fa-caret-down"></i></a>
-                                    <div class="dropdown-content">
-                                      <a href="products_map.html">Dinamicland Mapper</a>
-                                      <a href="products_map.html">Dinamicland Indicator</a>
-                                      <a href="products_map.html">Dinamicland Field</a>
-                                    </div>
+                                    <a class="dropbtn" href="visor.html">Viewer<i class="fas fa-caret-down"></i></a>
                                   </div>
                                 <a href="news.html">News</a>
                                 <a href="https://blogs.upm.es/dynamicland/contact/" Target="_blank" >Contact</a>
@@ -117,36 +112,32 @@
                     <h3>MODIS (MOD17A2H) SPECTRUM</h3>    
                 </label>
                 <div class="tab-content-grid">
-                    <div class="title-card">
-                        <h3>DOWNLOADS:</h3>
-                        <button class="title-card-descarga"><b>Raster Image</b></button>
+                    <div class="title-card">OFFICIAL SITE
+                        <button class="title-card-descarga"><b>HERE</b></button>
                     </div>
                     
                     <aside class="img-card">
-                        <div><img src="img\levelC-1.png" alt=""></div>
+                        <div><img class="img-card-img1" src="img\MODIS_LOGO.png" alt="">
+
+                            <p><b>KEYWORDS</b> <br>
+                                <b>Data source:</b> remote sensing
+                                <b>Sensor:</b> MODIS
+                                <b>Processing level:</b> C
+                                <b>Methodology:</b> spectral index, time series analysis, artificial intelligence, 
+                            </div>
                     </aside>
 
                     <article class="main-card">
-                        <div><h3>DESCRIPTION</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
-                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
-                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
-                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
+                        <div><h3>DESCRIPTION</h3><p>MOD17A2H is an 8-day composite at 1-km spatial resolution delivered as a gridded Level-4 product in Sinusoidal projection.
+                            The MODIS Adaptive Processing System (MODAPS) at the NASA Goddard Space Flight Center produces this Collection-5 GPP product. This version contains some 
+                            cloud-contaminated LAI/FPAR inputs that users should exclude by flagging them as part of the quality assessment filters. Once the cloud-contaminated pixels 
+                            are excluded, this dataset may serve the near-real-time needs for the current calendar year. 
                             </p>
-                            <div class="main-card-img"><img src="img\work.png" alt="" ></div>
+                            <div class="main-card-img"></div>
                         </div>
                     </article>
-                            
-                           
-                    <div class="credit-card"> 
-                        <p><b>Product citation:</b>
-                        Recuero, L., Wiese, K., Huesca, M., Cicuéndez, V., Litago, J., Tarquis, A. M., & Palacios-Orueta, A. (2019). Fallowing temporal patterns assessment 
-                        in rainfed agricultural areas based on NDVI time series autocorrelation values.International Journal of Applied Earth Observation and Geoinformation,82, 101890.
-                        <br>
-                        <br>
-                        <b>Copyright & License:</b>
-                        Estudiar qué tipo queremos/podemos
-                        </p>
-                    </div>
+                    <div class="credit-card"><p>Creative Commons Attribution 4.0 International</p></div>
+                </div>
                 </div>
             </div> 
             
@@ -157,16 +148,33 @@
                     <h3>MODIS(MOD09A1) SPECTRUM</h3>    
                 </label>
                 <div class="tab-content-grid">
-                    <div class="title-card">TITLE-CARD
-                        <button class="title-card-descarga"><b>Raster Image</b></button>
+                    <div class="title-card">OFFICIAL SITE
+                        <a target="_blank" href="https://lpdaac.usgs.gov/products/mod09a1v006/">
+                            <button class="title-card-descarga"><b>HERE</b></button>
+                          </a> 
+                        
                     </div>
                     
-                    <aside class="img-card">IMG-CARD</aside>
-                    <article class="main-card"> <div><h3>DESCRIPTION</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
-                        temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
-                        agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
-                        rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
-                        You can see the spatial distribution in the map viewer below.<br>
+                    <aside class="img-card">
+                        <div><img class="img-card-img1" src="img\MODIS_LOGO.png" alt="">
+
+                            <p><b>KEYWORDS</b> <br>
+                                <b>Thematic area:</b> sustainable agriculture 
+                                <b>Specific area:</b> fallow lands 
+                                <b>Data source:</b> remote sensing
+                                <b>Sensor:</b> MODIS
+                                <b>Period start:</b> 2001
+                                <b>Period end:</b> 2012
+                                <b>Coverage:</b> regional (Spain)
+                                <b>Processing level:</b> C
+                                <b>Methodology:</b> spectral index, time series analysis,artificial intelligence, 
+                                <b>Other keyword:</b> NDVI, Spain, autocorrelation</p>
+                            </div>
+                    </aside>
+                    <article class="main-card"> <div><h3>DESCRIPTION</h3><p>The Moderate Resolution Imaging Spectroradiometer (MODIS) Terra MOD09A1 Version 6 product provides an estimate of the 
+                        surface spectral reflectance of Terra MODIS Bands 1 through 7 corrected for atmospheric conditions such as gasses, aerosols, and Rayleigh scattering. Along with the seven
+                        500 meter (m) reflectance bands are two quality layers and four observation bands. For each pixel, a value is selected from all the acquisitions within the 8-day composite
+                        period. The criteria for the pixel choice include cloud and solar zenith. When several acquisitions meet the criteria the pixel with the minimum channel 3 (blue) value is used.<br>
                         </p>
                         <div class="main-card-img">
                         </div>
@@ -183,18 +191,33 @@
                     <h3>MODIS(MOD09Q1) SPECTRUM</h3>    
                 </label>
                 <div class="tab-content-grid">
-                    <div class="title-card">
-                        <h3>DOWNLOADS:</h3>
-                        <button class="title-card-descarga"><b>Raster Image</b></button>
-                        
+                    <div class="title-card">OFFICIAL SITE
+                        <a target="_blank" href="https://lpdaac.usgs.gov/products/mod09q1v061/">
+                            <button class="title-card-descarga"><b>HERE</b></button>
+                          </a> 
                     </div>
                     
-                    <aside class="img-card"><img src="img\levelC-1.png"></aside>
-                    <article class="main-card"><div><h3>DESCRIPTION</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
-                        temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
-                        agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
-                        rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
-                        You can see the spatial distribution in the map viewer below.<br>
+                    <aside class="img-card">
+                        <div><img class="img-card-img1" src="img\MODIS_LOGO.png" alt="">
+
+                            <p><b>KEYWORDS</b> <br>
+                                <b>Thematic area:</b> sustainable agriculture 
+                                <b>Specific area:</b> fallow lands 
+                                <b>Data source:</b> remote sensing
+                                <b>Sensor:</b> MODIS
+                                <b>Period start:</b> 2001
+                                <b>Period end:</b> 2012
+                                <b>Coverage:</b> regional (Spain)
+                                <b>Processing level:</b> C
+                                <b>Methodology:</b> spectral index, time series analysis,artificial intelligence, 
+                                <b>Other keyword:</b> NDVI, Spain, autocorrelation</p>
+                            </div>
+                    </aside>
+
+                    <article class="main-card"><div><h3>DESCRIPTION</h3><p>MOD09Q1 is a product from the Moderate Resolution Imaging Spectroradiometer (MODIS) aboard NASA's Terra and Aqua satellites. 
+                    It provides information on land surface reflectance at a 250-meter spatial resolution. The data are composited over an 8-day period, meaning that for each pixel, the reflectance 
+                    value represents the best observation obtained within that timeframe. <br><br> This composite approach helps to reduce the impact of clouds and atmospheric disturbances on the data, 
+                    providing more reliable and consistent information about land surface properties over time. <br>
                         </p>
                         <div class="main-card-img">
                         </div>
@@ -206,7 +229,7 @@
             <div class="tab">
                 <input type="checkbox" name="abrir" id="acc4"/>
                 <label for="acc4">
-                    <h2>A1</h2>
+                    <h2>A2</h2>
                     <h3>AVHRR-NVDI TIME SERIES</h3>    
                 </label>
                 <div class="tab-content-grid">
@@ -215,8 +238,10 @@
                         
                     </div>
                     
-                    <aside class="img-card">IMG-CARD</aside>
-                    <article class="main-card"><h2>MAIN-CARD</h2>
+                    <aside class="img-card">
+
+                    </aside>
+                    <article class="main-card"><h2>DESCRIPTION</h2>
                         <div><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
                             temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
                             agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow

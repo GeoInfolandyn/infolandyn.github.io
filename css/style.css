@@ -5,13 +5,13 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 .header{
   display: flex;
   justify-content: center;
   align-content: center;
-
+  width: 100%;
 }
-
 
 .logo{
   display: flex;
@@ -32,13 +32,13 @@
   background-color: #c9f3f9;
   color: #fff;
 }
-
+/* anchura tarjetas y secciones */
 .section {
   padding-top: 50px;
   padding-right: 50px;
   padding-left: 50px;
-  margin: 0 40px;
-  max-width: 1500px;
+  margin: auto;
+  max-width: 75%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -46,6 +46,7 @@
 /* eliminar espacio entre secciones */
 #sC1{
   padding-bottom: 50px;
+  width: 100%;
 }
 #sA2{
   padding-top: 20px;
@@ -70,6 +71,7 @@
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
   overflow: hidden;
+  
 }
 .section .tab input {
   -webkit-appearance: none;
@@ -89,7 +91,7 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 .section .tab input:checked ~ .tab-content-grid {
-  max-height: 100vh;
+  max-height: 150vh;
   transition: 1s;
   display: grid;
 }
@@ -154,6 +156,7 @@
 
 .tab-content-grid {
   display: grid;
+  width: 100%;
   gap: 20px;
   grid-template: "title-card" 200px "main-card" 100px "main-card" "credit-card";
 }
@@ -193,6 +196,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 gap: 10px;
+
 }
 .title-card h3{
   display: flex;
@@ -250,84 +254,127 @@ gap: 10px;
 }
 
 .main-card-formula-img{
-  border: solid black 1px;
-
+  justify-content: center;
+  justify-self: center;
+  margin: auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
 }
 
 .main-card-img{
-position: relative;
+width: 100%;
+display: flex;
+justify-content: center;
 
 }
 
-.main-card img{
+ .a{
+  background-color: #a4c1ec;
+  align-items: center;
+  margin: auto;
+  width: 15%;
+  height: 80px;
+  padding: 2%;
+  text-align: center;
+  font-size: small;
+  justify-content: center;
+  color: #fff;
+  border: solid 2px #3c5abb;
+ }
+ 
+ .a:hover{
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  background-color: #3e62a5b6;
+}
+ .b{
+  background-color: #d09cbd;
+  align-items:flex-start;
+  margin: auto;
+  width: 15%;
+  height: 80px;
+  padding: 2%;
+  text-align: center;
+  font-size: small;
+  justify-content: center;
+  color: #fff;
+  border: solid 2px #cf52c5;
+ }
+ .b:hover{
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  background-color: #a04398b6;
+}
+ .c{
+  background-color: #198754;
+  align-items: center;
+  margin: auto;
+  width: 20%;
+  height: 80px;
+  padding: 2%;
+  text-align: center;
+  font-size: small;
+  justify-content: center;
+  color: #fff;
+  border: solid 2px #70d6a6;
+}
+.c:hover{
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  background-color: #3d9b63;
+}
+
+.almacen{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 3%;
+}
+.cuerpoFlecha{
+background-color: #a4c1ec;
+width: 90%;
+display: inline-flex;
+height: 30px;
+justify-self: center;
+align-self: center;
+}
+
+.flecha{
+  display: inline-flex;
+  width: 10%;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid #a4c1ec;
+}
+
+.tranparente{
+  background-color: none;
+  width:auto;
+}
+ /* .main-card img{
   display: flex;
   gap: 8px;
   margin: 0 auto;
-  max-width: 100%;
- }
- .main-card-image-btn{
-  position: absolute;
-  margin: auto;
-  top: 33px;
-  left: 1%;
-  display: flex;
-  gap: 10px;
-  font-size: small;
-  text-align: left;
+  width: 100%;
   
- }
- /* Estilos de los botones del workflow  y sus hover */
- /* Para cambiar la alineación del texto aplicar propiedades dentro de cada botón con tex-align, aunque si se lo aplicas al padre, debería aplicarse a los hijos */
- .main-card-image-btn .btn-primary{
-  text-align: left;
-  border: 3px solid;
-  background-color: #a4c1ec;
- }
- .main-card-image-btn .btn-danger{
-  text-align: left;
-  border: 3px solid;
-  background-color:#d09cbd;
- }
- .main-card-image-btn .btn-sucess{
-  align-content: center;
-  border: 3px solid;
-  background-color: #198754;
- }
- .main-card-image-btn .btn-primary:hover{
-  align-content: center;
-  border: 3px solid;
-  background-color: #7ea6e0;
- }
- .main-card-image-btn .btn-danger:hover{
-  align-content: center;
-  border: 3px solid;
-  background-color: #B5739D;
- }
+ } */
+ 
 
 /* Estilos Img-card de tarjetas */
 .img-card{
  display: flex;
  justify-content: center;
- align-items: center;
-}
+} 
 
-/* .img-card div{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  flex-wrap: wrap;
-  
-} */
 .img-card div{
-  display: flex;
+ display: flex;
  justify-content: center;
  align-items: center;
  flex-wrap: wrap;
+ width: 100%;
 }
 
 .img-card-img1{
   display: flex;
-  justify-content: center;
+  justify-SELF: center;
   align-items: center;
   width: 100%;
   height: auto;
@@ -335,12 +382,11 @@ position: relative;
 }
 
 .img-card-img2{
-  margin-left: 6px;
-  margin-top: 15px;
+  margin-top: 5px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
+  justify-self: center;
+  align-self: ;
+  width: 100%;
   height: auto;
   object-fit: scale-down;
   border: solid #0955ce 1px;

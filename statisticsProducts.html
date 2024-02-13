@@ -72,12 +72,7 @@
                                 <a href="widgets.html">About</a>
                                 <a href="productosPrueba.html">Products</a>
                                   <div class="dropdown">
-                                    <a class="dropbtn" href="products_map.html">Viewer<i class="fas fa-caret-down"></i></a>
-                                    <div class="dropdown-content">
-                                      <a href="products_map.html">Dinamicland Mapper</a>
-                                      <a href="products_map.html">Dinamicland Indicator</a>
-                                      <a href="products_map.html">Dinamicland Field</a>
-                                    </div>
+                                    <a class="dropbtn" href="visor.html">Viewer<i class="fas fa-caret-down"></i></a>
                                   </div>
                                 <a href="news.html">News</a>
                                 <a href="https://blogs.upm.es/dynamicland/contact/" Target="_blank" >Contact</a>
@@ -131,7 +126,7 @@
                             The autocorrelation function (ACF) was computed for the first 150 lags using the MODIS NDVI time series from 2001 to 2012 obtained from the product MOD09Q1. 
                             The use of this ACF is highly useful to assess the temporal patterns of vegetation over agricultural or forested areas. 
                             </p></div>
-                            <img class="main-card-formula-img" src="img\Captura de pantalla 2023-11-14 131919.png" alt="">
+                            <div class="main-card-formula-img"><img  src="img\Captura de pantalla 2023-11-14 131919.png" alt=""></div>
                         </article>
                         
                     <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
@@ -434,8 +429,10 @@
                         <button class="title-card-descarga">AC at lag 3 year</button>
                 </div> 
                 <aside class="img-card">
-                    <div><h6 >Autocorrelation coefficients at lags 1, 23, 46, 92, 138</h6>
+                    <div>
+                        <h5>Autocorrelation coefficients at lags: 1, 23, 46, 92, 138</h5>
                         <img class="img-card-img2" src="img\lagsImg.png" alt="">
+                        <img  src="img\Captura de pantalla 2023-11-14 131919.png" alt="">
                     </div>
                 </aside>
                 <article class="main-card"><h3>DESCRIPTION</h3>
@@ -444,20 +441,19 @@
                         The identification of these AC values depends on the temporal frequency of satellite images. When using MOD09Q1 MODIS product which consists of 8-day composites, 
                         the annual temporal dependency is measured by the AC value at lag 46. Thus, the most important lags to assess the temporal patterns of vegetation are the AC values 
                         at lags 1, 23, 46, 92 and 138 which measures the temporal dependency of NDVI at 8 days, 6-months, one, two and three years respectively.  Each autocorrelation (AC) 
-                        coefficient is calculated according to the following equation: </p>
-                        <img class="main-card-formula-img" src="img\Captura de pantalla 2023-11-14 131919.png" alt="">      
-                    <div class="main-card-img">
-                        <img src="img\Diagrama MAS FINO.drawio.svg" alt="">
-                        <div class="main-card-image-btn">
-                                <a id="hide-button" type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('MODIS(MOD09Q1) SPECTRUM', 'A')">MODIS09Q1</a>
-                                <a type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" >NDVI250TS</a>
-                                <a type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" >NDVI250 FILTERED</a>
-                                <a type="button" class="btn btn-danger btn-sm btn-block" onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')">AUTOCORRELATION FUNCTION</a>
-                                <a type="button" class="btn btn-danger btn-sm">AUTOCORRELATION VALUES AT LAGS 8 DAYS, 6 MONTHS AND 1, 2, 3 YEARS</a>
-                        </div>    
-                    </div>
+                        coefficient is calculated according to the following equation: </p>  
+                        
+                        <div class="main-card-img">
+                               <div onclick="linkToItem('MODIS(MOD09Q1) SPECTRUM', 'A')" class="a"><b>MODIS 09Q1</b></div> 
+                               <div onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" class="a"><b>NDVI 250 TS</b></div>
+                               <div onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" class="a"><b>NDVI 250 TS <br>FILTERED</b> </div>
+                               <div onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')" class="b"><b>ACF</b></div>
+                               <div onclick="linkToItem('SPECIFIC AUTOCORRELATION COEFFICIENTS (NDVI 250m MOD09Q1)', 'B')" class="b"><b>SPECIFIC ACF</b></div>
+                        </div> 
+                        <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>   
                     </div>
                 </article>      
+               
                 <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
             </div>
         </div>

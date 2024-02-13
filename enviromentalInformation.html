@@ -192,7 +192,6 @@
                     
                     <aside class="img-card">
                         <div><img class="img-card-img1" src="img\FallowRF.png" alt="">
-
                         <p><b>KEYWORDS</b> <br>
                             <b>Thematic area:</b> sustainable agriculture 
                             <b>Specific area:</b> fallow lands 
@@ -286,14 +285,15 @@
                              <br>
                             </p>
                             <div class="main-card-img">
-                               <img src="img\Diagrama MAS FINO.drawio.svg" alt="">
-                                    <div class="main-card-image-btn">
-                                        <a type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" >NDVI250 FILTERED</a>
-                                        <a type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" >500m MODIS 09A1 FILTERED SG</a>
-                                        <a type="button" class="btn btn-danger btn-sm btn-block" onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')">PERIODOGRAM AND ATC</a>
-                                        <a type="button" class="btn btn-success btn-sm btn-block" href="">STATISTICAL ANALYSIS OF THE CLIMATOLOGY AND VEGETATION DYNAMICS IN DUERO REGION</a>
-                                    </div>    
-                              </div>
+                               <<div class="main-card-img">
+                                <div onclick="linkToItem('MODIS(MOD09Q1) SPECTRUM', 'A')" class="a"><b>MODIS 09Q1</b></div> 
+                                <div onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" class="a"><b>NDVI 250 TS</b></div>
+                                <div onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" class="a"><b>NDVI 250 TS <br>FILTERED</b> </div>
+                                <div onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')" class="b"><b>ACF</b></div>
+                                <div onclick="linkToItem('SPECIFIC AUTOCORRELATION COEFFICIENTS (NDVI 250m MOD09Q1)', 'B')" class="b"><b>SPECIFIC ACF</b></div>
+                                <div class="c"><b>FALLOW LANDS <br>REGIME</b></div>               
+                             </div>
+                                 <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
                         </div>
                     </article>
            
@@ -693,7 +693,8 @@
                     <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
                 </div>
             </div> -->
-            <div class="tab">
+            
+            <!-- <div class="tab">
                 <input type="checkbox" name="abrir" id="acc16"/>
                 <label for="acc16">
                     <h2><b>C</b></h2>
@@ -724,26 +725,27 @@
                     <article class="main-card">
                         <div>
                             <img src="img\leyenda.drawio.drawio.svg" alt="">
-                            <br><h3>DESCRIPTION:</h3><p>The results obtained after classification generate a cartography that allows to observe the spatial 
+                            <br><br><h3>DESCRIPTION:</h3><p>The results obtained after classification generate a cartography that allows to observe the spatial 
                                 distribution of the different classes. These classes are used to recognize different patterns of vegetation behaviour, 
                                 identifying areas that remain unchanged and areas that have changed over the study range. It is useful to identify agricultural areas, 
                                 fires and even serve as an indicator in early warning systems to detect areas with an increase in biomass and potentially being combustible. <br>
                             </p>
                            
                             <div class="main-card-img">
-                                <div href="" class="a"><b>MODIS 09Q1</b></div> 
-                               <div class="a"><b>NDVI 250 TS</b><button class="tranparente" onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" ></button></div>
-                               <div class="a"><b>NDVI 250 TS <br>FILTERED</b> </div>
-                               <div class="b"><b>ACF</b></div>
-                               <div class="b"><b>SPECIFIC ACF</b></div>
-                               <div class="c"><b>FALLOW LANDS <br>REGIME</b></div>  
-                            </div>
-                        </div>
-                        </article>
+                                    <div onclick="linkToItem('MODIS(MOD09Q1) SPECTRUM', 'A')" class="a"><b>MODIS 09Q1</b></div> 
+                                    <div onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" class="a"><b>NDVI 250 TS</b></div>
+                                    <div onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" class="a"><b>NDVI 250 TS <br>FILTERED</b> </div>
+                                    <div onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')" class="b"><b>ACF</b></div>
+                                    <div onclick="linkToItem('SPECIFIC AUTOCORRELATION COEFFICIENTS (NDVI 250m MOD09Q1)', 'B')" class="b"><b>SPECIFIC ACF</b></div>
+                                    <div class="c"><b>FALLOW LANDS <br>REGIME</b></div>               
+                                 </div>
+                                     <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
+                             </div>
+                         </article>
                            
                     <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
                 </div>
-            </div> 
+            </div>  -->
 </section>
            
 

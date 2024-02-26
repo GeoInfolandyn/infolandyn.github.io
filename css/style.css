@@ -177,12 +177,65 @@
   grid-area: credit-card;
   background-color: rgba(198, 221, 247, 0.74);
 }
-@media (min-width: 500px) {
+/* @media (min-width: 500px) {
   .tab-content-grid {
     grid-template: "title-card" 70px "img-card" auto "main-card" auto "credit-card " auto/auto auto;
     overflow: scroll;
   }
+} */
+
+@media screen and (max-width: 600px) {
+  
+  .section{
+    width: 100%;
+  }
+  .section .tab {
+    width: 100%; /* Ocupar el ancho completo */
+    display: block; /* Cambiar a display block para ocupar el ancho completo */
+    margin-bottom: 20px; /* Añadir margen inferior para separar las tarjetas */
+  }
+
+  /* Ajustar los estilos de las tarjetas */
+  .tab-content-grid {
+    grid-template: 
+      "title-card" auto /* Ajustar el tamaño de las filas */
+      "img-card" auto
+      "main-card" auto
+      "credit-card" auto;
+  }
+ 
+ /* Tamaño de fuente */
+ .section label h3,
+ .section .tab-content-grid p {
+   font-size: 9px;
+ }
+/* Tamaño de las imágenes dentro de main-card-img */
+.main-card-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%; /* Asegurar que se ajusten correctamente */
 }
+ /* Tamaño de las imágenes */
+ .img-card-img1,
+ .img-card-img2 {
+   width: 100%; /* Ocupar el ancho completo */
+   max-width: 100%; /* Evitar desbordamiento horizontal */
+ }
+
+ /* Ajuste del ancho de las tarjetas */
+ .section .tab {
+   width: 95%; /* Ocupar el 95% del ancho del body */
+   margin: 0 auto; /* Centrar horizontalmente */
+   margin-bottom: 20px; /* Espacio entre las tarjetas */
+ }
+ .main-card-img div {
+  width: 100%;
+  max-width: 100%; /* Asegurar que se ajusten correctamente */
+  text-align: center; /* Centrar el contenido */
+}
+}
+
 @media (min-width: 886px) {
   .tab-content-grid {
     grid-template: "title-card   title-card" 100px "img-card     main-card" auto "credit-card  credit-card" auto/30% 67%;
@@ -232,14 +285,14 @@ gap: 10px;
   background-color: #3d9b63;
 }
 #btn-features{
-  background-color: #e6d175;
+  background-color: #da9d19;
 }
 #btn-features:hover{
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
   background-color: #f39843;
 }
 #btn-graphics{
-  background-color:  #ebaeaa;
+  background-color:  #9b0e0ed0;
 }
 #btn-graphics:hover{
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
@@ -268,6 +321,25 @@ display: flex;
 justify-content: center;
 
 }
+.z{
+  background-color: #a5afbde1;
+  align-items: center;
+  margin: auto;
+  width: 10%;
+  height: 80px;
+  padding: 2%;
+  text-align: center;
+  font-size: small;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  border: solid 2px #434346;
+}
+
+  .z:hover{
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+
+  }
 
  .a{
   background-color: #a4c1ec;
@@ -310,7 +382,7 @@ justify-content: center;
   margin: auto;
   width: 20%;
   height: 80px;
-  padding: 2%;
+  padding: 1%;
   text-align: center;
   font-size: small;
   justify-content: center;
@@ -376,9 +448,9 @@ align-self: center;
   display: flex;
   justify-SELF: center;
   align-items: center;
+  object-fit: cover;
   width: 100%;
   height: auto;
-  object-fit: scale-down;
 }
 
 .img-card-img2{

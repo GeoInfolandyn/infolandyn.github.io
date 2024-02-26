@@ -19,7 +19,10 @@ function filtroProducto(){
         }
     }
 }
-
+function mod09Q1(){
+    var site = "https://lpdaac.usgs.gov/products/mod09q1v061/"
+    return site
+}
 
 function filtroA(){
     var op1 = document.getElementById("OP1");

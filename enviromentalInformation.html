@@ -109,7 +109,7 @@
         <section class="section" id="sC1">
             <h1>ENVIROMENTAL INFORMATION</h1>
             
-            <!-- <div class="tab">
+             <div class="tab">
                 <input type="checkbox" name="abrir" id="acc1"/>
                 <label for="acc1">
                     <h2><b>C</b></h2>
@@ -119,75 +119,9 @@
                     <div class="title-card">
                         <h3>DOWNLOADS:</h3>
                         <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/record/7973930/files/FallowTemp_8bit.tif?download=1">Raster Image</a>
-                        <button class="title-card-descarga" id="btn-graphics"><b>Report</b></button>
-                        <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
-                        <button class="title-card-descarga" id="btn-features"><b>Graphics</b></button>
-                        
-                    </div>
-                    
-                    <aside class="img-card">
-                        <div><img class="img-card-img1" src="img\FallowRF.png" alt="">
-
-                        <p><b>KEYWORDS</b> <br>
-                            <b>Thematic area:</b> sustainable agriculture 
-                            <b>Specific area:</b> fallow lands 
-                            <b>Data source:</b> remote sensing
-                            <b>Sensor:</b> MODIS
-                            <b>Period start:</b> 2001
-                            <b>Period end:</b> 2012
-                            <b>Coverage:</b> regional (Spain)
-                            <b>Processing level:</b> C
-                            <b>Methodology:</b> spectral index, time series analysis,artificial intelligence, 
-                            <b>Other keyword:</b> NDVI, Spain, autocorrelation</p>
-                        </div>
-                 </aside>
-
-                    <article class="main-card">
-                        <div>
-                            <img src="img\leyenda.drawio.drawio.svg" alt="">
-                            <br> <h3>DESCRIPTION:</h3>
-                            <p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
-                            temporal patterns across rainfed agricultural areas that were tested in mainland Spain. We found that approximately half of rainfed 
-                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
-                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
-                            You can see the spatial distribution in the map viewer below.
-                            <br>
-                            </p>
-                            <div class="main-card-img">
-                                
-                               <img src="img\Diagrama MAS FINO.drawio.svg" alt="">
-                                    <div class="main-card-image-btn">
-                                        <a id="hide-button" type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('MODIS(MOD09Q1) SPECTRUM', 'A')">MODIS09Q1</a>
-                                        <a type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" >NDVI250TS</a>
-                                        <a type="button" class="btn btn-primary btn-sm btn-block" onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" >NDVI250 FILTERED</a>
-                                        <a type="button" class="btn btn-danger btn-sm btn-block" onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')">AUTOCORRELATION FUNCTION</a>
-                                        <a type="button" class="btn btn-danger btn-sm" onclick="linkToItem('SPECIFIC AUTOCORRELATION COEFFICIENTS (NDVI 250m MOD09Q1)', 'B')">Autocorrelation values at lags 8 days 6 months</a>
-                                        <a type="button" class="btn btn-success btn-sm btn-block" href="">FALLOW LANDS REGIME</a>
-                                    </div>    
-                              </div>
-                        </div>
-                    </article>
-           
-                    <div class="credit-card"> 
-                        <p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p>
-                    </div>
-                </div>
-            </div>  -->
-
-            <div class="tab">
-                <input type="checkbox" name="abrir" id="acc1"/>
-                <label for="acc1">
-                    <h2><b>C</b></h2>
-                    <h3>FALLOW LANDS REGIME</h3>    
-                </label>
-                <div class="tab-content-grid">
-                    <div class="title-card">
-                        <h3>DOWNLOADS:</h3>
-                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/record/7973930/files/FallowTemp_8bit.tif?download=1">Raster Image</a>
-                        <button class="title-card-descarga" id="btn-graphics"><b>Report</b></button>
-                        <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
-                        <button class="title-card-descarga" id="btn-features"><b>Graphics</b></button>
-                        
+                        <a class="title-card-descarga" target="_blank" id="btn-features" href="https://zenodo.org/record/7973930/files/FallowTemp_8bit.tif?download=1">Features table</a>
+                        <button class="title-card-descarga" id="btn-features">Graphics</button> 
+                        <button class="title-card-descarga" id="btn-graphics">Report</button> 
                     </div>
                     
                     <aside class="img-card">
@@ -207,9 +141,8 @@
                  </aside>
 
                     <article class="main-card">
-                        <div>
-                            <img src="img\leyenda.drawio.drawio.svg" alt="">
-                            <br><br> <h3>DESCRIPTION:</h3>
+                            <img class="leyenda" src="img\leyenda.drawio.drawio.svg" alt="">
+                            <div><br><br> <h3>DESCRIPTION:</h3>
                             <p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
                             temporal patterns across rainfed agricultural areas that were tested in mainland Spain. We found that approximately half of rainfed 
                             agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
@@ -217,10 +150,10 @@
                             You can see the spatial distribution in the map viewer below.
                             <br>
                             </p>
-                            <div class="main-card-img">
-                               <div onclick="linkToItem('MODIS(MOD09Q1) SPECTRUM', 'A')" class="a"><b>MODIS 09Q1</b></div> 
-                               <div onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" class="a"><b>NDVI 250 TS</b></div>
-                               <div onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" class="a"><b>NDVI 250 TS <br>FILTERED</b> </div>
+                            <div class="main-card-imgC">
+                               <a href="https://lpdaac.usgs.gov/products/mod09q1v061/" target="_blank" class="z"><div>MOD <br> 09Q1</div></a>
+                               <div onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" class="a"><b>NDVI 250<br>TS 2000 - 2012 </b></div>
+                               <div onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" class="a"><b>FILTERED<br>TS </b> </div>
                                <div onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')" class="b"><b>ACF</b></div>
                                <div onclick="linkToItem('SPECIFIC AUTOCORRELATION COEFFICIENTS (NDVI 250m MOD09Q1)', 'B')" class="b"><b>SPECIFIC ACF</b></div>
                                <div class="c"><b>FALLOW LANDS <br>REGIME</b></div>               
@@ -271,8 +204,8 @@
                  </aside>
 
                     <article class="main-card">
+                        <img src="img\leyenda.drawio.drawio.svg" alt="">
                         <div>
-                            <img src="img\leyenda.drawio.drawio.svg" alt="">
                             <br><br><h3>DESCRIPTION:</h3>
                             <p>The objective of the present study was to analyze the dynamics of the vegetation in ribera del Duero through
                                 the use of the NDVI index and to relate this index with climatic variables to study how the climate influences the 
@@ -284,14 +217,12 @@
                                 had a trend and it was also observed that the NDVI series had a clear annual cycle.
                              <br>
                             </p>
-                            <div class="main-card-img">
-                               <<div class="main-card-img">
-                                <div onclick="linkToItem('MODIS(MOD09Q1) SPECTRUM', 'A')" class="a"><b>MODIS 09Q1</b></div> 
-                                <div onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" class="a"><b>NDVI 250 TS</b></div>
+                            <div class="main-card-imgC">
+                                <!-- <div onclick="linkToItem('MODIS(MOD09Q1) SPECTRUM', 'A')" class="a"><b>MODIS 09Q1</b></div>  -->
+                                <a href="https://lpdaac.usgs.gov/products/mod09a1v006/" target="_blank" class="z"><div>MOD<br>09A1</div></a>
                                 <div onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" class="a"><b>NDVI 250 TS <br>FILTERED</b> </div>
                                 <div onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')" class="b"><b>ACF</b></div>
-                                <div onclick="linkToItem('SPECIFIC AUTOCORRELATION COEFFICIENTS (NDVI 250m MOD09Q1)', 'B')" class="b"><b>SPECIFIC ACF</b></div>
-                                <div class="c"><b>FALLOW LANDS <br>REGIME</b></div>               
+                                <div class="c"><b>CLIMATOLOGY <br>VEGETATION<br>DUERO</b></div>               
                              </div>
                                  <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
                         </div>
@@ -304,77 +235,7 @@
             </div> 
             
 
-            <div class="tab">
-                <input type="checkbox" name="abrir" id="acc3"/>
-                <label for="acc3">
-                    <h2><b>C</b></h2>
-                    <h3>SPATIO-TEMPORAL VARIATIONS OF WATER QUALITY</h3>    
-                </label>
-                <div class="tab-content-grid">
-                    <div class="title-card">
-                        <h3>DOWNLOADS:</h3>
-                        <button class="title-card-descarga"><b>Raster Image</b></button>
-                        <button class="title-card-descarga"><b>Features table</b></button>
-                        <button class="title-card-descarga"><b>Graphics</b></button>
-                    </div>
-                    
-                    <aside class="img-card">
-                        <div><img class="img-card-img1" src="img\FallowRF.png" alt="">
-                            <p><b>KEYWORDS</b> <br>
-                                <b>Thematic area:</b> sustainable agriculture 
-                                <b>Specific area:</b> fallow lands 
-                                <b>Data source:</b> remote sensing
-                                <b>Sensor:</b> MODIS
-                                <b>Period start:</b> 2001
-                                <b>Period end:</b> 2012
-                                <b>Coverage:</b> regional (Spain)
-                                <b>Processing level:</b> C
-                                <b>Methodology:</b> spectral index, time series analysis,artificial intelligence, 
-                                <b>Other keyword:</b> NDVI, Spain, autocorrelation</p>
-                            </div>
-                    </aside>
-                    <article class="main-card">
-                        <img src="img\leyenda.drawio.drawio.svg" alt=""><div>
-                            <br><br><h3>DESCRIPTION:</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
-                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
-                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
-                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
-                            You can see the spatial distribution in the map viewer below <br>
-                            </p></div></article>
-                           
-                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
-                </div>
-            </div>
-
-            <div class="tab">
-                <input type="checkbox" name="abrir" id="acc4"/>
-                <label for="acc4">
-                    <h2><b>C</b></h2>
-                    <h3>FOREST AS CARBON SINKERS OR CARBON EMITTERS</h3>    
-                </label>
-                <div class="tab-content-grid">
-                    <div class="title-card"><h3>DOWNLOADS:</h3>
-                        <button class="title-card-descarga"><b>Raster Image</b></button>
-                        <button class="title-card-descarga"><b>Features table</b></button>
-                        <button class="title-card-descarga"><b>Graphics</b></button>
-                    </div>
-                    
-                    <aside class="img-card">IMG-CARD</aside>
-                    <article class="main-card">
-                        <div>
-                            <img src="img\leyenda.drawio.drawio.svg" alt="">
-                            <br><h3>DESCRIPTION:</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
-                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
-                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
-                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
-                            You can see the spatial distribution in the map viewer below <br>
-                            </p></div></article>
-                           
-                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
-                </div>
-            </div>
             
-
             <div class="tab">
                 <input type="checkbox" name="abrir" id="acc5"/>
                 <label for="acc5">
@@ -389,36 +250,42 @@
                     </div>
                     
                     <aside class="img-card">
-                        <div><img src="img\levelC-1.png" alt=""><p><b>KEYWORDS:</b><br>AVHRR, SEASONALITY, VEGETATION DYNAMICS, STABILITY, BIOCLIMATE, NDVI, TIME SERIES, PLURI-ANNUAL CYCLES, 
-                            SPETRAL ANALYSIS, PERIODOGRAM, LAND SURFACE PHENOLOGY</p></div>
+                        <div><img class="img-card-img1" src="img\prueba_number_cycles.png" alt="">
+                            <p><b>KEYWORDS:</b><br>AVHRR, SEASONALITY, VEGETATION DYNAMICS, STABILITY, BIOCLIMATE, NDVI, TIME SERIES, PLURI-ANNUAL CYCLES, 
+                                SPETRAL ANALYSIS, PERIODOGRAM, LAND SURFACE PHENOLOGY</p>
+                                <p><b>Product citation</b><br><i>Recuero, L., Litago, J., Pinzón, J. E., Huesca, M., Moyano, M. C., & Palacios-Orueta, A. (2019). Mapping periodic patterns of global 
+                                    vegetation based on spectral analysis of NDVI time series. Remote sensing, 11(21), 2497.</i>
+                                </p>
+                            </div> 
                     </aside>
 
                     <article class="main-card">
-                        <div>
                             <img src="img\leyenda.drawio.drawio.svg" alt="">
-                            <br><br><h3>DESCRIPTION:</h3><p>Using the AVHRR product provided by NOAA, the NDVI time series has been calculated, a periodogram has been made to study 
-                            different factors that affect the periodicity of the vegetative cycles. In this case, the number of seasonal cycles of vegetation it is presented</p>
-                            <p><b>Product citation</b><br><i>Recuero, L., Litago, J., Pinzón, J. E., Huesca, M., Moyano, M. C., & Palacios-Orueta, A. (2019). Mapping periodic patterns of global 
-                            vegetation based on spectral analysis of NDVI time series. Remote sensing, 11(21), 2497.</i>
-                            </p></div>
-                            <div class="main-card-img">
-                                <div href="" class="a"><b>MODIS 09Q1</b></div> 
-                               <div class="a"><b>NDVI 250 TS</b><button class="tranparente" onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" ></button></div>
-                               <div class="a"><b>NDVI 250 TS <br>FILTERED</b> </div>
-                               <div class="b"><b>ACF</b></div>
-                               <div class="b"><b>SPECIFIC ACF</b></div>
-                               <div class="c"><b>FALLOW LANDS <br>REGIME</b></div> 
-                            </div>
+                            <div><br><br><h3>DESCRIPTION:</h3><p>Using the AVHRR product provided by NOAA, the NDVI time series has been calculated, a periodogram has been made to study different factors that affect the periodicity of the vegetative cycles. In this case, the number of seasonal cycles of vegetation.
+                                <br>
+                                <b>Value 1:</b> one cycle
+                                <br>
+                                <b>Value 2:</b> two cycles
+                                <br>
+                                <b>Value 3:</b> three cycles</p>
+                           </div>
+                            <div class="main-card-imgC">
+                                <!-- <div class="z"><a target="_blank" href="https://lpdaac.usgs.gov/products/mod09q1v061/"> <button class="site"><b>MOD <br>09Q1</b></button></a></div>  -->
+                                <a href="https://www.earthdata.nasa.gov/sensors/avhrr" target="_blank" class="z"><div>AVHRR-NDVI</div></a>
+                                <div onclick="linkToItem('AVHRR NDVI Time Series', 'A')" class="a"><b>AVHRR NDVI <br>TS</b></div>
+                                <div onclick="linkToItem('PERIODOGRAM AVHRR-NDVI', 'B')" class="b"><b>PERIODOGRAM</b></div>
+                                <div class="c"><b>AMPLITUDE  OF SEASONAL<br>CYCLES</b></div>               
+                                <div class="c"><b>FALLOW LANDS <br>REGIME</b></div>               
+                             </div>
+                                 <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
+                         
                     </article>
+                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International<br><img src="img\sellocreativecommons.png" alt=""></p></div>
+                    <!-- <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International <br>cc-by-4.0 icon
+                                Creative Commons Attribution 4.0 International</p> -->
+                            
+                            </div></div>
 
-                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p><p>cc-by-4.0 icon
-                                Creative Commons Attribution 4.0 International</p>
-                            <br><img src="img\sellocreativecommons.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    
             <div class="tab">
                 <input type="checkbox" name="abrir" id="acc6"/>
                 <label for="acc6">
@@ -427,21 +294,34 @@
                 </label>
                 <div class="tab-content-grid">
                     <div class="title-card"><h3>DOWNLOADS:</h3>
-                        <button class="title-card-descarga"><b>Raster Image</b></button>
+                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/records/8038604/files/SA_82-16.tif?download=1">Raster Image</a> 
                         <button class="title-card-descarga"><b>Features table</b></button>
                         <button class="title-card-descarga"><b>Graphics</b></button>
                     </div>
                     
-                    <aside class="img-card">IMG-CARD</aside>
+                    <aside class="img-card">
+                        <div><img class="img-card-img1" src="img\avhrr_amplitude.jpg" alt="">
+                            <p><b>KEYWORDS</b> <br>
+                                <b>Thematic area:</b> 
+                                <b>Data source:</b> remote sensing
+                                <b>Sensor:</b> AVHRR
+                                <b>Processing level:</b> C
+                                <b>Methodology:</b> spectral index, time series analysis,artificial intelligence, 
+                            </div>
+                    </aside>
                     <article class="main-card">
-                        <div>
-                            <img src="img\leyenda.drawio.drawio.svg" alt="">
-                            <br><br><h3>DESCRIPTION:</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
-                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
-                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
-                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
-                            You can see the spatial distribution in the map viewer below <br>
-                            </p></div>
+                        <img src="img\leyenda.drawio.drawio.svg" alt="">
+                        <div><br><br><h3>DESCRIPTION:</h3><p>Using the AVHRR product provided by NOAA, the NDVI time series has been calculated, a periodogram 
+                                has been made to study different factors that affect the periodicity of the vegetative cycles. In this case, the amplitude of the cycles.<br>
+                            </p>
+                            <div class="main-card-imgC"> 
+                                <a href="https://www.earthdata.nasa.gov/sensors/avhrr" target="_blank" class="z"><div>AVHRR-NDVI</div></a>
+                                <div onclick="linkToItem('AVHRR NDVI Time Series', 'A')" class="a"><b>AVHRR NDVI <br>TS</b></div>
+                                <div onclick="linkToItem('PERIODOGRAM AVHRR-NDVI', 'B')" class="b"><b>PERIODOGRAM</b></div>
+                                <div class="c"><b>AMPLITUDE  OF SEASONAL<br>CYCLES</b></div>               
+                             </div>
+                                 <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
+                         </div>
                     </article>
                            
                     <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
@@ -462,15 +342,21 @@
                         <button class="title-card-descarga" id="btn-graphics"><b>Graphics</b></button>
                     </div>
                     
-                    <aside class="img-card">IMG-CARD</aside>
+                    <aside class="img-card">
+                        <div><img class="img-card-img1" src="img\Stabily_of_Seasonal_Cycles.png" alt="">
+                            <p><b>KEYWORDS</b> <br>
+                                <b>Thematic area:</b> 
+                                <b>Data source:</b> remote sensing
+                                <b>Sensor:</b> AVHRR
+                                <b>Processing level:</b> C
+                                <b>Methodology:</b> spectral index, time series analysis,artificial intelligence, 
+                            </div>
+                    </aside>
                     <article class="main-card">
-                        <div>
-                            <img src="img\leyenda.drawio.drawio.svg" alt="">
-                            <br><br><h3>DESCRIPTION:</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
-                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
-                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
-                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
-                            You can see the spatial distribution in the map viewer below <br>
+                        <img src="img\leyenda.drawio.drawio.svg" alt="">
+                        <div><br><br><h3>DESCRIPTION:</h3><p>Using the AVHRR product provided by NOAA, the NDVI time series has been 
+                                calculated, a periodogram has been made to study different factors that affect the periodicity of 
+                                the vegetative cycles. In this case, the Stability of seasonal cycles of vegetation.<br>
                             </p></div>
                     </article>
                            
@@ -586,32 +472,7 @@
                 </div>
             </div>   -->
             
-            <div class="tab">
-                <input type="checkbox" name="abrir" id="acc12"/>
-                <label for="acc12">
-                    <h2><b>C</b></h2>
-                    <h3>GRASSLANDS TRENDS</h3>    
-                </label>
-                <div class="tab-content-grid">
-                    <div class="title-card"><h3>DOWNLOADS:</h3>
-                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/record/7973930/files/FallowTemp_8bit.tif?download=1">Raster Image</a>
-                        <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
-                        <button class="title-card-descarga" id="btn-graphics"><b>Graphics</b></button>
-                    </div>
-                    
-                    <aside class="img-card">IMG-CARD</aside>
-                    <article class="main-card">
-                        <div>
-                            <br><br><h3>DESCRIPTION:</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
-                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
-                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
-                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
-                            You can see the spatial distribution in the map viewer below <br>
-                            </p></div></article>
-                           
-                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
-                </div>
-            </div>
+            
 
             <!-- <div class="tab">
                 <input type="checkbox" name="abrir" id="acc13"/>
@@ -746,6 +607,60 @@
                     <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
                 </div>
             </div>  -->
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc13"/>
+                <label for="acc13">
+                    <h2><b>C</b></h2>
+                    <h3>Mapping Cropland Intensification in Ecuador through Spectral Analysis of MODIS NDVI Time Series</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card"><h3>DOWNLOADS:</h3>
+                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/record/7973930/files/FallowTemp_8bit.tif?download=1">Raster Image</a>
+                        <button class="title-card-descarga" id="btn-features">Features table</button>
+                        <button class="title-card-descarga" id="btn-graphics">Graphics</button>
+                    </div>
+                    
+                    <aside class="img-card">
+                        <div><h3>RESULTS</h3><img class="img-card-img1" src="img\GIF-C.gif" alt="">
+                        <p><b>KEYWORDS</b> <br>
+                                <b>Thematic area:</b> sustainable agriculture 
+                                <b>Specific area:</b> fallow lands 
+                                <b>Data source:</b> remote sensing
+                                <b>Sensor:</b> MODIS
+                                <b>Period start:</b> 2001
+                                <b>Period end:</b> 2012
+                                <b>Coverage:</b> regional (Spain)
+                                <b>Processing level:</b> C
+                                <b>Methodology:</b> spectral index, time series analysis,artificial intelligence, 
+                                <b>Other keyword:</b> NDVI, Spain, autocorrelation</p>
+                            </div>
+                    </aside>
+                    <article class="main-card">
+                        <div>
+                            <img class="leyenda" src="img\leyenda.drawio.drawio.svg" alt="">
+                            <br><br><h3>DESCRIPTION:</h3><p>The main objective of this research was to assess cropland intensification by means of spectral analysis of MODIS NDVI time series in a high cloudiness tropical 
+                                area such as Ecuador. A surface of 89,225 ha of the main staple crops in this country, which are rice and maize crops, was monitored to assess the evolution of the number of crop cycles. 
+                                The 20-year period of NDVI time series was used to calculate the periodograms across four subperiods (2001–2005, 2006–2010, 2011–2015, 2016–2020). The maximum ordinate value of each periodogram 
+                                was used as an indicator of the number of growing crop cycles per year identifying single-, double-, and triple-cropping systems in each subperiod. Cropland intensification was assessed by comparing 
+                                the cropping system between the subperiods. Results reveal that more than half of the studied croplands experienced changes in the cropping systems, and 40% showed positive trends in terms of the 
+                                number of growing crop cycles, being principally located near the main rivers where irrigation facilitates crop development during the dry season. <br>
+                            </p>
+                            <div class="main-card-imgC">
+                                <!-- <div class="z"><a target="_blank" href="https://lpdaac.usgs.gov/products/mod09q1v061/"> <button class="site"><b>MOD <br>09Q1</b></button></a></div>  -->
+                                <a href="https://lpdaac.usgs.gov/products/mod09q1v061/" target="_blank" class="z"><div>MOD <br> 09A1</div></a>
+                                <div onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" class="a"><b>NDVI 500<br>TS 2001 - 2020 </b></div>
+                                <div onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" class="a"><b>FILTERED<br>TS </b> </div>
+                                <div onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')" class="b"><b>PERIODOGRAM</b></div>
+                                <div class="c"><b>CROPLAND <br>INTENSIFICATION</b></div>               
+                             </div>
+                                 <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
+                        </div>
+                        </article>
+                           
+                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>
+            
 </section>
            
 

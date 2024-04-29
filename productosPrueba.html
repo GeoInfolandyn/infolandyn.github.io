@@ -5,111 +5,55 @@
 <head>
 	<title>INFOLANDYN</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-	<link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
-	<link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
-	<link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
-	<link href="custom.css" media="screen" rel="stylesheet" type="text/css" />
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
 	<link rel="shortcut icon" href="img/infolandyn.png"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
 	<link href="css\productosdef.css" media="screen" rel="stylesheet" type="text/css" />
 	
-	<style>
-		.menu-index {
-			color: rgb(255, 255, 255) !important;
-			opacity: 1 !important;
-			font-weight: 700 !important;
-		}
-		.menu-container{
-			background-color:rgb(52, 88, 186);
-			color: #fff7f7;
-			display: flex;
-			flex-wrap: wrap;
-			align-content:end;
-			justify-content: center;
-			
-
-		}
-		.logo-font-2{
-			color: #00ffff;
-		}
-		
-		.verticalLine{
-			margin-top: 10px;
-		}
-		.fondo{
-			width: 100%;
-			background-color: rgb(255, 255, 255);
-		}
-		.card p{
-			font-size: large;
-		}
-		.text{
-			text-align:justify;}
-		
-	</style>
 </head>
-<!-- end: Head -->
+
 
 <body>
-	<div class="header">
-	<header>
-	 <!--<div class="menu-table flex-row-space-between">-->
-		<div class="logo flex-row-center">
-		  <img src="img/geo.jpg" width="70"><img src="img/upm.png" width="70"><img src="img/Logo_URJC.png" width="70">	
-			<div class="logo flex-row-center">
-				<img src="img/infolandyn.png" width="70">
-				<div>
-					<span>INFORMATION SYSTEM TO MONITOR<br>
-					GLOBAL CHANGE IMPACTS</span>
-				</div>
-			</div>
-		</div>
-	</header>
-  </div>
-	<!-- MENU --> 
-	<div class="menu-container">
-		<div class="menu ">
-			<div class="menu-table flex-row-space-between ">
-				<a class="menu-button" tabindex="0" href="javascript:void(0)">
-				<img src="img/menu.png"></a>
-				<!-- TODO: justificar los items del menu a los margenes para que este centrado -->
-					<div class="menu-items flex-row-center flex-item"> 
-						<a href="index.html" class="menu-index"><span class="logo-font-1">INFOLANDYN</span><span class="logo-font-2"><i>Project</i></span></a>
-						<!--<a href="index.html" class="menu-index" class="logo-font-3"><b>Home</b></a> -->
-						<a href="widgets.html">About</a>
-						<a href="products.html"><b>Products</b></a>
-						  <div class="dropdown">
-							<a class="dropbtn" href="visor.html">Viewer<i class="fas fa-caret-down"></i></a>
-						  </div>
-						<a href="news.html">News</a>
-						<a href="https://blogs.upm.es/dynamicland/contact/" Target="_blank" >Contact</a>
-					</div>
-			</div>
-		</div> 
+	<div class="logo">
+		<img src="img\Logo Qubidy_sin_fondo.png" alt="geoqubdy">
+		<img src="img\LOGOTIPOpolitec_header.png" alt="Politécnica">
+		<img src="img/Logo_URJC.png" alt="URJC">
+		<img src="img\Logo_INFOLANDYN_sin_fondo.png" alt="Infolandyn">
+		<div class="cabecera">INFORMATION SYSTEM TO MONITOR <br>
+			GLOBAL CHANGE IMPACTS</div>
 	</div>
+	<header class="header">
+		<nav>
+			<ul class="nav-links">
+				<a href="index.html"><span class="fuentenav1">INFOLANDYN</span><span class="fuentenav2">PROJECT</span></a>
+				<a href="widgets.html">About</a>
+				<a href="productosPrueba.html">Products</a>
+				<a href="visor.html">Viewer</a>
+				<a href="news.html">News</a>
+				<a href="https://blogs.upm.es/dynamicland/contact/" Target="_blank">Contact</a>
+			</ul>
+		</nav>
+	</header>
 
 		<!-- Start Products -->
-			<div class="fondo">
 			<div class="contexto">
 				<h2>MODELING LAND COVER DYNAMICS</h2>
-				<img src="img\sky.jpg" alt="" id="bannerProductos"> 
-				
+				<img src="img\sky.jpg" alt="" id="bannerProductos"> 	
 			</div>
-			</div>
-	
+
 			<div class="container">
-				
 					<div class="card">
 						<a href="sateliteImagery.html">
 							<div class="letter">A</div>
 							<img src="img\ImagenProductoA.jpg" alt="Product A">
 						</a>
-						<h4 style="color: black;">SATELLITE DATA</h4>
-						<p style="color: black;">Earth observation data and products</p>
-						<h5 style="color: black;"><br><b>A</b></h5>
+						<div class="info">
+							<h4 style="color: black;"><b>SATELLITE DATA</b></h4>
+							<p style="color: black;">Earth observation data and products</p>
+							<h5 class="categoria" style="color: black;"><br><b>A</b></h5>
+						</div>
 					</div>
 					
 					<div class="card">
@@ -117,9 +61,11 @@
 							<div class="letter">B</div>
 							<img src="img\ImagenProductoB.png" alt="Product B">
 						</a>
-						<h4 style="color: black;">STATISTICAL PRODUCTS</h4>
-						<p style="color: black;">Results from statistical procedures applied at pixel level</p>
-						<h5 style="color: black;"><b>B</b></h5>
+						<div class="info">
+							<h4 style="color: black;"><b>STATISTICAL PRODUCTS</b></h4>
+							<p style="color: black;">Results from statistical procedures applied at pixel level</p>
+							<h5 class="categoria" style="color: black;"><b>B</b></h5>
+						</div>
 					</div>
 					
 
@@ -128,28 +74,23 @@
 							<div class="letter">C</div>
 							<img src="img\ImagenProductoC.png" alt="Product C">
 						</a>
-						<h4 style="color: black;">ENVIRONMENTAL INFORMATION</h4>
-							<h5 style="color: black;"><b>C-Maps</b></h5>
+						<div class="info">
+							<h4 style="color: black;"><b>ENVIRONMENTAL INFORMATION</b></h4>
+							<p style="color: black;">Final products obtained</p>
+							<h5 class="categoria" style="color: black;"><b>C-Maps</b></h5>
 							<h5 style="color: rgb(131, 130, 130);">D-Tables</h5><h5 style="color: rgb(131, 130, 130);">E-Reports</h5>	
-							
+						</div>
 					</div>
 			</div> 
-			
-
-
-		
-		
 			<!-- Start Credits -->
-		<div class="footer">
-			<div class="menu">
-				<div class="logo flex-row-left">
-				<img src="img/ESCUDO_blanco.png" width="170">
-				<p class="text text-small text-italic">
-					<span class="highlight-text">© 2023 INFOLANDYN All rights reserved.</span>
-				</p>
-				</div>
-			</div>
-		</div>
+			<footer class=footer>
+				<div class="piepagina">
+					<img src="img/ESCUDO_blanco.png" width="170">
+					<p class="text text-small text-italic">
+						© 2023 INFOLANDYN All rights reserved.
+					</p>
+					</div>
+			</footer>
 			<!-- End Credits -->
 
 			<!-------------------------------------------------------------------------------------------->

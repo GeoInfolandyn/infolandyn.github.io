@@ -1,22 +1,144 @@
 
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
-.menu-container{
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica", sans-serif;
+  }
+  
+    body{
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+  
+    .header{
+      background-color:rgb(52, 88, 186);
+      color: #fff7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 5%;
+      padding: 0%;
+    }
+  
+    .logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+      padding: 6px 2%;
+    }
+  
+    .logo img{
+      width: 70px;
+      height: auto; 
+    }
+   
+
+  /* añadir un cambio para dispositivos móviles */
+  @media (max-width: 600px){
+    .logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+      padding: 6px 2%;
+    }
+  
+    .logo img{
+      width: 15%;
+      height: auto; 
+    }
+    .cabecera{
+      display: flex;
+      justify-content: center;
+      margin: 5px;
+      font-size: 11px;
+    }
+
+    .container{
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-wrap: wrap;
+      height: 80%;
+      justify-content: center;
+      gap: 55px;
+      padding: 40px 20px; /* Ajuste de los márgenes */
+      margin: auto;
+    }
+    .container .card{
+      width:100%; /* Ajusta el ancho según tus preferencias */
+      margin:20px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff7f7;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.5s;
+      position: relative;
+      height: 450px; /* Ajusta el alto según tus preferencias */
+    }
+  }
+  /* fin del mediaquerey para móviles */
+  
+    .cabecera{
+      display: flex;
+      justify-content: center;
+      margin: 5px;
+      padding-left: 0.5%;
+    }
+  
+    .header .nav-links{
+      list-style: none;
+    }
+  
+    .header .nav-links a{
+      display: inline-block;
+      padding: 0 8px;
+      font-size: 20px;
+      color: antiquewhite;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  
+    .header .nav-links a:hover{
+      transform: scale(1.1);
+      color: #ffffff;
+    }
+  
+    .fuentenav1 {
+      font-family: "SVG_Trade_Gothic_XBold";
+      font-size: 30px;
+      line-height: 33px;}
+      
+      .fuentenav2 {
+        font-family: "Ernest&Emily";
+        font-size: 20px;
+        line-height: 33px;
+        color: #00ffff;
+      }
+
+   .footer{
+      background-color:rgb(52, 88, 186);
+      color: #fff7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+    
+      margin-top: auto;
+   }
+  
+   .piepagina{
     display: flex;
-    flex-wrap:wrap;
-    align-content:end;
-    justify-content: center;
-    width: 100%;
-    
-}
+    justify-content: space-between;
+    align-items: center;
+   }
 /* REVISAAAAR */
-.footer{
-    background-color:rgb(52, 88, 186);
-    color: #fff7f7;
-    bottom: 0;
-    width:100%;
-    margin-left: 0;
-    
-}
+
 
 .contexto{
     padding-top: 20px;
@@ -32,6 +154,7 @@
     position: absolute;
     top: 35%;
     bottom: 50%;
+    text-align: center;
 }
   
 #bannerProductos{
@@ -63,7 +186,7 @@ margin-top: 12px;
 }
 
 
-#boton1{
+/* #boton1{
     width: 180px;
     height: 30px;
     font-size:18px;
@@ -76,19 +199,19 @@ margin-top: 12px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+} */
 
 
-.contenido{
+/*.contenido{
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* width: 100%;
+     width: 100%;
     height: 100%;
     background-color: rgb(255, 255, 255);
     flex-wrap: wrap;
-    align-content:center; */
-}
+    align-content:center; 
+}*/
 
 
 
@@ -106,33 +229,35 @@ margin-top: 12px;
     gap: 20px;
     padding: 40px 100px 10px 100px;
 }
+
+/* LO IMPORTANTE DE  LA PÁGINA DE PRODUCTOS */
 .container{
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
-    max-width: 1200px;
-    height: 80%;
+    max-width: 1400px;
+    display: flex;
+    height: 100%;
     justify-content: center;
     gap: 55px;
     padding: 40px 20px; /* Ajuste de los márgenes */
     margin: auto;
 }
 .container .card{
-    width:350px; /* Ajusta el ancho según tus preferencias */
-    height: 450px; /* Ajusta el alto según tus preferencias */
+    width:100%; /* Ajusta el ancho según tus preferencias */
+    margin:20px;
     border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    text-align: center;
     overflow: hidden;
-    margin-bottom: 20px; /* El margen de las tarjetas inferior para alejarlo del footer */ 
-    margin-top: 20px;
+    background: #fff7f7;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-align: center;
     transition: all 0.5s;
     position: relative;
+    height: 460px; /* Ajusta el alto según tus preferencias */
 }
 
 .container .card:hover{
     transform: scale( 1.15);
-    box-shadow: 0 8px 16px rgb(52, 88, 186);
+    box-shadow: 4px 8px 16px rgb(52, 88, 186);
 }
 
 .card .letter {
@@ -149,25 +274,32 @@ margin-top: 12px;
 }
 
  .container .card img{
-width: 100%;
-height: 100%; /* Ajusta el porcentaje de altura según tus preferencias */
-object-fit: cover; /* Evita que la imagen se deforme */
-border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior de la img de la tarjeta */
-   
-}
+    width: 100%;
+    height: 330px; /* Ajusta el porcentaje de altura según tus preferencias */
+    object-fit: cover; /* Evita que la imagen se deforme */
+    border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior de la img de la tarjeta */
+    }
+
 .container .card h4{
-font-weight: 400;
-padding: 8px;
-color: black;
-}
+    font-weight: 400;
+    padding: 8px;
+    color: black;
+    }
+
 .container .card p{
     font-weight: 300;
-}
+    }
 
 
 .container .card a{
     text-decoration: none;
 } 
+
+.categoria{
+  font-weight: bold;
+  font-size: large;
+  margin-top: 6px;
+  }
 
 /* filtros búsqueda productos */
 .filtros{

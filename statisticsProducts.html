@@ -1,85 +1,37 @@
 <!DOCTYPE html>
     <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-	<link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
-	<link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
-	<link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
-	<link href="custom.css" media="screen" rel="stylesheet" type="text/css" />
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-	<link rel="shortcut icon" href="img/infolandyn.png"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css\productos.css">
-    <link rel="stylesheet" href="css/style.css">
-        <title>Satelite Imagery</title>
-        <style>
-            .menu-index {
-                color: rgb(255, 255, 255) !important;
-                opacity: 1 !important;
-                font-weight: 700 !important;
-            }
-            .menu-container{
-                background-color:rgb(52, 88, 186);
-                color: #fff7f7;
-                display: flex;
-                flex-wrap: wrap;
-                align-content:end;
-                justify-content: center;
-            }
-            .verticalLine{
-                margin-top: 10px;
-            }
-            .logo-font-2{
-                color: #00ffff;
-            }
-            .department{
-                margin-top: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="header">
-            <header>
-             <!--<div class="menu-table flex-row-space-between">-->
-                <div class="logo flex-row-center">
-                  <img src="img/geo.jpg" width="70"><img src="img/upm.png" width="70"><img src="img/Logo_URJC.png" width="70">
-                    <a href="index.html"><font color="black"><H3><font color="black"><p style = "font-family:arial;"><font size=5>  <br>  </p></H3></font></a>
-                    <!--</div>-->
-                    <div class="logo flex-row-center">
-                        <img src="img/infolandyn.png" width="70">
-                        <div class="verticalLine">
-                            <p align="justify">INFORMATION SYSTEM TO MONITOR<br>
-                            GLOBAL CHANGE IMPACTS</p>
-                        </div>
-                    </div>
-                </div>
-            </header>
-          </div>
-            <!-- MENU --> 
-            <div class="menu-container">
-                <div class="menu ">
-                    <div class="menu-table flex-row-space-between ">
-                        <a class="menu-button" tabindex="0" href="javascript:void(0)">
-                        <img src="img/menu.png"></a>
-                        <!-- TODO: justificar los items del menu a los margenes para que este centrado -->
-                            <div class="menu-items flex-row-center flex-item"> 
-                                <a href="index.html" class="menu-index"><span class="logo-font-1">INFOLANDYN </span> <span class="logo-font-2"><i> Project</i></span><span class="logo-font-1"></span></a>
-                                <!--<a href="index.html" class="menu-index" class="logo-font-3"><b>Home</b></a> -->
-                                <a href="widgets.html">About</a>
-                                <a href="productosPrueba.html">Products</a>
-                                  <div class="dropdown">
-                                    <a class="dropbtn" href="visor.html">Viewer<i class="fas fa-caret-down"></i></a>
-                                  </div>
-                                <a href="news.html">News</a>
-                                <a href="https://blogs.upm.es/dynamicland/contact/" Target="_blank" >Contact</a>
-                            </div>
-                    </div>
-                </div> 
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/infolandyn.png"/>
+        
+        <link rel="stylesheet" href="css\productosdef.css">
+        <link rel="stylesheet" href="css/style.css">
+            <title>Statistics Products</title>
+    
+        </head>
+        <body>
+            <div class="logo">
+                <img src="img\Logo Qubidy_sin_fondo.png" alt="geoqubdy">
+                <img src="img\LOGOTIPOpolitec_header.png" alt="Politécnica">
+                <img src="img/Logo_URJC.png" alt="URJC">
+                <img src="img\Logo_INFOLANDYN_sin_fondo.png" alt="Infolandyn">
+                <div class="cabecera">INFORMATION SYSTEM TO MONITOR <br>
+                    GLOBAL CHANGE IMPACTS</div>
             </div>
+            <header class="header">
+                <nav>
+                    <ul class="nav-links">
+                        <a href="index.html"><span class="fuentenav1">INFOLANDYN</span><span class="fuentenav2">PROJECT</span></a>
+                        <a href="widgets.html">About</a>
+                        <a href="productosPrueba.html">Products</a>
+                        <a href="visor.html">Viewer</a>
+                        <a href="news.html">News</a>
+                        <a href="https://blogs.upm.es/dynamicland/contact/" Target="_blank">Contact</a>
+                    </ul>
+                </nav>
+            </header>
             <!-- Fin menu -->
             
             <!-- Botón Subdivision -->
@@ -124,6 +76,40 @@
                         <div class="leyenda"><img src="img\leyenda.drawio.drawio.svg" alt=""></div>
                         <div><p><h3>DESCRIPTION</h3>
                             The autocorrelation function (ACF) was computed for the first 150 lags using the MODIS NDVI time series from 2001 to 2012 obtained from the product MOD09Q1. 
+                            The use of this ACF is highly useful to assess the temporal patterns of vegetation over agricultural or forested areas.</p>
+                            <img class="main-card-formula-img" src="img\Captura de pantalla 2023-11-14 131919.png" alt="">
+                            <div class="main-card-imgB"> 
+                                <div onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" class="a2v"><b>NDVI 250<br>TS 2000 - 2012 </b></div>
+                                <div onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" class="a2v"><b>FILTERED<br>TS </b> </div>
+                                <div onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')" class="b2v"><b>ACF</b></div>          
+                             </div>
+                                 <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div></div>
+                        </article>
+                        
+                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>
+
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc23"/>
+                <label for="acc23">
+                    <h2>B1</h2>
+                    <h3>AUTOCORRELATION FUNCTION (NDVI 500m MOD09A1)</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card"><h3>DOWNLOADS:</h3>
+                        <a class="title-card-descarga" target="_blank" id="btn-productsB" href="https://zenodo.org/records/10721593/files/ACF_NDVI_250M-01-12_filtrada.tif?download=1">First 100 lags</a>
+                    </div>
+                    
+                    <aside class="img-card">
+                        <img class="img-card-img1" src="img\autocorrelationFuntion.jpg" alt="">
+                    
+                    </aside>
+
+                    <article class="main-card">
+                        <div class="leyenda"><img src="img\leyenda.drawio.drawio.svg" alt=""></div>
+                        <div><p><h3>DESCRIPTION</h3>
+                            The autocorrelation function (ACF) was computed for the first 332 lags using the MODIS NDVI time series from 2002 to 2020 obtained from the product MOD09A1. 
                             The use of this ACF is highly useful to assess the temporal patterns of vegetation over agricultural or forested areas.</p>
                             <img class="main-card-formula-img" src="img\Captura de pantalla 2023-11-14 131919.png" alt="">
                             <div class="main-card-imgB"> 
@@ -314,17 +300,15 @@
         
     </section>
     
-            <!-- Start Credits -->
-        <div class="footer">
-			<div class="menu">
-				<div class="logo flex-row-left">
-				<img src="img/ESCUDO_blanco.png" width="170">
-				<p class="text text-small text-italic">
-					<span class="highlight-text">© 2023 INFOLANDYN All rights reserved.</span>
-				</p>
-				</div>
-			</div>
-		</div>
+           <!-- Start Credits -->
+           <footer class=footer>
+            <div class="piepagina">
+                <img src="img/ESCUDO_blanco.png" width="170">
+                <p class="text text-small text-italic">
+                    © 2023 INFOLANDYN All rights reserved.
+                </p>
+                </div>
+        </footer>
 			<!-- End Credits -->
             <script src="js\productos.js"></script>
 </body>

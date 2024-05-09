@@ -10,17 +10,9 @@
   margin: 0;
   padding: 0;
 }
-header{
-  font-family: "Poppins", sans-serif;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
 
-/* Página productos */
 
-/* Fin página productos */
+
 ul{
   list-style: square inside;
 }
@@ -49,16 +41,6 @@ ul{
 /*************************************************************************/
 
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  background-color: white;
-  font-family: Helvetica, sans-serif, Arial;
-  left: 0;
-  right: 0;
-  width: auto;
-}
 
 /* This is a hack for FireFox that the <b> tag does not work */
 strong,

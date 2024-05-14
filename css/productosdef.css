@@ -104,6 +104,7 @@
       color: antiquewhite;
       text-decoration: none;
       cursor: pointer;
+      transition: 0.3s;
     }
   
     .header .nav-links a:hover{

@@ -800,14 +800,59 @@ align-self: center;
  flex-wrap: wrap;
  width: 100%;
 }
+/* CSS para la imagen y hover para acceder al visor de cada producto */
+.img-card div a{
+  cursor: pointer;
+  transition: 0.3s;
+}
+.img-card div a:hover{
+  transform: scale(1.05);
 
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
+
+.img-card a:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+/*  */
 .img-card-img1{
   display: flex;
-  justify-SELF: center;
+  justify-self: center;
   align-items: center;
   object-fit:contain;
   width: 100%;
   height: auto;
+}
+.img-card-img1:hover{
+border: #000 solid 2px;
 }
 
 .img-card-img2{
@@ -820,6 +865,9 @@ align-self: center;
   object-fit: scale-down;
   border: solid #0955ce 1px;
 }
+.img-card-img2:hover{
+  border: #000 solid 1px;
+  }
 
 .img-card div p{
   justify-content: center;

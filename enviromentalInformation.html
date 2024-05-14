@@ -69,9 +69,11 @@
                     </div>
                     
                     <aside class="img-card">
-                        <div><h3>Click to display the product in the viewer</h3>
+                        <div>
                             <a href="https://ee-diegomadrugaramos.projects.earthengine.app/view/fallowlandsviewer">
-                            <img class="img-card-img1" src="img\FallowRF.png" alt=""></a>
+                            <img class="img-card-img1" src="img\FallowRF.png" alt="">
+                            <span class="tooltip" id="tooltip1">Click to see the full map</span>
+                        </a>
                         <p><b>KEYWORDS</b> <br>
                             <b>Thematic area:</b> sustainable agriculture 
                             <b>Specific area:</b> fallow lands 
@@ -133,7 +135,9 @@
                     <aside class="img-card">
                         <div>
                             <h2>CROPS SURFACE</h2>
-                            <img class="img-card-img1" src="img\RD_COMPOSICION_C.png" alt="">
+                            <a href=""><img class="img-card-img1" src="img\RD_COMPOSICION_C.png" alt="">
+                                <span class="tooltip" id="tooltip1">Click to see the full map</span>
+                            </a>
 
                         <p><b>KEYWORDS</b> <br>
                             <b>Thematic area:</b> climatology and vegetation 
@@ -196,7 +200,10 @@
                     </div>
                     
                     <aside class="img-card">
-                        <div><img class="img-card-img1" src="img\prueba_number_cycles.png" alt="">
+                        <div>
+                            <a href=""><img class="img-card-img1" src="img\prueba_number_cycles.png" alt="">
+                                <span class="tooltip" id="tooltip1">Click to see the full map</span>
+                            </a>
                             <p><b>KEYWORDS:</b><br>AVHRR, SEASONALITY, VEGETATION DYNAMICS, STABILITY, BIOCLIMATE, NDVI, TIME SERIES, PLURI-ANNUAL CYCLES, 
                                 SPETRAL ANALYSIS, PERIODOGRAM, LAND SURFACE PHENOLOGY</p>
                                 <p><b>Product citation</b><br><i>Recuero, L., Litago, J., Pinzón, J. E., Huesca, M., Moyano, M. C., & Palacios-Orueta, A. (2019). Mapping periodic patterns of global 
@@ -246,7 +253,10 @@
                     </div>
                     
                     <aside class="img-card">
-                        <div><img class="img-card-img1" src="img\SeasonalityAmplitude.jpg" alt="">
+                        <div>
+                            <a href=""><img class="img-card-img1" src="img\SeasonalityAmplitude.jpg" alt="">
+                                <span class="tooltip" id="tooltip1">Click to see the full map</span>
+                            </a>
                             <p><b>KEYWORDS</b> <br>
                                 <b>Thematic area:</b> 
                                 <b>Data source:</b> remote sensing
@@ -289,7 +299,10 @@
                     </div>
                     
                     <aside class="img-card">
-                        <div><img class="img-card-img1" src="img\SeasonalityStability.jpg" alt="">
+                        <div>
+                            <a href=""><img class="img-card-img1" src="img\SeasonalityStability.jpg" alt="">
+                                <span class="tooltip" id="tooltip1">Click to see the full map</span>
+                            </a>
                             <p><b>KEYWORDS</b> <br>
                                 <b>Thematic area:</b> 
                                 <b>Data source:</b> remote sensing
@@ -304,40 +317,65 @@
                                 calculated, a periodogram has been made to study different factors that affect the periodicity of 
                                 the vegetative cycles. In this case, the Stability of seasonal cycles of vegetation.<br>
                             </p></div>
+                            <div class="main-card-imgC"> 
+                                <a href="https://www.earthdata.nasa.gov/sensors/avhrr" target="_blank" class="z"><div>AVHRR-NDVI</div></a>
+                                <div onclick="linkToItem('AVHRR NDVI Time Series', 'A')" class="a"><b>AVHRR NDVI <br>TS</b></div>
+                                <div onclick="linkToItem('PERIODOGRAM AVHRR-NDVI', 'B')" class="b"><b>PERIODOGRAM</b></div>
+                                <div class="c"><b>AMPLITUDE  OF SEASONAL<br>CYCLES</b></div>               
+                             </div>
+                                 <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
                     </article>
                            
                     <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
                 </div>
             </div>
 
-            <!-- <div class="tab">
+          <div class="tab">
                 <input type="checkbox" name="abrir" id="acc8"/>
                 <label for="acc8">
                     <h2><b>C</b></h2>
                     <h3>PRESENCE OF PLURIANNUAL CYCLES</h3>    
                 </label>
                 <div class="tab-content-grid">
-                    <div class="title-card"><h3>DOWNLOADS:</h3>
-                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/record/7973930/files/FallowTemp_8bit.tif?download=1">Raster Image</a>
-                        <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
-                        <button class="title-card-descarga" id="btn-graphics"><b>Graphics</b></button>
-                    </div>
-                    
-                    <aside class="img-card">IMG-CARD</aside>
-                    <article class="main-card">
-                        <div>
-                            <img src="img\leyenda.drawio.drawio.svg" alt="">
-                            <br><h3>DESCRIPTION:</h3><p>Using the AVHRR product provided by NOAA, the NDVI time series has been calculated, a periodogram has been made to study different factors that affect the periodicity of the vegetative cycles. 
-                            In this case, the Stability of seasonal cycles of vegetation it is presented
-                            <br>
-                            </p></div>
-                    </article>
-                           
-                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
+                <div class="title-card"><h3>DOWNLOADS:</h3>
+                    <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/record/7973930/files/FallowTemp_8bit.tif?download=1">Raster Image</a>
+                    <button class="title-card-descarga" id="btn-features"><b>Features table</b></button>
+                    <button class="title-card-descarga" id="btn-graphics"><b>Graphics</b></button>
                 </div>
+                
+                <aside class="img-card">
+                    <div>
+                        <a href=""><img class="img-card-img1" src="img\PluriannualCyclesPrueba.jpg" alt="">
+                            <span class="tooltip" id="tooltip1">Click to see the full map</span>
+                        </a>
+                        <p><b>KEYWORDS</b> <br>
+                            <b>Thematic area:</b> 
+                            <b>Data source:</b> remote sensing
+                            <b>Sensor:</b> AVHRR
+                            <b>Processing level:</b> C
+                            <b>Methodology:</b> spectral index, time series analysis,artificial intelligence, 
+                        </div>
+                </aside>
+                <article class="main-card">
+                    <img src="img\leyenda.drawio.drawio.svg" alt="">
+                    <div><br><br><h3>DESCRIPTION:</h3><p>Using the AVHRR product provided by NOAA, the NDVI time series has been 
+                            calculated, a periodogram has been made to study different factors that affect the periodicity of 
+                            the vegetative cycles. In this case, the Stability of seasonal cycles of vegetation.<br>
+                        </p></div>
+                        <div class="main-card-imgC"> 
+                            <a href="https://www.earthdata.nasa.gov/sensors/avhrr" target="_blank" class="z"><div>AVHRR-NDVI</div></a>
+                            <div onclick="linkToItem('AVHRR NDVI Time Series', 'A')" class="a"><b>AVHRR NDVI <br>TS</b></div>
+                            <div onclick="linkToItem('PERIODOGRAM AVHRR-NDVI', 'B')" class="b"><b>PERIODOGRAM</b></div>
+                            <div class="c"><b>AMPLITUDE  OF SEASONAL<br>CYCLES</b></div>               
+                         </div>
+                             <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
+                </article>
+                       
+                <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
             </div>
+        </div>
            
-            <div class="tab">
+            <!--   <div class="tab">
                 <input type="checkbox" name="abrir" id="acc9"/>
                 <label for="acc9">
                     <h2><b>C</b></h2>
@@ -567,8 +605,11 @@
                     </div>
                     
                     <aside class="img-card">
-                        <div><h3>RESULTS</h3><img class="img-card-img1" src="img\GIF-C.gif" alt="">
+                        <div>
+                            <a href=""><img class="img-card-img1" src="img\GIF-C.gif" alt="">
                         <p><b>KEYWORDS</b> <br>
+                            <span class="tooltip" id="tooltip1">Click to see the full map</span>
+                        </a>
                                 <b>Thematic area:</b> sustainable agriculture 
                                 <b>Specific area:</b> fallow lands 
                                 <b>Data source:</b> remote sensing
@@ -582,9 +623,9 @@
                             </div>
                     </aside>
                     <article class="main-card">
-                        <div>
                             <img class="leyenda" src="img\leyenda.drawio.drawio.svg" alt="">
-                            <br><br><h3>DESCRIPTION:</h3><p>The main objective of this research was to assess cropland intensification by means of spectral analysis of MODIS NDVI time series in a high cloudiness tropical 
+                            <div>
+                            <h3>DESCRIPTION:</h3><br><p>The main objective of this research was to assess cropland intensification by means of spectral analysis of MODIS NDVI time series in a high cloudiness tropical 
                                 area such as Ecuador. A surface of 89,225 ha of the main staple crops in this country, which are rice and maize crops, was monitored to assess the evolution of the number of crop cycles. 
                                 The 20-year period of NDVI time series was used to calculate the periodograms across four subperiods (2001–2005, 2006–2010, 2011–2015, 2016–2020). The maximum ordinate value of each periodogram 
                                 was used as an indicator of the number of growing crop cycles per year identifying single-, double-, and triple-cropping systems in each subperiod. Cropland intensification was assessed by comparing 

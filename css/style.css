@@ -293,6 +293,7 @@ margin-bottom:5%;
   justify-content: center;
 }
 /* Fin about */
+
 .encabezado{
     padding-right: 20px;
     padding-left: 20px;
@@ -458,15 +459,12 @@ margin-bottom:5%;
   grid-area: credit-card;
   background-color: rgba(198, 221, 247, 0.74);
 }
-/* @media (min-width: 500px) {
-  .tab-content-grid {
-    grid-template: "title-card" 70px "img-card" auto "main-card" auto "credit-card " auto/auto auto;
-    overflow: scroll;
-  }
-} */
+
 
 /* para móviles */
 @media screen and (max-width: 600px) {
+ 
+  
   #girasol{
     width: 100%;
     height: 100px;
@@ -479,22 +477,36 @@ margin-bottom:5%;
     display: block; /* Cambiar a display block para ocupar el ancho completo */
     margin-bottom: 20px; /* Añadir margen inferior para separar las tarjetas */
   }
+ 
+  .section {
+    max-width: 96%;
+  }
+
+ 
 
   /* Ajustar los estilos de las tarjetas */
   .tab-content-grid {
+   
     grid-template: 
       "title-card" auto /* Ajustar el tamaño de las filas */
       "img-card" auto
       "main-card" auto
       "credit-card" auto;
   }
- 
  /* Tamaño de fuente */
  .section label h3,
  .section .tab-content-grid p {
    font-size: 9px;
  }
 /* Tamaño de las imágenes dentro de main-card-img */
+.title-card{
+display: flex;
+flex-direction: column
+flex-wrap: wrap;
+width: 100%;
+font-size: small;
+}
+
 .main-card-img {
   display: flex;
   justify-content: center;
@@ -504,19 +516,33 @@ margin-bottom:5%;
  /* Tamaño de las imágenes */
  .img-card-img1,
  .img-card-img2 {
-   width: 100%; /* Ocupar el ancho completo */
-   max-width: 100%; /* Evitar desbordamiento horizontal */
+   width: 50%; /* Ocupar el ancho completo */
+   max-width: 50%; /* Evitar desbordamiento horizontal */
  }
-
+.img-card div{
+ width: 50%;
+}
+.main-card-imgC{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.main-card .almacen{
+  display: none;
+}
+.main-card .main-card-imgC{
+  display: none;
+}
  /* Ajuste del ancho de las tarjetas */
  .section .tab {
-   width: 95%; /* Ocupar el 95% del ancho del body */
+   width: 100%; /* Ocupar el 95% del ancho del body */
    margin: 0 auto; /* Centrar horizontalmente */
    margin-bottom: 20px; /* Espacio entre las tarjetas */
  }
  .main-card-img div {
-  width: 100%;
-  max-width: 100%; /* Asegurar que se ajusten correctamente */
+  width: 50%;
+  max-width: 50%; /* Asegurar que se ajusten correctamente */
   text-align: center; /* Centrar el contenido */
   justify-content: center;
 }
@@ -597,7 +623,7 @@ width: 110%;
     grid-template: "title-card   title-card" 100px "img-card     main-card" auto "credit-card  credit-card" auto/34% 63%;
    
   }
-}/*# sourceMappingURL=style.css.map */
+}
 
 /* Estilos encabezado de tarjetas */
 .title-card{

@@ -373,3 +373,131 @@
     margin: 1% 0 2% 5%;
     max-width: 75%;
   }
+
+  .section {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tab {
+    background: linear-gradient(135deg, #95cad2 10%, #7ba3e3 100%);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+}
+
+.tab input {
+    display: none;
+}
+
+.tab label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tab label h2 {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.tab label h3 {
+    flex-grow: 1;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.tab-content-grid {
+    display: none;
+    margin-top: 20px;
+}
+
+.tab input:checked ~ .tab-content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.title-card, .img-card, .main-card, .credit-card {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.title-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn.green { background-color: #4caf50; }
+.btn.yellow { background-color: #ffeb3b; color: #000; }
+.btn.orange { background-color: #ff9800; }
+.btn.red { background-color: #f44336; }
+
+@media (min-width: 886px) {
+    .tab-content-grid {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+            "title-card title-card"
+            "img-card main-card"
+            "credit-card credit-card";
+    }
+
+    .title-card { grid-area: title-card; }
+    .img-card { grid-area: img-card; }
+    .main-card { grid-area: main-card; }
+    .credit-card { grid-area: credit-card; }
+}
+@media screen and (max-width: 800px) {
+  .section {
+    max-width: 90%; /* Cambiar el ancho máximo del section al 90% */
+    padding-right: 10px; /* Ajustar el padding derecho para compensar el cambio de ancho */
+    padding-left: 10px; /* Ajustar el padding izquierdo para compensar el cambio de ancho */
+  }
+
+  /* Modificar la estructura de los "tab" para que se distribuyan en una única columna */
+  .tab-content-grid {
+    grid-template:
+      "title-card"
+      "img-card"
+      "main-card"
+      "credit-card";
+  }
+
+  /* Ajustar el tamaño de fuente y otros estilos para que se adapten al tamaño de pantalla más pequeño */
+  .section label h3,
+  .section .tab-content-grid p {
+    font-size: 14px; /* Cambiar el tamaño de fuente a 14px para pantallas más pequeñas */
+  }
+
+  /* Ajustar el ancho de los "tab" para ocupar el 95% del ancho del body */
+  .section .tab {
+    width: 95%; /* Ocupar el 95% del ancho del body */
+    margin: 0 auto; /* Centrar horizontalmente */
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+  }
+
+
+
+}

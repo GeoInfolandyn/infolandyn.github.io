@@ -119,8 +119,7 @@
                             The use of this ACF is highly useful to assess the temporal patterns of vegetation over agricultural or forested areas.</p>
                             <img class="main-card-formula-img" src="img\Captura de pantalla 2023-11-14 131919.png" alt="">
                             <div class="main-card-imgB"> 
-                                <div onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" class="a2v"><b>NDVI 250<br>TS 2000 - 2012 </b></div>
-                                <div onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" class="a2v"><b>FILTERED<br>TS </b> </div>
+                                <div onclick="linkToItem('MODIS NDVI 500m MOD09A1 Time Series filtered', 'A')" class="a2v"><b>FILTERED<br>TS </b> </div>
                                 <div onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')" class="b2v"><b>ACF</b></div>          
                              </div>
                                  <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div></div>
@@ -131,51 +130,6 @@
             </div>
 
 
-            <div class="tab">
-                <input type="checkbox" name="abrir" id="acc1"/>
-                <label for="acc1">
-                    <h2>B1</h2>
-                    <h3>PERIODOGRAM (NDVI 500m MOD09A1)</h3>    
-                </label>
-                <div class="tab-content-grid">
-                    <div class="title-card">
-                        <h3>DOWNLOADS:</h3>
-                        <button class="title-card-descarga"><b>Raster Image</b></button>
-                      
-                    </div>
-                    
-                    <aside class="img-card">
-                        <div>
-                            <img src="img\levelC-1.png" alt="">
-                            <span class="tooltip" id="tooltip1">Click to see the full map</span></a>
-                        </div>
-                    </aside>
-
-                    <article class="main-card">
-                        <img src="img\leyenda.drawio.drawio.svg" alt="">
-                            <div><br><br><h3>DESCRIPTION:</h3><p>We proposed a new methodology based on NDVI time series autocorrelation values and machine learning algorithms to assess fallowing 
-                            temporal patterns across rainfed agricultural areas that was tested in mainland Spain. We found that approximately half of rainfed 
-                            agricultural areas were regularly cultivated (RC) and distributed mainly in the north- western Spain whereas lands with crop-fallow
-                            rotation patterns every two (CF-2) and three years (CF-3) were distributed across northeast, center and south of Spain. 
-                            You can see the spatial distribution in the map viewer below <br>
-                            </p>
-                            <div class="main-card-imgB">
-                            <a href="https://lpdaac.usgs.gov/products/mod09q1v061/" target="_blank" class="z"><div>MOD <br> 09Q1</div></a>
-                            <div onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" class="a2v"><b>NDVI 250<br>TS 2000 - 2012 </b></div>
-                            <div onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" class="a2v"><b>FILTERED<br>TS </b> </div>
-                            <div onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')" class="b2v"><b>ACF</b></div>
-                            <div class="b2v"><b>SPECIFIC ACF</b></div>          
-                         </div>
-                             <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
-                        </div>
-                    </article>
-                            
-                           
-                    <div class="credit-card"> 
-                        <p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p>
-                    </div>
-                </div>
-            </div>
             
         
 
@@ -189,9 +143,12 @@
                 <div class="title-card"><h3>DOWNLOADS</h3>
                     <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://zenodo.org/records/10807728/files/Periodogram_NDVI_82-16.tif?download=1">Raster Image</a>
                 </div>
-                    
                 <aside class="img-card">
-                    <div><img class="img-card-img1" src="img\GIF_AVHRR_PERIODOGRAM.gif" alt=""></div>
+                    <div>
+                        <a target="_blank" href="https://ee-diegomadrugaramos.projects.earthengine.app/view/avhrr-periodogram">
+                        <img class="img-card-img1" src="img\GIF_AVHRR_PERIODOGRAM.gif" alt="">
+                        <span class="tooltip" id="tooltip1">Click to open the map</span></a>
+                    </div>
                 </aside>
                 <article class="main-card">
                     <img src="img\leyenda.drawio.drawio.svg" alt="">
@@ -236,13 +193,13 @@
                 </label>
             <div class="tab-content-grid">
                 <div class="title-card"><h3>DOWNLOADS:</h3>
-                    <a class="title-card-descarga" target="_blank" id="btn-productsB" href="https://zenodo.org/records/10792767/files/AC_lag1_23_46_92_138_NDVI_250M-01-12_filtrada_stack.tif?download=1">Specific lags</a>
+                    <a class="title-card-descarga" target="_blank" id="btn-productsB" href="https://storage.googleapis.com/infolandyn/Web/Productos%20B/B2/AC_lag1_23_46_92_138_NDVI_250M-01-12_filtrada_stack_tiled.tif">Specific lags</a>
                 </div> 
                 <aside class="img-card">
                     <div>
-                        <h3>Autocorrelation coefficients at lags: 1, 23, 46,<br> 92, 138. Click to display de viewer</h3>
-                        <a href="https://ee-diegomadrugaramos.projects.earthengine.app/view/ndvi-250-acf-150lags">
+                        <a href="https://ee-diegomadrugaramos.projects.earthengine.app/view/mod09q1-ndvi-1-12-acf-specific-lags">
                             <img class="img-card-img1" src="img\Specific_ACF_lags_stack_gif.gif" alt="">
+                            <span class="tooltip" id="tooltip1">Click to open the map</span>
                         </a>
                         <img  src="img\Captura de pantalla 2023-11-14 131919.png" alt="">
                     </div>

@@ -481,8 +481,38 @@ margin-bottom:5%;
   .section {
     max-width: 96%;
   }
-
  
+    .tab-content-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .title-card,
+    .img-card,
+    .main-card,
+    .credit-card {
+        width: 100%;
+        margin-bottom: 1rem;
+        overflow: hidden;
+    }
+  
+    .title-card h3, .main-card h3 {
+        text-align: center;
+    }
+  
+    .main-card {
+        padding: 1rem;
+        display: flex;
+    }
+  
+    .img-card-img1, .img-card-img2{
+      width: 100%;
+    }
+  
+    .leyenda{
+      width: 140%;
+    }
 
   /* Ajustar los estilos de las tarjetas */
   .tab-content-grid {
@@ -496,13 +526,12 @@ margin-bottom:5%;
  /* Tamaño de fuente */
  .section label h3,
  .section .tab-content-grid p {
-   font-size: 9px;
+   font-size: 12px;
  }
 /* Tamaño de las imágenes dentro de main-card-img */
 .title-card{
 display: flex;
-flex-direction: column
-flex-wrap: wrap;
+flex-direction: column;
 width: 100%;
 font-size: small;
 }
@@ -514,14 +543,7 @@ font-size: small;
   max-width: 100%; /* Asegurar que se ajusten correctamente */
 }
  /* Tamaño de las imágenes */
- .img-card-img1,
- .img-card-img2 {
-   width: 50%; /* Ocupar el ancho completo */
-   max-width: 50%; /* Evitar desbordamiento horizontal */
- }
-.img-card div{
- width: 50%;
-}
+
 .main-card-imgC{
   display:flex;
   flex-direction: column;
@@ -579,6 +601,16 @@ body{
 
 .workflow{
 width: 110%;
+}
+  
+.textImgCard {
+ font-weight: bold;
+ margin-top: 4%;
+ margin-bottom: 4%;
+ text-align: justify;
+ color: #000;
+ justify-content: center;
+ display: flex;
 }
 
 .text{
@@ -698,12 +730,11 @@ gap: 10px;
   /* padding: 5%; */
 }
 .main-card-formula-img{
-  justify-content: center;
   justify-self: center;
   margin: auto;
   width: auto;
   height: auto;
-  display: block;
+  display: flex;
 }
 
 /* Estilos cajas del workflow para productos C */
@@ -1087,10 +1118,16 @@ border: #000 solid 2px;
 
 .img-card div p{
   justify-content: center;
-  font-size: 8px; 
+  font-size: 12px; 
   
 }
-
+.formula-img-card{
+  justify-self: center;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
 /* Estilos Credit-card de tarjetas */
 .credit-card{
   display:flex;

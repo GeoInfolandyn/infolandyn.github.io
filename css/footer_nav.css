@@ -35,27 +35,6 @@
     height: auto; 
   }
  
-/* añadir un cambio para dispositivos móviles */
-@media (max-width: 600px){
-  .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    padding: 6px 2%;
-  }
-
-  .logo img{
-    width: 15%;
-    height: auto; 
-  }
-  .cabecera{
-    display: flex;
-    justify-content: center;
-    margin: 5px;
-    font-size: 11px;
-  }
-}
-/* fin del mediaquerey para móviles */
 
   .cabecera{
     display: flex;
@@ -119,261 +98,7 @@
     justify-content:center;
     width: 100%;
   }
-  /* About */
-  .arquitectura {
-    width: 90%;
-    margin: 1%;
-}
-.item-about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-.image {
-    width: 100%;
-    margin: 2%;
-}
-.image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right: 20px;
-    width: 50%;
-}
-.text-container {
-    width: 100%;
-    margin-left: 2%;
-}
-.control-group {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
-}
-.custom-button {
-    padding: 10px 20px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    margin: 5px;
-}
-.custom-button-A {
-    background-color: blue;
-}
-.custom-button-B {
-    background-color: rgb(155, 93, 141);
-}
-.custom-button-C {
-    background-color: #198754;
-}
-.custom-button-E {
-    background-color: #DA9D19;
-}
-.custom-button-D {
-    background-color: #9b0e0ed0;
-}
-.pulse-primary {
-    animation: pulse 2s infinite;
-}
-.pulse-danger{
-  animation: pulse 2s infinite;
-}
-.pulse-info{
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-}
-
-        @media screen and (max-width: 600px){
-          .flex-row {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .image-container {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          margin-right: 20px;
-          width: 100%;
-        }
-
-        }
-
-.content {
-    margin: 0 auto;
-    font-size: 16px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    line-height: 1.5;
-    max-width: 70%;
-    overflow-x: visible;
-}
-.lineaSeparadora {
-    width: 100%;
-    padding: 2%;
-}
-
-.cajatabla{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content:center;
-  justify-self: center;
-  width: 100%;
-  margin-left: 10%;
-}
-
-.custom-table-container {
-    overflow-x: auto;
-    justify-content: center;
-}
-.custom-table {
-    width: 100%;
-    border-collapse: collapse;
-  
-}
-.custom-table th,
-.custom-table td {
-    padding: 8px 12px;
-    border: 1px solid #ddd;
-}
-.bg-color-gray {
-    background-color: #F2F2F2;
-}
-.bg-color-light-gray {
-    background-color: #FAFAFA;
-}
-.text-center {
-    text-align: center;
-}
-.add-top-margin {
-    margin-top: 20px;
-}
-.add-top-margin-small {
-    margin-top: 10px;
-}
-.max-width-400 {
-    max-width: 400px;
-}
-.text {
-    font-size: 16px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    line-height: 1.5;
-}
-.graph-title {
-    font-weight: bold;
-}
-.fotoDiego {
-    display: flex;
-    justify-content: center;
-}
-
-  .flex-column1{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
-    box-sizing: border-box;
-  }
-  .flex-column2{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    box-sizing: border-box;
-  }
-
-  .text{
-   width: 100%;
-   margin-top: 1%;
-   text-align: justify;
-  }
-
-  .text a{
-    text-decoration: none;
-  }
-
-  .textWorkflow {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
-  .textWorkflow p {
-    font-weight: bold;
-  }
-
-  .content {
-    margin: 0 auto;
-    font-size: 16px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    line-height: 1.5;
-    max-width: 70%;
-    overflow-x:visible;
-  }
-
-  
-  .lineaSeparadora{
-    width: 100%;
-  }
-  
-  .home{
-    float: left;
-    justify-content: center;
-    width: 30%;
-    margin: 0.5% 5% 5% 0;
-  }
-
-  .ministerio{
-    float: right;
-    width: 15%;
-    margin-bottom: 1%;
-    display: flex;
-    justify-self: center ;
-  }
-
-  .indexinfo{ 
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 2%;
-  }
-  .indexinfo h3{
-    margin-top: 1%;
-  }
-  .indexinfo ul{
-    margin: 1% 0 2% 5%;
-    max-width: 75%;
-  }
-
+ 
   .section {
     max-width: 75%;
     margin: 0 auto;
@@ -455,20 +180,6 @@
 .btn.orange { background-color: #ff9800; }
 .btn.red { background-color: #f44336; }
 
-@media (min-width: 886px) {
-    .tab-content-grid {
-        grid-template-columns: 1fr 2fr;
-        grid-template-areas: 
-            "title-card title-card"
-            "img-card main-card"
-            "credit-card credit-card";
-    }
-
-    .title-card { grid-area: title-card; }
-    .img-card { grid-area: img-card; }
-    .main-card { grid-area: main-card; }
-    .credit-card { grid-area: credit-card; }
-}
 @media screen and (max-width: 800px) {
   .section {
     max-width: 90%; /* Cambiar el ancho máximo del section al 90% */
@@ -499,5 +210,32 @@
   }
 
 
+}
+@media (max-width: 768px) {
+  .tab-content-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
 
+  .title-card,
+  .img-card,
+  .main-card,
+  .credit-card {
+      width: 100%;
+      margin-bottom: 1rem;
+      overflow: hidden;
+  }
+
+  .title-card h3, .main-card h3 {
+      text-align: center;
+  }
+
+  .main-card {
+      padding: 1rem;
+  }
+
+  .img-card-img1, .img-card-img2{
+    width: 100%;
+  }
 }

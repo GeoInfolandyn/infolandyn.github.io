@@ -119,7 +119,7 @@
                             The use of this ACF is highly useful to assess the temporal patterns of vegetation over agricultural or forested areas.</p>
                             <img class="main-card-formula-img" src="img\Captura de pantalla 2023-11-14 131919.png" alt="">
                             <div class="main-card-imgB"> 
-                                <div onclick="linkToItem('MODIS NDVI 500m MOD09A1 Time Series filtered', 'A')" class="a2v"><b>FILTERED<br>TS </b> </div>
+                                <div onclick="linkToItem('MOD09A1 NDVI 500m Time Series filtered', 'A')" class="a2v"><b>FILTERED<br>TS </b> </div>
                                 <div onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')" class="b2v"><b>ACF</b></div>          
                              </div>
                                  <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div></div>
@@ -148,26 +148,42 @@
                         <a target="_blank" href="https://ee-diegomadrugaramos.projects.earthengine.app/view/avhrr-periodogram">
                         <img class="img-card-img1" src="img\GIF_AVHRR_PERIODOGRAM.gif" alt="">
                         <span class="tooltip" id="tooltip1">Click to open the map</span></a>
+                    <div>
+                        <img class="formula-img-card" src="img\formulaFurierWaves.png" alt=""><br>
+                        <p > 
+                           -<b>xt</b> are the equally spaced time series data<br>
+                           -<b>t:</b> is the time subscript, t= 1,2,…,n<br>
+                           -<b>n:</b> is the number of observations in the time series<br>
+                           -<b>ai</b> and bi are the Fourier coefficients; i= 1,2,…,m<br>
+                           -<b>m:</b> is the number of frequencies: m= n/2 if n is even; m=(n-1)/2 if n is odd<br>
+                           -<b>fi:</b> is the i-th Fourier frequency: fi= i/n<br>
+                           -<b>a0:</b> is the mean term: a0=x ̅<br>
+                           -<b>et:</b> error term<br></p></div>
                     </div>
                 </aside>
                 <article class="main-card">
                     <img src="img\leyenda.drawio.drawio.svg" alt="">
-                    <div><br><br><h3>DESCRIPTION:</h3><p> In this work, we describe vegetation
-                          oscillations by a novel quantitative approach based on the spectral analysis of Normalized Difference Vegetation Index (NDVI) time series. A new
-                           set of global periodicity indicators permitted to identify different seasonal patterns regarding the intra-annual cycles (the number, amplitude,
-                            and stability) and to evaluate the existence of pluri-annual cycles, even in those regions with noisy or low NDVI. Most of vegetated land
-                             surface (93.18%) showed one intra-annual cycle whereas double and triple cycles were found in 5.58% of the land surface, mainly in tropical
-                              and arid regions along with agricultural areas. In only 1.24% of the pixels, the seasonality was not statistically significant. The highest
-                               values of amplitude and stability were found at high latitudes in the northern hemisphere whereas lowest values corresponded to tropical
-                                and arid regions, with the latter showing more pluri-annual cycles. The indicator maps compiled in this work provide highly relevant and
-                                 practical information to advance in assessing global vegetation dynamics in the context of global change.<br>
+                    <div><br><br><h3>DESCRIPTION:</h3><p> The periodogram was computed at pixel basis for AVHRR NDVI time series for the period 
+                        1982-2016 (840 observations). It contains information at 420 frequencies, which is the half of the total time series 
+                        observations. This tool is highly interesting to assess vegetation seasonality enabling the identification of the most
+                        significant components of each NDVI time series. 
+                        Periodogram is based on the classical mathematical theory of Fourier series in which the signal is decomposed
+                        into a series of sine and cosine waves at different frequencies called Fourier frequencies (f_i): 
+                        <br>
+                        <!-- <img class="main-card-formula-img" src="img\formulaFurierWaves.png" alt=""><br>                            -->
+                            The significance of each frequency (f_i) in accounting for the variance of the time series is indicated by 
+                            the periodogram amplitude at that particular frequency. Thus, the periodogram plots the amplitude at each 
+                            frequency versus frequencies. 
+                            <br>The most important periodicities are associated with high amplitudes. Since the NDVI3g product provides 24 
+                            observations per year, the most relevant amplitudes for assessing vegetation dynamics are at periods 24, 12
+                             and 8, representing annual, semi-annual and four months terms respectively. 
+
                             </p>
                             <div class="main-card-imgB">
-                                <a href="https://lpdaac.usgs.gov/products/mod09q1v061/" target="_blank" class="z"><div>MOD <br> 09Q1</div></a>
-                                <div onclick="linkToItem('NDVI Time Series 250m 8days(MOD09Q1)', 'A')" class="a2v"><b>NDVI 250<br>TS 2000 - 2012 </b></div>
-                                <div onclick="linkToItem('MODIS NDVI 250m MOD09Q1 Time Series filtered', 'A')" class="a2v"><b>FILTERED<br>TS </b> </div>
-                                <div onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')" class="b2v"><b>ACF</b></div>
-                                <div class="b2v"><b>SPECIFIC ACF</b></div>          
+                                <a href="https://www.earthdata.nasa.gov/sensors/avhrr" target="_blank" class="z"><div><p>AVHRR</p></div></a>
+                                <div onclick="linkToItem('AVHRR NDVI Time Series)', 'A')" class="a2v"><b>NDVI<br>AVHRR</b></div>
+                               
+                                <div onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')" class="b2v"><b>PERIODOGRAM</b></div>         
                              </div>
                                  <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
                         </div>
@@ -241,15 +257,27 @@
                     </div>
                     
                     <aside class="img-card">
-                        <img class="img-card-img2" src="img\lagsImg.png" alt="">
-                    
+                        <div><img class="img-card-img2" src="img\lagsImg.png" alt="">
+                        
+                        <div><p>m is the number of frequencies: m= n/2 if n is even; m=(n-1)/2 if n is odd <br>
+                        n is the number of observations in the time series <br>
+                        f_i is the i-th Fourier frequency: f_i = i/n<br>
+                        I(f_i ) is the periodogram amplitude at the frequency f_i<br>
+                    </p></div>
+                </div>
                     </aside>
                     <article class="main-card">
                         <img src="img\leyenda.drawio.drawio.svg" alt="">
-                        <div><br><br><h3>DESCRIPTION:</h3><p>would be interesting to analyse the seasonal patterns of vegetation of the
-                            periodogram ordinates at one year, 6 months and 4 months. 
-                            The relevancy of seasonal patterns could be evaluated by yhe Fisher Kapa test<br>
-                            This Kappa test is calculated: 
+                        <div><br><br><h3>DESCRIPTION:</h3><p>The specific periodogram ordinates were generated using the AVHRR NDVI 
+                            time series from 1982 to 2016 obtained from the product NDVI3g product. This product contains 24 
+                            observations per year so that the most relevant amplitudes for assessing vegetation dynamics are at
+                            periods 24, 12 and 8, representing annual, semi-annual and four months terms respectively, that is, there
+                            is a seasonal cycle every 24, 12 and 8 AVHRR periods. 
+                            The Fisher’s Kappa test (FK) can be used for evaluating the NDVI seasonality significance and for 
+                            identifying white noise series. The statistic for this test is computed as the ratio between the maximum 
+                            amplitude value and the mean of all amplitudes according as follows: <br><br>
+                            <img class="main-card-formula-img" src="img\fisherKappa.png" alt=""><br>
+                            
                             <!-- añadir fórmula -->
                             </p></div>
                             <div class="main-card-imgB">

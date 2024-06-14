@@ -106,7 +106,7 @@
                     
                     <aside class="img-card">
                         <div>
-                            <a href="https://ee-diegomadrugaramos.projects.earthengine.app/view/mod09a1-ndvi-acf">
+                            <a target="_blank" href="https://ee-diegomadrugaramos.projects.earthengine.app/view/mod09a1-ndvi-acf">
                              <img class="img-card-img1" src="img\autocorrelationFuntion.jpg" alt="">
                             <span class="tooltip" id="tooltip1">Click to see the full map</span></a>
                             </div>
@@ -291,9 +291,52 @@
                     <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
                 </div>
             </div>         
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc16"/>
+                <label for="acc16">
+                    <h2>B2</h2>
+                    <h3>PERIODOGRAM ECUADOR (MOD09A1-NDVI)</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card"><h3>DOWNLOADS:</h3>
+                        <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://storage.googleapis.com/infolandyn/Web/Productos%20B/B2/MOD09A1_NDVI_ECU_00_23_INT_SG72_periodogram_tiled_COG.tif">Raster Image</a>
+                    </div>
+                    
+                    <aside class="img-card">
+                        <div>
+                            <a target="_blank" href="https://ee-geoinfolandyn.projects.earthengine.app/view/periodogram-ecuador-mod09a1"><img class="img-card-img1" src="img\Periodogram_Ecuador.png" alt="">
+                                <span class="tooltip" id="tooltip1">Click to see the full map</span>  
+                            </a>
+                </div>
+                    </aside>
+                    <article class="main-card">
+                        <img src="img\leyenda.drawio.drawio.svg" alt="">
+                        <div><br><br><h3>DESCRIPTION:</h3><p>The specific periodogram ordinates were generated using the AVHRR NDVI 
+                            time series from 1982 to 2016 obtained from the product NDVI3g product. This product contains 24 
+                            observations per year so that the most relevant amplitudes for assessing vegetation dynamics are at
+                            periods 24, 12 and 8, representing annual, semi-annual and four months terms respectively, that is, there
+                            is a seasonal cycle every 24, 12 and 8 AVHRR periods. 
+                            The Fisher’s Kappa test (FK) can be used for evaluating the NDVI seasonality significance and for 
+                            identifying white noise series. The statistic for this test is computed as the ratio between the maximum 
+                            amplitude value and the mean of all amplitudes according as follows: <br><br>
+                            <img class="main-card-formula-img" src="img\fisherKappa.png" alt=""><br>
+                            
+                            <!-- añadir fórmula -->
+                            </p></div>
+                            <div class="main-card-imgB">
+                                <a href="https://lpdaac.usgs.gov/products/mod09q1v061/" target="_blank" class="z"><div>MOD <br> 09Q1</div></a>
+                                <div onclick="linkToItem('AVHRR-NDVI Time Series', 'A')" class="a2v"><b>VHRR-NDVI <br>TS</b></div>
+                                <div onclick="linkToItem('PERIODOGRAM AVHRR-NDVI', 'B')"class="b2v"><b>PERIODOGRAM <br> AVHRR-NDVI</b></div>
+                                <div onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')" class="b2v"><b>ACF</b></div>       
+                             </div>
+                            <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
+                    </article>  
+                    <div class="credit-card"><p><b>Copyright: </b>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>         
     
             
-        
+            
     </section>
     
            <!-- Start Credits -->

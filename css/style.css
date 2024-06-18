@@ -691,6 +691,10 @@ gap: 10px;
   text-decoration: none;
 }
 /* estilos botones descarga */
+#btn-productsA{
+  background-color: #639ef6;
+}
+
 #btn-productsB{
   background-color: #a04398b6;
 }

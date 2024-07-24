@@ -32,15 +32,7 @@
             </nav>
         </header>
             <!-- Botón Subdivision -->
-           <div class="filtros">
-            <!-- <form action="">
-                <select class="subdivision" id="OP1" onchange="filtroC()">
-                    <option selected> Select a subdivision</option>
-                    <option value="C1">C1</option>
-                    <option value="C2">C2</option>
-                    <option value="C3">C3</option>
-                </select>
-            </form> -->
+           <div class="filtros">  
             <form action="">
                 <select class="subdivision" id="OP2" onchange="filtroProducto()">
                     <option selected> Select a product</option>
@@ -64,9 +56,7 @@
                         <h3>DOWNLOADS:</h3>
                         <a class="title-card-descarga" target="_blank" id="btn-raster" href="https://storage.googleapis.com/infolandyn/Web/Productos%20C/Fallow%20Lands/FallowLand_tiled_COG.tif">Raster Image</a>
                         <a class="title-card-descarga" target="_blank" id="btn-features" href="https://storage.googleapis.com/infolandyn/Web/Productos%20C/Fallow%20Lands/Surface_FallowClasses_v2.xlsx">Features table</a>
-                        <a class="title-card-descarga" target="_blank" id="btn-graphics" href="https://storage.googleapis.com/infolandyn/Web/Productos%20C/Fallow%20Lands/1-s2.0-S0303243419302272-main.pdf">Report</a>
-                       
-                        
+                        <a class="title-card-descarga" target="_blank" id="btn-graphics" href="https://storage.googleapis.com/infolandyn/Web/Productos%20C/Fallow%20Lands/1-s2.0-S0303243419302272-main.pdf">Report</a>   
                     </div>
                     
                     <aside class="img-card">
@@ -105,7 +95,7 @@
                                <div onclick="linkToItem('MOD09Q1 NDVI 250m Time Series filtered', 'A')" class="a"><b>FILTERED<br>TS </b> </div>
                                <div onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'B')" class="b"><b>ACF</b></div>
                                <div onclick="linkToItem('SPECIFIC AUTOCORRELATION COEFFICIENTS (NDVI 250m MOD09Q1)', 'B')" class="b"><b>SPECIFIC ACF</b></div>
-                               <div class="c"><b>FALLOW LANDS <br>REGIME</b></div>               
+                               <a class="c" target="_blank" href="https://ee-diegomadrugaramos.projects.earthengine.app/view/fallowlandsviewer"><div><p class="pC"><b>FALLOW LANDS <br>REGIME</b></p></div><span class="tooltip2">Click to open the map</span></a>               
                             </div>
                                 <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
                         </div>
@@ -135,7 +125,8 @@
                     
                     <aside class="img-card">
                         <div>
-                            <a target="_blank" href=" https://ee-diegomadrugaramos.projects.earthengine.app/view/rivera-duero"><img class="img-card-img1" src="img\RD_COMPOSICION_C.png" alt="">
+                            <a target="_blank" href=" https://ee-diegomadrugaramos.projects.earthengine.app/view/rivera-duero">
+                                <img class="img-card-img1" src="img\RD_COMPOSICION_C.png" alt="">
                                 <span class="tooltip" id="tooltip1">Click to open the map</span>
                             </a>
 
@@ -172,7 +163,7 @@
                                 <a href="https://lpdaac.usgs.gov/products/mod09a1v006/" target="_blank" class="z"><div>MOD<br>09A1</div></a>
                                 <div onclick="linkToItem('MOD09A1 NDVI 500m TIME SERIES FILTERED', 'A')" class="a"><b>NDVI 500 TS <br>FILTERED</b> </div>
                                 <div onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 500m MOD09A1)', 'B')" class="b"><b>ACF</b></div>
-                                <div class="c"><b>CLIMATOLOGY <br>VEGETATION<br>DUERO</b></div>               
+                                <a class="c" target="_blank" href=" https://ee-diegomadrugaramos.projects.earthengine.app/view/rivera-duero"><div><p class="pC"><b>CLIMATOLOGY <br>VEGETATION<br>DUERO</b></p></div><span class="tooltip2">Click to open the map</span></a>               
                              </div>
                                  <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
                         </div>
@@ -227,7 +218,7 @@
                                 <a href="https://www.earthdata.nasa.gov/sensors/avhrr" target="_blank" class="z"><div><p>AVHRR</p></div></a>
                                 <div onclick="linkToItem('AVHRR NDVI Time Series', 'A')" class="a"><b>AVHRR NDVI <br>TS</b></div>
                                 <div onclick="linkToItem('PERIODOGRAM AVHRR-NDVI', 'B')" class="b"><b>PERIODOGRAM</b></div>
-                                <div class="c"><b>NUMBER OF SEASONAL<br>CYCLES</b></div>               
+                                <a class="c" target="_blank" href="https://ee-diegomadrugaramos.projects.earthengine.app/view/number-cycles"><div><p class="pC"><b>NUMBER OF SEASONAL<br>CYCLES</b></p></div><span class="tooltip2">Click to open the map</span></a>               
                               
                              </div>
                                  <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
@@ -277,7 +268,7 @@
                                 <a href="https://www.earthdata.nasa.gov/sensors/avhrr" target="_blank" class="z"><div><p>AVHRR</p></div></a>
                                 <div onclick="linkToItem('AVHRR NDVI Time Series', 'A')" class="a"><b>AVHRR NDVI <br>TS</b></div>
                                 <div onclick="linkToItem('PERIODOGRAM AVHRR-NDVI', 'B')" class="b"><b>PERIODOGRAM</b></div>
-                                <div class="c"><b>AMPLITUDE  OF SEASONAL<br>CYCLES</b></div>               
+                                <a class="c" target="_blank" href="https://ee-diegomadrugaramos.projects.earthengine.app/view/amplitude-cycles"><div><p class="pC"><b>AMPLITUDE  OF SEASONAL<br>CYCLES</b></p></div><span class="tooltip2">Click to open the map</span></a>               
                              </div>
                                  <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
                          </div>
@@ -303,7 +294,8 @@
                     
                     <aside class="img-card">
                         <div>
-                            <a target="_blank" href="https://ee-diegomadrugaramos.projects.earthengine.app/view/stability-cycles"><img class="img-card-img1" src="img\SeasonalityStability.jpg" alt="">
+                            <a target="_blank" href="https://ee-diegomadrugaramos.projects.earthengine.app/view/stability-cycles">
+                                <img class="img-card-img1" src="img\SeasonalityStability.jpg" alt="">
                                 <span class="tooltip" id="tooltip1">Click to open the map</span>
                             </a>
                             <p><b>KEYWORDS</b> <br>
@@ -329,7 +321,7 @@
                                 <a href="https://www.earthdata.nasa.gov/sensors/avhrr" target="_blank" class="z"><div><p>AVHRR</p></div></a>
                                 <div onclick="linkToItem('AVHRR NDVI Time Series', 'A')" class="a"><b>AVHRR NDVI <br>TS</b></div>
                                 <div onclick="linkToItem('PERIODOGRAM AVHRR-NDVI', 'B')" class="b"><b>PERIODOGRAM</b></div>
-                                <div class="c"><b>STABILITY OF SEASONAL<br>CYCLES</b></div>               
+                                <a class="c" target="_blank" href="https://ee-diegomadrugaramos.projects.earthengine.app/view/stability-cycles"><div><p class="pC"><b>STABILITY OF SEASONAL<br>CYCLES</b></p></div><span class="tooltip2">Click to open the map</span></a>               
                              </div>
                                  <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
                     </article>
@@ -378,7 +370,7 @@
                             <a href="https://www.earthdata.nasa.gov/sensors/avhrr" target="_blank" class="z"><div><p>AVHRR</p></div></a>
                             <div onclick="linkToItem('AVHRR NDVI Time Series', 'A')" class="a"><b>AVHRR NDVI <br>TS</b></div>
                             <div onclick="linkToItem('PERIODOGRAM AVHRR-NDVI', 'B')" class="b"><b>PERIODOGRAM</b></div>
-                            <div class="c"><b>PRESENCE OF PLURIANNUAL<br>CYCLES</b></div>               
+                            <a class="c" target="_blank" href="https://ee-diegomadrugaramos.projects.earthengine.app/view/pluriannual-cycles"><div><p class="pC"><b>PRESENCE OF PLURIANNUAL<br>CYCLES</b></p></div><span class="tooltip2">Click to open the map</span></a>               
                          </div>
                              <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
                 </article>
@@ -459,7 +451,8 @@
                     
                     <aside class="img-card">
                         <div>
-                            <a target="_blank" href="https://ee-geoinfolandyn.projects.earthengine.app/view/mod09a1-ecu-4subperiods-2001-2020"><img class="img-card-img1" src="img\GIF_Subperiods.gif" alt="">
+                            <a target="_blank" href="https://ee-geoinfolandyn.projects.earthengine.app/view/mod09a1-ecu-4subperiods-2001-2020">
+                                <img class="img-card-img1" src="img\GIF_Subperiods.gif" alt="">
                             <span class="tooltip" id="tooltip1">Click to see the full map</span>
                         </a>
                         <p><br><b>KEYWORDS</b> <br> 
@@ -486,7 +479,7 @@
                                 <div onclick="linkToItem('MOD09A1 NDVI 500m ECUADOR', 'A')" class="a"><b>NDVI 500<br>TS 2000 - 2023 </b></div>
                                 <div onclick="linkToItem('MOD09A1 NDVI 500m ECUADOR TIME SERIES FILTERED', 'A')" class="a"><b>FILTERED<br>TS </b> </div>
                                 <div onclick="linkToItem('PERIODOGRAM ECUADOR (MOD09A1-NDVI)', 'B')" class="b"><b>PERIODOGRAM</b></div>
-                                <div class="c"><b>CROPLAND <br>INTENSIFICATION</b></div>               
+                                <a class="c" target="_blank" href="https://ee-geoinfolandyn.projects.earthengine.app/view/mod09a1-ecu-4subperiods-2001-2020"><div><p class="pC"><b>CROPLAND <br>INTENSIFICATION</b></p></div><span class="tooltip2">Click to open the map</span></a>               
                              </div>
                                  <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
                         </div>
@@ -511,7 +504,8 @@
                     
                     <aside class="img-card">
                         <div>
-                            <a href="https://ee-geoinfolandyn.projects.earthengine.app/view/mod09a1-ecuador-clasification-2001-2020"><img class="img-card-img1" src="img\Clasification.png" alt="">
+                            <a href="https://ee-geoinfolandyn.projects.earthengine.app/view/mod09a1-ecuador-clasification-2001-2020">
+                                <img class="img-card-img1" src="img\Clasification.png" alt="">
                             <span class="tooltip" id="tooltip1">Click to see the full map</span>  
                         </a>
                         <p><br><b>KEYWORDS</b> <br> 
@@ -539,7 +533,7 @@
                                 <div onclick="linkToItem('MOD09A1 NDVI 500m ECUADOR', 'A')" class="a"><b>NDVI 500<br>TS 2000 - 2023 </b></div>
                                 <div onclick="linkToItem('MOD09A1 NDVI 500m ECUADOR TIME SERIES FILTERED', 'A')" class="a"><b>FILTERED<br>TS </b> </div>
                                 <div onclick="linkToItem('PERIODOGRAM ECUADOR (MOD09A1-NDVI)', 'B')" class="b"><b>PERIODOGRAM</b></div>
-                                <div class="c"><b>CROPLAND <br>INTENSIFICATION</b></div>               
+                                <a class="c" href="https://ee-geoinfolandyn.projects.earthengine.app/view/mod09a1-ecuador-clasification-2001-2020"><div><p class="pC"><b>CROPLAND <br>INTENSIFICATION</b></p></div><span class="tooltip2">Click to open the map</span></a>               
                              </div>
                                  <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
                         </div>
@@ -564,7 +558,8 @@
                     
                     <aside class="img-card">
                         <div>
-                            <a href=" https://ee-geoinfolandyn.projects.earthengine.app/view/mod09a1-ecuador-intensification-01-20"><img class="img-card-img1" src="img\Intensi.png" alt="">
+                            <a href=" https://ee-geoinfolandyn.projects.earthengine.app/view/mod09a1-ecuador-intensification-01-20">
+                                <img class="img-card-img1" src="img\Intensi.png" alt="">
                             <span class="tooltip" id="tooltip1">Click to see the full map</span>  
                         </a>
                         <p><br><b>KEYWORDS</b> <br> 
@@ -590,8 +585,9 @@
                                 <div onclick="linkToItem('MOD09A1 NDVI 500m ECUADOR', 'A')" class="a"><b>NDVI 500<br>TS 2000 - 2023 </b></div>
                                 <div onclick="linkToItem('MOD09A1 NDVI 500m ECUADOR TIME SERIES FILTERED', 'A')" class="a"><b>FILTERED<br>TS </b> </div>
                                 <div onclick="linkToItem('PERIODOGRAM ECUADOR (MOD09A1-NDVI)', 'B')" class="b"><b>PERIODOGRAM</b></div>
-                                <div class="c"><b>CROPLAND <br>INTENSIFICATION</b></div>               
-                             </div>
+                                <a class="c" href=" https://ee-geoinfolandyn.projects.earthengine.app/view/mod09a1-ecuador-intensification-01-20"><div><p class="pC"><b>CROPLAND <br>INTENSIFICATION</b></p></div><span class="tooltip2">Click to open the map</span></a>               
+                            
+                            </div>
                                  <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
                         </div>
                         </article>
@@ -617,7 +613,8 @@
                     
                     <aside class="img-card">
                         <div>
-                            <a target="_blank" href="https://ee-geoinfolandyn.projects.earthengine.app/view/analysis-and-modeling-of-rainfed-crops-dynamics-in-soria"><img class="img-card-img1" src="img\SORIA.gif" alt="">
+                            <a target="_blank" href="https://ee-geoinfolandyn.projects.earthengine.app/view/analysis-and-modeling-of-rainfed-crops-dynamics-in-soria">
+                                <img class="img-card-img1" src="img\SORIA.gif" alt="">
                             <span class="tooltip" id="tooltip1">Click to see the full map</span>  
                         </a>
                         <p><br><b>KEYWORDS</b> <br><b>Thematic area:</b> sustainable agriculture 
@@ -647,7 +644,7 @@
                                 <a href="https://lpdaac.usgs.gov/products/mod09q1v061/" target="_blank" class="z"><div>MOD <br> 09A1</div></a>
                                 <div onclick="linkToItem('MOD09A1 NDVI 500m TIME SERIES FILTERED', 'A')" class="a"><b>NDVI 500 TS <br>FILTERED</b> </div>
                                 <div onclick="linkToItem('AUTOCORRELATION FUNCTION (NDVI 500m MOD09A1)', 'B')" class="b"><b>ACF</b></div>
-                                <div class="c"><b>RAINFED CROPS DYNAMICS<br>IN SORIA</b></div>               
+                                <a class="c" target="_blank" href="https://ee-geoinfolandyn.projects.earthengine.app/view/analysis-and-modeling-of-rainfed-crops-dynamics-in-soria"><div><p class="pC"><b>RAINFED CROPS DYNAMICS<br>IN SORIA</b></p></div></a>               
                              </div>
                                  <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div></div>
                         </div>

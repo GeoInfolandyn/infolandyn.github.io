@@ -31,14 +31,24 @@
       justify-content: center;
       align-items: center;  
       padding: 6px 2%;
+      gap: 4px;
     }
   
     .logo img{
       width: 70px;
       height: auto; 
     }
-   
 
+   #etsi{
+    width: 65px;
+    height: auto;
+    margin-right:2% ;
+   }
+   #etsi2{
+    width: 80px;
+    height: auto;
+    margin-right:2% ;
+   }
   /* añadir un cambio para dispositivos móviles */
   @media (max-width: 600px){
     .logo{

@@ -111,11 +111,38 @@ hr {
 /* Fin Index */
 
 /* NEWS */
+.news{
+display: flex;
+margin: 0 auto;
+font-size: 16px;
+font-family: "Poppins", sans-serif;
+font-weight: 300;
+line-height: 1.5;
+max-width: 70%;
+overflow-x:visible;
+
+}
+.titulosenlace{
+font-size: 19px;
+font-family: "Poppins", sans-serif;
+text-decoration: none;
+color: #000;
+}
 .blog-post{
-  flex-direction: column;
+  /* flex-direction: column;
   justify-content: center;
   align-items: center;
- margin-bottom: 5%;
+  margin-bottom: 5%;
+  max-width: 70%;
+  display: flex;
+  margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  box-sizing: border-box;
 }
 
  /* About */
@@ -461,233 +488,156 @@ margin-bottom:5%;
 }
 
 
-/* para móviles */
-@media (min-width: 886px){
-  .title-card,
-    .img-card,
-    .main-card,
-    .credit-card {
-        width: 100%;
-        margin-bottom: 1rem;
-        overflow: hidden;
-    }
-}
-@media screen and (max-width: 885px) {
- 
-  
-  #girasol{
-    width: 100%;
-    height: 100px;
-  }
-  .section{
-    width: 100%;
-
-  }
-  .section .tab {
-    width: 100%; /* Ocupar el ancho completo */
-    display: block; /* Cambiar a display block para ocupar el ancho completo */
-    margin-bottom: 20px; /* Añadir margen inferior para separar las tarjetas */
-  }
- 
-  .section {
-    max-width: 96%;
-  }
- 
-    .tab-content-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-  
+    /* para móviles */
+    @media (min-width: 886px){
     .title-card,
-    .img-card,
-    .main-card,
-    .credit-card {
-        width: 100%;
-        margin-bottom: 1rem;
-        overflow: hidden;
+      .img-card,
+      .main-card,
+      .credit-card {
+          width: 100%;
+          margin-bottom: 1rem;
+          overflow: hidden;
+      }
     }
-  
-    .title-card h3, .main-card h3 {
-        text-align: center;
-    }
-  
-    .main-card {
-        padding: 1rem;
-        display: flex;
-    }
-  
-    .img-card-img1, .img-card-img2{
+    @media screen and (max-width: 885px) {
+
+
+    #girasol{
       width: 100%;
+      height: 100px;
     }
-  
-    .leyenda{
-      width: 140%;
+    .section{
+      width: 100%;
+
+    }
+    .section .tab {
+      width: 100%; /* Ocupar el ancho completo */
+      display: block; /* Cambiar a display block para ocupar el ancho completo */
+      margin-bottom: 20px; /* Añadir margen inferior para separar las tarjetas */
     }
 
-  /* Ajustar los estilos de las tarjetas */
-  .tab-content-grid {
-   
-    grid-template: 
-      "title-card" auto /* Ajustar el tamaño de las filas */
-      "img-card" auto
-      "main-card" auto
-      "credit-card" auto;
-  }
- /* Tamaño de fuente */
- .section label h3,
- .section .tab-content-grid p {
-   font-size: 12px;
- }
-/* Tamaño de las imágenes dentro de main-card-img */
-.title-card{
-display: flex;
-flex-direction: column;
-width: 100%;
-font-size: small;
-}
+    .section {
+      max-width: 96%;
+    }
 
-.main-card-img {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 100%; /* Asegurar que se ajusten correctamente */
-}
- /* Tamaño de las imágenes */
+      .tab-content-grid {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
 
-.main-card-imgC{
-  display:flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: left;
-}
+      .title-card,
+      .img-card,
+      .main-card,
+      .credit-card {
+          width: 100%;
+          margin-bottom: 1rem;
+          overflow: hidden;
+      }
 
-/* Hacer que tanto la flecha como las cajitas del workflow desaparezcan en formato móvil */
-.main-card .almacen{
-  display: none;
-}
-.main-card .main-card-imgC{
-  display: none;
-}
-.main-card .main-card-imgA{
-  display: none;
-}
-.main-card .main-card-imgA_1{
-  display: none;
-}
-.main-card .main-card-imgB{
-  display:none ;
-}
- /* Ajuste del ancho de las tarjetas */
- .section .tab {
-   width: 100%; /* Ocupar el 95% del ancho del body */
-   margin: 0 auto; /* Centrar horizontalmente */
-   margin-bottom: 20px; /* Espacio entre las tarjetas */
- }
- .main-card-img div {
-  width: 50%;
-  max-width: 50%; /* Asegurar que se ajusten correctamente */
-  text-align: center; /* Centrar el contenido */
-  justify-content: center;
-}
+      .title-card h3, .main-card h3 {
+          text-align: center;
+      }
 
-/* index móvil*/
-body{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-  max-width: 100vw;
-  padding-bottom: 0px;
-}
-.footer{
- font-size: x-small;
-}
+      .main-card {
+          padding: 1rem;
+          display: flex;
+      }
 
-.text text-small text-italic{
-  justify-content: center;
-  font-size: x-small;
-}
+      .img-card-img1, .img-card-img2{
+        width: 100%;
+      }
 
-.flex-column1{
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-  align-content: stretch;
-  box-sizing: border-box;
-}
-.flex-column2{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  box-sizing: border-box;
-}
+      .leyenda{
+        width: 140%;
+      }
 
-.workflow{
-width: 110%;
-}
-  
-.textImgCard {
- font-weight: bold;
- margin-top: 4%;
- margin-bottom: 4%;
- text-align: justify;
- color: #000;
- justify-content: center;
- display: flex;
-}
+    /* Ajustar los estilos de las tarjetas */
+    .tab-content-grid {
+      
+      grid-template: 
+        "title-card" auto /* Ajustar el tamaño de las filas */
+        "img-card" auto
+        "main-card" auto
+        "credit-card" auto;
+    }
+    /* Tamaño de fuente */
+    .section label h3,
+    .section .tab-content-grid p {
+      font-size: 12px;
+    }
+    /* Tamaño de las imágenes dentro de main-card-img */
+    .title-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: small;
+    }
 
-.text{
- width: 100%;
- margin-top: 4%;
- margin-bottom: 4%;
- text-align: justify;
-}
+    .main-card-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%; /* Asegurar que se ajusten correctamente */
+    }
+    /* Tamaño de las imágenes */
 
-.text a{
-  text-decoration: none;
-}
+    .main-card-imgC{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    }
 
-.textWorkflow {
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
+    /* Hacer que tanto la flecha como las cajitas del workflow desaparezcan en formato móvil */
+    .main-card .almacen{
+    display: none;
+    }
+    .main-card .main-card-imgC{
+    display: none;
+    }
+    .main-card .main-card-imgA{
+    display: none;
+    }
+    .main-card .main-card-imgA_1{
+    display: none;
+    }
+    .main-card .main-card-imgB{
+    display:none ;
+    }
+    /* Ajuste del ancho de las tarjetas */
+    .section .tab {
+      width: 100%; /* Ocupar el 95% del ancho del body */
+      margin: 0 auto; /* Centrar horizontalmente */
+      margin-bottom: 20px; /* Espacio entre las tarjetas */
+    }
+    .main-card-img div {
+    width: 50%;
+    max-width: 50%; /* Asegurar que se ajusten correctamente */
+    text-align: center; /* Centrar el contenido */
+    justify-content: center;
+    }
 
-.content {
-  margin: 5%;
-  margin-left: 10%;
-  font-size: 13px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  line-height: 1.4;
-  max-width: 100%;
-  overflow-x: visible;
-}
+    /* index móvil*/
+    body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 100vw;
+    padding-bottom: 0px;
+    }
+    .footer{
+    font-size: x-small;
+    }
 
-}
+    .text text-small text-italic{
+    justify-content: center;
+    font-size: x-small;
+    }
 
-
-
-
-
-/* tamaños pantalla intermedios */
-@media (min-width: 886px) {
-  .tab-content-grid {
-    grid-template: "title-card   title-card" 100px "img-card     main-card" auto "credit-card  credit-card" auto/34% 63%;
-   
-  }
- .workflow{
-  width: 90%;
- }
-
-  .flex-column1{
+    .flex-column1{
+    width: 90%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -695,33 +645,110 @@ width: 110%;
     align-items: stretch;
     align-content: stretch;
     box-sizing: border-box;
-    width: 95%;
-  }
-  .flex-column2{
+    }
+    .flex-column2{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     box-sizing: border-box;
-    width: 95%;
-  }
-  
-  .text{
-   width: 100%;
-   margin-top: 1%;
-   text-align: justify;
-  }
-}
+    }
 
-/* Estilos encabezado de tarjetas */
-.title-card{
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 10px;
+    .workflow{
+    width: 110%;
+    }
 
-}
-.title-card h3{
+    .textImgCard {
+    font-weight: bold;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    text-align: justify;
+    color: #000;
+    justify-content: center;
+    display: flex;
+    }
+
+    .text{
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    text-align: justify;
+    }
+
+    .text a{
+    text-decoration: none;
+    }
+
+    .textWorkflow {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    }
+
+    .content {
+    margin: 5%;
+    margin-left: 10%;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    line-height: 1.4;
+    max-width: 100%;
+    overflow-x: visible;
+    }
+
+    }
+
+
+
+
+
+    /* tamaños pantalla intermedios */
+    @media (min-width: 886px) {
+      .tab-content-grid {
+        grid-template: "title-card   title-card" 100px "img-card     main-card" auto "credit-card  credit-card" auto/34% 63%;
+      
+      }
+    .workflow{
+      width: 90%;
+    }
+
+      .flex-column1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+        box-sizing: border-box;
+        width: 95%;
+      }
+      .flex-column2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 95%;
+      }
+      
+      .text{
+      width: 100%;
+      margin-top: 1%;
+      text-align: justify;
+      }
+    }
+
+  /* Estilos encabezado de tarjetas */
+  .title-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  }
+
+  .title-card h3{
   display: flex;
   justify-content: start;
   align-content: center;
@@ -729,7 +756,64 @@ gap: 10px;
   color: #03050a;
   }
 
+.con{
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns:  repeat(3,1fr) ;
+  grid-template-rows: 100px, 1fr, 1fr, 1fr, 1fr;
+}
+.der{
+  grid-column: 1/span 3;
+  grid-row: 1;
+  background-color: #012b80;
+}
+.mai{
+  grid-row: 2 / span 3;
+  grid-column: 1/ span 2;
+  background-color: #ff9c07;
+  display: flex;
+  justify-content: center; /* Espacio entre elementos .cepo */
+  align-items: center;           /* Centra los .cepo verticalmente */
+  padding: 20px;
+  gap: 1%;
+}
 
+.cepo{
+  height: 80%;
+  flex-basis: 80%; 
+  background-color: #333;
+}
+
+
+.side{ 
+grid-row:2 / span 3;
+grid-column: 3;
+background-color: #018016;
+}
+.foot{
+  grid-column: 1 / span 3;
+  grid-row: 5;
+  background-color: #9b1969;
+}
+#start{
+  width: 600px;
+  height: 50px;
+  font-size: 20px;
+
+}
+
+.calendar{
+display: flex;
+flex-wrap: wrap;
+width: 1000px;
+height: fit-content;
+justify-content: center;
+align-content: center;
+margin-bottom: 3%;
+
+
+}
 
 .title-card-descarga{
   display:inline-flex;

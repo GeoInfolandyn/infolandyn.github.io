@@ -122,7 +122,12 @@ max-width: 70%;
 overflow-x:visible;
 
 }
-
+.titulosenlace{
+font-size: 19px;
+font-family: "Poppins", sans-serif;
+text-decoration: none;
+color: #000;
+}
 .blog-post{
   /* flex-direction: column;
   justify-content: center;

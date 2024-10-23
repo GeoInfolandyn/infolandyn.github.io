@@ -30,7 +30,7 @@ hr {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: stretch;
   align-content: stretch;
   box-sizing: border-box;

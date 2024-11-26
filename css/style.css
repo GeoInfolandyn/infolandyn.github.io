@@ -445,7 +445,7 @@ margin-bottom:5%;
 }
 .section .tab-content-grid {
   max-height: 0;
-  overflow: auto;
+  overflow: hidden;
   transition: 1s;
 }
 .section .tab-content-grid p {

@@ -30,7 +30,7 @@ function filtroA(){
 // listas de los elementos por clase
     var listA1 =['MODIS(MOD09A1) SPECTRUM','MODIS(MOD09Q1) SPECTRUM','MODIS(MOD17A2H) SPECTRUM']
     var listA2 =['MOD09Q1 NDVI 250m 8 Days Time Series','MOD09A1 NDVI 500m Ecuador Time Series','AVHRR NDVI Time Series']
-    var listA3 =['MOD09Q1 NDVI 250m Time Series filtered','MOD09A1 NDVI 500m Time Series Filtered','MOD09A1 NDVI 500m ECUADOR Time Series Filtered']
+    var listA3 =['MOD09Q1 NDVI 250m Time Series filtered','MOD09A1 NDVI 500m Time Series Filtered','MOD09A1 NDVI 500m ECUADOR Time Series Filtered','SENTINEL-2 NDVI 10m GUADALQUITON Time Series Filtered']
     
     cards = document.getElementsByClassName('tab') 
     for(card of cards){

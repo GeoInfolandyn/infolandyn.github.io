@@ -28,9 +28,9 @@ function filtroA(){
     var op1 = document.getElementById("OP1");
     var op2 = document.getElementById("OP2");
 // listas de los elementos por clase
-    var listA1 =['MODIS(MOD09A1) SPECTRUM','MODIS(MOD09Q1) SPECTRUM','MODIS(MOD17A2H) SPECTRUM']
-    var listA2 =['MOD09Q1 NDVI 250m 8 Days Time Series','MOD09A1 NDVI 500m Ecuador Time Series','AVHRR NDVI Time Series']
-    var listA3 =['MOD09Q1 NDVI 250m Time Series filtered','MOD09A1 NDVI 500m Time Series Filtered','MOD09A1 NDVI 500m ECUADOR Time Series Filtered']
+    var listA1 =['MODIS(MOD09A1) SPECTRUM','MODIS(MOD09Q1) SPECTRUM','MODIS(MOD17A2H) SPECTRUM', "SENTINEL-2"]
+    var listA2 =['MOD09Q1 NDVI 250m 8 Days Time Series','MOD09A1 NDVI 500m Ecuador Time Series','AVHRR NDVI Time Series', "SENTINEL-2 NDVI 10m GUADALQUITÓN Time Series","SENTINEL-2 NDVI 10m LA RONCA Time Series"]
+    var listA3 =['MOD09Q1 NDVI 250m Time Series filtered','MOD09A1 NDVI 500m Time Series Filtered','MOD09A1 NDVI 500m ECUADOR Time Series Filtered',"SENTINEL-2 NDVI 10m GUADALQUITÓN Time Series Filtered", "SENTINEL-2 NDVI 10m LA RONCA Time Series Filtered"]
     
     cards = document.getElementsByClassName('tab') 
     for(card of cards){
@@ -109,7 +109,7 @@ function filtroB(){
     var op1 = document.getElementById("OP1");
     var op2 = document.getElementById("OP2");
 // listas de los elementos por clase
-    var listB1 =['AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'AUTOCORRELATION FUNCTION (NDVI 500m MOD09A1)', 'PERIODOGRAM AVHRR-NDVI']
+    var listB1 =['AUTOCORRELATION FUNCTION (NDVI 250m MOD09Q1)', 'AUTOCORRELATION FUNCTION (NDVI 500m MOD09A1)', 'PERIODOGRAM AVHRR-NDVI',"AUTOCORRELATION FUNCTION (SENTINEL-2) GUADALQUITÓN","AUTOCORRELATION FUNCTION (SENTINEL-2) LA RONCA"]
     var listB2 =['SPECIFIC AUTOCORRELATION COEFFICIENTS (NDVI 250m MOD09Q1)','PERIODOGRAM ECUADOR (MOD09A1-NDVI)']
 
     cards = document.getElementsByClassName('tab')

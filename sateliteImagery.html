@@ -68,8 +68,10 @@
                     </div>
                     
                     <aside class="img-card">
-                        <div><img class="img-card-img1" src="img\MODIS_LOGO.png" alt="">
-
+                        <div>
+                            <a target="_blank" href="https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/MOD17A2H">
+                                <img class="img-card-img1" src="img\MODIS_LOGO.png" alt="">
+                                <span class="tooltip" id="tooltip1">Click to open the map</span></a>
                             <p><b>KEYWORDS</b> <br>
                                 <b>Data source:</b> remote sensing
                                 <b>Sensor:</b> MODIS
@@ -80,8 +82,8 @@
 
                     <article class="main-card">
                         <div><h3>DESCRIPTION</h3><p>MOD17A2H is an 8-day composite at 1-km spatial resolution delivered as a gridded Level-4 product in Sinusoidal projection.
-                            The MODIS Adaptive Processing System (MODAPS) at the NASA Goddard Space Flight Center produces this Collection-5 GPP product. This version contains some 
-                            cloud-contaminated LAI/FPAR inputs that users should exclude by flagging them as part of the quality assessment filters. Once the cloud-contaminated pixels 
+                            The MODIS Adaptive Processing System (MODAPS) at the NASA Goddard Space Flight Center produces this Collection-5 GPP product.
+                            <br><br>This version contains some cloud-contaminated LAI/FPAR inputs that users should exclude by flagging them as part of the quality assessment filters. Once the cloud-contaminated pixels 
                             are excluded, this dataset may serve the near-real-time needs for the current calendar year. 
                             </p>
                             <div class="main-card-img"></div>
@@ -101,13 +103,16 @@
                 <div class="tab-content-grid">
                     <div class="title-card">OFFICIAL SITE
                         <a target="_blank" href="https://lpdaac.usgs.gov/products/mod09a1v006/">
-                            <button class="title-card-descarga"><b>HERE</b></button>
+                            <button class="title-card-descarga "><b>HERE</b></button>
                           </a> 
                         
                     </div>
                     
                     <aside class="img-card">
-                        <div><img class="img-card-img1" src="img\MODIS_LOGO.png" alt="">
+                        <div>
+                            <a target="_blank" href="https://lpdaac.usgs.gov/products/mod09a1v006//">
+                                <img class="img-card-img1" src="img\MODIS_LOGO.png" alt="">
+                                <span class="tooltip" id="tooltip1">Click to open the map</span></a>
 
                             <p><b>KEYWORDS</b> <br>
                                 <b>Thematic area:</b> sustainable agriculture 
@@ -123,7 +128,8 @@
                             </div>
                     </aside>
                     <article class="main-card"> <div><h3>DESCRIPTION</h3><p>The Moderate Resolution Imaging Spectroradiometer (MODIS) Terra MOD09A1 Version 6 product provides an estimate of the 
-                        surface spectral reflectance of Terra MODIS Bands 1 through 7 corrected for atmospheric conditions such as gasses, aerosols, and Rayleigh scattering. Along with the seven
+                        surface spectral reflectance of Terra MODIS Bands 1 through 7 corrected for atmospheric conditions such as gasses, aerosols, and Rayleigh scattering. <br><br>
+                        Along with the seven
                         500 meter (m) reflectance bands are two quality layers and four observation bands. For each pixel, a value is selected from all the acquisitions within the 8-day composite
                         period. The criteria for the pixel choice include cloud and solar zenith. When several acquisitions meet the criteria the pixel with the minimum channel 3 (blue) value is used.<br>
                         </p>
@@ -149,8 +155,10 @@
                     </div>
                     
                     <aside class="img-card">
-                        <div><img class="img-card-img1" src="img\MODIS_LOGO.png" alt="">
-
+                        <div>
+                            <a target="_blank" href="https://lpdaac.usgs.gov/products/mod09q1v061/">
+                                <img class="img-card-img1" src="img\MODIS_LOGO.png" alt="">
+                                <span class="tooltip" id="tooltip1">Click to open the map</span> </a>
                             <p><b>KEYWORDS</b> <br>
                                 <b>Thematic area:</b> sustainable agriculture 
                                 <b>Specific area:</b> fallow lands 
@@ -176,8 +184,53 @@
                     <div class="credit-card"><p>Creative Commons Attribution 4.0 International</p></div>
                 </div>
             </div>
-            
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc33"/>
+                <label for="acc33">
+                    <h2>A1</h2>
+                    <h3>SENTINEL-2 (REFLECTANCE) SPECTRUM</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card">OFFICIAL SITE
+                        <a target="_blank" href="https://sentiwiki.copernicus.eu/web/s2-applications">
+                            <button class="title-card-descarga"><b>HERE</b></button>
+                          </a> 
+                    </div>
+                    
+                    <aside class="img-card">
+                        
+                        <div>
+                            <a target="_blank" href="https://sentiwiki.copernicus.eu/web/s2-applications">
+                                <img class="img-card-img1" src="img/Sentinel-2_patch_card_full.png" alt="">
+                                <span class="tooltip" id="tooltip1">Click to open the map</span>
+                            </a>
+                            <p><b>KEYWORDS</b> <br>
+                                <b>Thematic area:</b> sustainable agriculture 
+                                <b>Specific area:</b> Spain
+                                <b>Data source:</b> remote sensing
+                                <b>Sensor:</b> SENTINEL-2
+                                <b>Processing level:</b> A
+                            </div>
+                    </aside>
 
+                    <article class="main-card"><div><h3>DESCRIPTION</h3><p>  Sentinel-2 Level-2A is a Bottom-of-Atmosphere (BOA) reflectance product
+                        generated from Level-1C data using the Sen2Cor processor. It provides
+                        10m, 20m, and 60m spatial resolution imagery in UTM/WGS84 projection.
+                        The product includes 13 spectral bands and is primarily used for land
+                        monitoring applications, including vegetation analysis, land cover
+                        classification, and change detection. <br><br>Atmospheric correction accounts
+                        for aerosol and water vapor effects. Users should apply scene
+                        classification and quality flags to exclude cloud-contaminated pixels.
+                        This dataset supports near-real-time environmental monitoring and
+                        scientific research. <br>
+                        </p>
+                        <div class="main-card-img">
+                        </div>
+                    </article>
+                    <div class="credit-card"><p>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>
+          
         </section>
         
         <section class="section" id="sA2">
@@ -329,7 +382,97 @@
                 </div>
             </div>
 
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc13"/>
+                <label for="acc13">
+                    <h2>A2</h2>
+                    <h3>SENTINEL-2 NDVI 10m GUADALQUITÓN Time Series</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card">DOWNLOADS
+                        <a class="title-card-descarga" target="_blank" id="btn-productsA" href="https://storage.googleapis.com/infolandyn/Web/Productos%20A/A2/stack_guadalquiton_filt_linear_COG.tif">Raster Image</a>
+                    </div>
+                    
+                    <aside class="img-card">
+                        <div>
+                            <a target="_blank" href="https://ee-diegomadrugaramos.projects.earthengine.app/view/s2-guadalquition-18-24">
+                                <img class="img-card-img1" src="img\guadalquiton interp.png" alt="">
+                            <span class="tooltip" id="tooltip1">Click to see the full map</span></a>
+                            <p><b>KEYWORDS</b> <br>
+                                <b>Thematic area:</b> 
+                                <b>Data source:</b> remote sensing
+                                <b>Sensor:</b> AVHRR
+                                <b>Processing level:</b> C
+                                <b>Methodology:</b> spectral index, time series analysis,artificial intelligence, 
+                            </div>
+                    </aside>
+                    <article class="main-card">
+                        <img class="leyenda" src="img\leyenda.drawio.drawio.svg" alt="">
+                        <div>
+                        <br><br> <h3>DESCRIPTION:</h3>
+                        <p>This card displays the interpolated NDVI (Normalized Difference Vegetation Index) of a time series. The images 
+                            used to generate the NDVI data were captured by the Sentinel-2 sensor at a 10m spatial resolution. 
+                            <br><br>The area covered by this analysis is Guadalquitón, located in Spain. Interpolation is applied to the time 
+                            series to estimate NDVI values for missing or irregularly spaced data points, allowing for a continuous representation of
+                             vegetation dynamics over time. This technique helps ensure a more consistent and reliable analysis, even in the presence of data gaps.<br>
+                            </p>
+                            <div class="main-card-imgA_1">
+                            <a href="https://www.earthdata.nasa.gov/sensors/avhrr" target="_blank" class="z3_1v"><div><p>SENTINEL -2</p></div></a>
+                            <div class="a3_1v"><b>SENTINEL- 2 <br> TS<br> </b></div>              
+                         </div>
+                             <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div>
+                        </div></div>
+                    </article>
+                           
+                    <div class="credit-card"><p>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>
            
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="LARONCAA2"/>
+                <label for="LARONCAA2">
+                    <h2>A2</h2>
+                    <h3>SENTINEL-2 NDVI 10m LA RONCA Time Series</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card">DOWNLOADS
+                        <a class="title-card-descarga" target="_blank" id="btn-productsA" href="https://storage.googleapis.com/infolandyn/Web/Productos%20A/A2/stack_laronca_NDVI_10_filt_linear_COG.tif">Raster Image</a>
+                    </div>
+                    
+                    <aside class="img-card">
+                        <div>
+                            <a target="_blank" href="https://ee-diegomadrugaramos.projects.earthengine.app/view/s2-la-ronca-18-24">
+                                <img class="img-card-img1" src="img\laronca_interp.png" alt="">
+                            <span class="tooltip" id="tooltip1">Click to see the full map</span></a>
+                            <p><b>KEYWORDS</b> <br>
+                                <b>Thematic area:</b> 
+                                <b>Data source:</b> remote sensing
+                                <b>Sensor:</b> AVHRR
+                                <b>Processing level:</b> C
+                                <b>Methodology:</b> spectral index, time series analysis,artificial intelligence, 
+                            </div>
+                    </aside>
+                    <article class="main-card">
+                        <img class="leyenda" src="img\leyenda.drawio.drawio.svg" alt="">
+                        <div>
+                        <br><br> <h3>DESCRIPTION:</h3>
+                        <p>This card displays the interpolated NDVI (Normalized Difference Vegetation Index) of a time series. The images 
+                            used to generate the NDVI data were captured by the Sentinel-2 sensor at a 10m spatial resolution. 
+                            <br><br>The area covered by this analysis is La Ronca, located in Spain. Interpolation is applied to the time 
+                            series to estimate NDVI values for missing or irregularly spaced data points, allowing for a continuous representation of
+                             vegetation dynamics over time. This technique helps ensure a more consistent and reliable analysis, even in the presence of data gaps.<br>
+                            </p>
+                            <div class="main-card-imgA_1">
+                            <a href="https://www.earthdata.nasa.gov/sensors/avhrr" target="_blank" class="z3_1v"><div><p>SENTINEL -2</p></div></a>
+                            <div class="a3_1v"><b>SENTINEL- 2 <br> TS<br> </b></div>              
+                         </div>
+                             <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div>
+                        </div></div>
+                    </article>
+                           
+                    <div class="credit-card"><p>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>
 
         </section>
 
@@ -489,7 +632,7 @@
                 <input type="checkbox" name="abrir" id="acc18"/>
                 <label for="acc18">
                     <h2>A3</h2>
-                    <h3>SENTINEL-2 NDVI 10m GUADALQUITON Time Series Filtered</h3>    
+                    <h3>SENTINEL-2 NDVI 10m GUADALQUITÓN Time Series Filtered</h3>    
                 </label>
                 <div class="tab-content-grid">
                     <div class="title-card">DOWNLOADS
@@ -498,8 +641,8 @@
                     
                     <aside class="img-card">
                         <div>
-                            <a target="_blank" href="https://ee-geoinfolandyn.projects.earthengine.app/view/mod09a1-ndvi-ecuador-00-23-filtered">
-                                <img target="_blank" class="img-card-img1" src="img\MOD09A1_NDVI_Filtered_ECUADOR.png" alt="">
+                            <a target="_blank" href="https://ee-diegomadrugaramos.projects.earthengine.app/view/s2-guadalquiton-18-24-sg">
+                                <img target="_blank" class="img-card-img1" src="img\Guadalquitón.png" alt="">
                             <span class="tooltip" id="tooltip1">Click to see the full map</span></a>
                             <p><b>KEYWORDS</b> <br>
                                 <b>Thematic area:</b> 
@@ -513,12 +656,63 @@
                         <img class="leyenda" src="img\leyenda.drawio.drawio.svg" alt="">
                         <div>
                         <br><br> <h3>DESCRIPTION:</h3>
-                        <p>desc.<br>
+                        <p>This card displays the NDVI (Normalized Difference Vegetation Index) of a filtered time series using the Savitzky-Golay filter.
+                            The images used to generate the NDVI data were captured by the Sentinel-2 sensor at a 10m spatial resolution. 
+                            <br><br>The area covered by this analysis is Guadalquitón, located in Spain. The use of Sentinel-2 imagery allows for high-quality 
+                            vegetation monitoring, while the Savitzky-Golay filter helps smooth the data, improving the accuracy and clarity of the time 
+                            series analysis.<br><br>
                             </p>
                             <div class="main-card-imgA_1">
-                            <a href="https://www.esa.int/Space_in_Member_States/Spain/SENTINEL_2" target="_blank" class="z3v"><div><p>SENTINEL-2 <br>TILE</p></div></a>
-                            <div onclick="linkToItem('MOD09A1 NDVI 500m ECUADOR', 'A')" class="a3v"><b>NDVI 10<br>TS 2018 - 2024 </b></div>
-                            <div class="a3v"><b>FILTERED<br>TS </b></div>              
+                            <a href="https://www.esa.int/Space_in_Member_States/Spain/SENTINEL_2" target="_blank" class="z3v"><div><p>SENTINEL-2 </p></div></a>
+                            <div onclick="linkToItem('SENTINEL-2 NDVI 10m GUADALQUITÓN Time Series', 'A')" class="a3v"><b>SENTINEL- 2 <br> TS<br> </b></div>
+                            <div class="a3v"><b>SENTINEL <br>FILTERED<br>TS </b></div>              
+                         </div>
+                             <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div>
+                        </div></div>
+                    </article>
+                   
+                           
+                    <div class="credit-card"><p>Creative Commons Attribution 4.0 International</p></div>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="checkbox" name="abrir" id="acc29"/>
+                <label for="acc29">
+                    <h2>A3</h2>
+                    <h3>SENTINEL-2 NDVI 10m LA RONCA Time Series Filtered</h3>    
+                </label>
+                <div class="tab-content-grid">
+                    <div class="title-card">DOWNLOADS
+                        <a class="title-card-descarga" target="_blank" id="btn-productsA" href="https://storage.googleapis.com/infolandyn/Web/Productos%20A/A3/stack_laronca_NDVI_10_filt_linear_SG5_COG.tif">Raster Image</a>
+                    </div>
+                    
+                    <aside class="img-card">
+                        <div>
+                            <a target="_blank" href="https://ee-diegomadrugaramos.projects.earthengine.app/view/s2-la-ronca-18-24-sg5">
+                                <img target="_blank" class="img-card-img1" src="img\laronca_sg.png" alt="">
+                            <span class="tooltip" id="tooltip1">Click to see the full map</span></a>
+                            <p><b>KEYWORDS</b> <br>
+                                <b>Thematic area:</b> 
+                                <b>Data source:</b> remote sensing
+                                <b>Sensor:</b> SENTINEL-2
+                                <b>Processing level:</b> A
+                                <b>Methodology:</b> spectral index, time series analysis,artificial intelligence, 
+                            </div>
+                    </aside>
+                    <article class="main-card">
+                        <img class="leyenda" src="img\leyenda.drawio.drawio.svg" alt="">
+                        <div>
+                        <br><br> <h3>DESCRIPTION:</h3>
+                        <p>This card displays the NDVI (Normalized Difference Vegetation Index) of a filtered time series using the Savitzky-Golay filter.
+                            The images used to generate the NDVI data were captured by the Sentinel-2 sensor at a 10m spatial resolution. 
+                            <br><br>The area covered by this analysis is La Ronca, located in Spain. The use of Sentinel-2 imagery allows for high-quality 
+                            vegetation monitoring, while the Savitzky-Golay filter helps smooth the data, improving the accuracy and clarity of the time 
+                            series analysis.<br><br>
+                            </p>
+                            <div class="main-card-imgA_1">
+                            <a href="https://www.esa.int/Space_in_Member_States/Spain/SENTINEL_2" target="_blank" class="z3v"><div><p>SENTINEL-2 </p></div></a>
+                            <div onclick="linkToItem('SENTINEL-2 NDVI 10m LA RONCA Time Series', 'A')" class="a3v"><b>SENTINEL- 2 <br>La RONCA <br> TS<br> </b></div>
+                            <div class="a3v"><b>SENTINEL<br> 2 Filtered <br>TS La <br>RONCA</b></div>              
                          </div>
                              <div class="almacen"><div class="cuerpoFlecha"> </div> <div class="flecha"></div>
                         </div></div>
